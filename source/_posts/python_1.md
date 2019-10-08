@@ -50,4 +50,12 @@ numbers2 = numbers.copy()
 numbers.append(45)
 print(numbers)
 print(numbers2)
+
+#去重复
+numbers = [5,20,1,5,7,5,6,4,5]
+uniques = []
+for i in numbers:
+    if i not in uniques:
+        uniques.append(i)
+print(uniques)
 ```
