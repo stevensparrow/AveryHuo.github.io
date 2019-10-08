@@ -9,5 +9,7 @@ tags: Python,Note
 ![enter description here](/images/1570501535887.png)
 
 ## For结构
+> * 普通使用
 > ![enter description here](./images/1570516202093.png)
-
+> * Use curly braces, 显示变量
+>![enter description here](./images/1570516527166.png)
