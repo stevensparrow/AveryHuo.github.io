@@ -34,3 +34,9 @@ greet_user2("John","Smith")
 greet_user2(second_name="John",first_name="Smith") #使用keyword形式作为参数，
 greet_user2(second_name="John","Smith") #错误，混合情况必须先用position形式再用keyword形式
 ```
+
++ ### Funtion Returns
+```
+def square(number):
+	return number * number
+```
