@@ -86,4 +86,14 @@ numbers[0] = 1 #TypeError: 'tuple' object does not support item assignment
 ```
 
 + ### Unpacking
-+ 
++ 映射数组成员
+```
+coordinates = (1,2,3)
+a = coordinates[0]
+b = coordinates[1]
+c = coordinates[2]
+
+# use Unpacking feature
+x, y, z = coordinates
+print(f"{a},{b},{c} <=> {x}, {y}, {z}")
+```
