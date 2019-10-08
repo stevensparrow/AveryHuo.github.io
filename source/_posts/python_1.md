@@ -112,4 +112,18 @@ print(customer.get("name"))
 print(customer.get("Name","Hey")) #Print,with default value:'Hey'
 customer["name"] = "AA"
 print(customer.get("name"))
+
+#Exercise
+input_str = str(input("Phone:"))
+digits_map = {
+    "1":"One",
+    "2":"Two",
+    "3":"Three",
+    "4":"Four",
+}
+output = ''
+for s in input_str:
+    output += digits_map.get(s,"") + " "
+
+print(output)
 ```
