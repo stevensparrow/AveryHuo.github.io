@@ -13,3 +13,5 @@ tags: Python,Note
 > ![enter description here](./images/1570516202093.png)
 > * Use curly braces, 显示变量
 >![enter description here](./images/1570516527166.png)
+> * 使用重复*个数输出字符
+> ![enter description here](./images/1570517022147.png)
