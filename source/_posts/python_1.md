@@ -18,7 +18,6 @@ tags: Python,Note
 
 ## List
 > * 普遍用法
-
 >```
 >names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']
 >print(names[2:])  #Print will start from 'Mosh'''
