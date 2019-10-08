@@ -23,4 +23,5 @@ def greet_user(name):
 
 
 greet_user("John")
+greet_user() #Error, no parameter
 ```
