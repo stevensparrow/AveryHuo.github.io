@@ -35,3 +35,19 @@ print(matrix)
 ```
 * 编辑类
 
+```
+numbers = [5,2,1,7]
+numbers.insert(-2,20)
+numbers.remove(2)
+numbers.append(45)
+numbers.pop()
+print(numbers.index(5))
+numbers.sort()
+numbers.reverse() #get deasc order
+if 5 in numbers:
+    print(numbers.index(5))
+numbers2 = numbers.copy()
+numbers.append(45)
+print(numbers)
+print(numbers2)
+```
