@@ -2,7 +2,7 @@
 title: Python Note 1
 tags: Python,Note
 ---
-# Python杂项
+# Python杂项 1
 
 + ### while结构
  注： """  多行string
