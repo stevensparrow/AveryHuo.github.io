@@ -29,7 +29,10 @@ This is test3!
  	print(f"i:{i}")
  ```
  * 使用重复*个数输出字符
- ![enter description here](./images/1570517022147.png)
+ ```
+ for i in range(5):
+ 	print(f"i:{i}"*4)
+ ```
 
 + ### List
 * 普遍用法
