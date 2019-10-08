@@ -127,3 +127,4 @@ for s in input_str:
 
 print(output)
 ```
++ [mac]ctrl+cmd+space>> to show emoji
