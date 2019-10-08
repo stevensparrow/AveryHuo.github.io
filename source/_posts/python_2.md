@@ -24,4 +24,11 @@ def greet_user(name):
 
 greet_user("John")
 greet_user() #Error, no parameter
+
+def greet_user2(first_name,second_name):
+    print(f"GO:{first_name} {second_name}")
+    print("Hi THERE!")
+
+
+greet_user2("John","Smith")
 ```
