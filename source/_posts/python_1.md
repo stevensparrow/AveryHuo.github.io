@@ -24,7 +24,7 @@ print(names[2:])  #Print will start from 'Mosh'''
 print(names[:])  #Print all'
 names[0] = 'Joh' #Change item
 print(names)  #output
-# 二维数组
+# 2d list
 matrix = [
     [1, 2, 3],
     [4, 5, 6],
