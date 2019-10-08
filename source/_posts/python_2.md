@@ -5,4 +5,3 @@ tags: Python,Note
 # Python Note 2
 
 + ### Function
-
