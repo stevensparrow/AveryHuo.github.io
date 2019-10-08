@@ -6,7 +6,16 @@ tags: Python,Note
 
 + ### while结构
  注： """  多行string
-![enter description here](/images/1570501535887.png)
+```
+n = 0
+while n < 5:
+	print("""
+This is test!
+This is test2!
+This is test3!
+	""")
+	n = n + 1
+```
 
 + ### For结构
  * 普通使用
