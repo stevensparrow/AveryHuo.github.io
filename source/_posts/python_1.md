@@ -21,3 +21,5 @@ tags: Python,Note
 > `names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']`
 > `print(names[2:]) ` #Print will start from 'Mosh'''
 > `print(names[:]) ` #Print all'
+> `names[0] = 'Joh'` #Change item
+> `print(names)` # output
