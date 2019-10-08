@@ -36,7 +36,12 @@ greet_user2(second_name="John","Smith") #错误，混合情况必须先用positi
 ```
 
 + ### Funtion Returns
++ By default, python return none.
 ```
 def square(number):
 	return number * number
+
+
+result = square(3)
+print(result)
 ```
