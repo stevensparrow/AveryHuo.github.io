@@ -40,7 +40,7 @@ numbers = [5,2,1,7]
 numbers.insert(-2,20)
 numbers.remove(2)
 numbers.append(45)
-numbers.pop()
+numbers.pop() #remove the last and return it
 print(numbers.index(5))
 numbers.sort()
 numbers.reverse() #get deasc order
