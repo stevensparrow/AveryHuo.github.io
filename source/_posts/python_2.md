@@ -16,3 +16,12 @@ greet_user()
 ```
 
 + ### Function parameters
+```
+def greet_user(name):
+    print(f"GO:{name}")
+    print("Hi THERE!")
+#As python recommended, left two blank lines after function
+
+
+greet_user("John")
+```
