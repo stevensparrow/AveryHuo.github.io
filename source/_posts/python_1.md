@@ -97,3 +97,19 @@ c = coordinates[2]
 x, y, z = coordinates
 print(f"{a},{b},{c} <=> {x}, {y}, {z}")
 ```
+
++ ### Dictionary
+```
+customer = {
+    "name": "John",
+    "age": 30,
+    "is_verified": True
+}
+print(customer["name"])
+# print(customer["Name"]) #KeyError,don't contain
+# print(customer["birthdate"])#KeyError,don't contain
+print(customer.get("name"))
+print(customer.get("Name","Hey")) #Print,with default value:'Hey'
+customer["name"] = "AA"
+print(customer.get("name"))
+```
