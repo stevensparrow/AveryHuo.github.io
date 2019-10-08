@@ -93,7 +93,7 @@ a = coordinates[0]
 b = coordinates[1]
 c = coordinates[2]
 
-# use Unpacking feature, unpacking the tuple to three variable
+# use Unpacking feature, unpacking the tuple/list to three variable
 x, y, z = coordinates
 print(f"{a},{b},{c} <=> {x}, {y}, {z}")
 ```
