@@ -23,3 +23,11 @@ tags: Python,Note
 > `print(names[:]) ` #Print all'
 > `names[0] = 'Joh'` #Change item
 > `print(names)` # output
+>`matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+matrix[0][-3] = 20
+print(matrix)
+`
