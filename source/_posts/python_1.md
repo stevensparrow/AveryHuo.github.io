@@ -5,7 +5,7 @@ tags: 新建,模板,小书匠
 # Python杂项
 
 ## while结构
-"""  多行string
+> 注： """  多行string
 ![enter description here](/images/1570501535887.png)
 
 ## For结构
