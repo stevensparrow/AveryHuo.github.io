@@ -20,4 +20,4 @@ tags: Python,Note
 > * 普遍用法
 > `names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']`
 > `print(names[2:]) ` #Print will start from 'Mosh'''
-> 
+> `print(names[:]) ` #Print all'
