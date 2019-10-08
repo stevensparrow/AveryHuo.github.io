@@ -4,7 +4,7 @@ tags: Python,Note
 ---
 # Python Note 2
 
-+ ### Function
++ ### Function definition
 ```
 def greet_user():
     print("GO")
@@ -14,3 +14,5 @@ def greet_user():
 
 greet_user()
 ```
+
++ ### Function parameters
