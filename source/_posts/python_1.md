@@ -4,11 +4,11 @@ tags: Python,Note
 ---
 # Python杂项
 
-## while结构
++ ### while结构
 > 注： """  多行string
 ![enter description here](/images/1570501535887.png)
 
-## For结构
++ ### For结构
 > * 普通使用
 > ![enter description here](./images/1570516202093.png)
 > * Use curly braces, 显示变量
@@ -16,7 +16,7 @@ tags: Python,Note
 > * 使用重复*个数输出字符
 > ![enter description here](./images/1570517022147.png)
 
-## List
++ ### List
 * 普遍用法
 ```
 names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']
@@ -60,4 +60,4 @@ for i in numbers:
 print(uniques)
 ```
 
-## Tuple
++ ### Tuple
