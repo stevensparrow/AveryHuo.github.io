@@ -21,10 +21,13 @@ This is test3!
  * 普通使用
  ```
  for i in range(5):
- 	print(i)
+ 	print()
  ```
  * Use curly braces, 显示变量
-![enter description here](./images/1570516527166.png)
+```
+ for i in range(5):
+ 	print(f"i:{i}")
+ ```
  * 使用重复*个数输出字符
  ![enter description here](./images/1570517022147.png)
 
