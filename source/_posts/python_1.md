@@ -19,7 +19,10 @@ This is test3!
 
 + ### For结构
  * 普通使用
- ![enter description here](./images/1570516202093.png)
+ ```
+ for i in range(5):
+ 	print(i)
+ ```
  * Use curly braces, 显示变量
 ![enter description here](./images/1570516527166.png)
  * 使用重复*个数输出字符
