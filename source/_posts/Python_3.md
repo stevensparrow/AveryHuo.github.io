@@ -22,3 +22,4 @@ point1.draw()
 print(point1.x)
 ```
 
+
