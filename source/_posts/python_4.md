@@ -26,3 +26,9 @@ chart.add_data(values)
 sheet.add_chart(chart, 'e2')
 wb.save('pydemo2/transactions_n2.xlsx')
 ```
+### Machine learning
++ Self-driving Cars
++ Robotics
++ Language Processing
++ Vision Processing
++ Forecasting Stock Market Trends
