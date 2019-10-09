@@ -6,3 +6,6 @@ tags: Python, Note
 
 ### Pypi & Pip
 + [pypi](https://pypi.org/)
++ use as : pip install openpyxl  to install 
+
+
