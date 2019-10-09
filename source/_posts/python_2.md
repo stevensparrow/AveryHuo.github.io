@@ -45,3 +45,6 @@ def square(number):
 result = square(3)
 print(result)
 ```
+
++ ### Error code
++ try except
