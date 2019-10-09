@@ -39,5 +39,25 @@ class Point:
 point1 = Point(10, 5)
 point1.draw()
 print(point1.x)
+
+#exercise
+class Person:
+	def __init__(self, name):
+		self.name = name
+
+	def talk(self):
+		print(f"{self.name} is talking..")
+
+
+while True:
+	person_name = str(input("Please enter person: "))
+	if person_name == "Quit":
+		break
+	elif person_name != "":
+		new_person = Person(person_name)
+		new_person.talk()
+	else:
+		print("You enter a empty!")
+
 ```
 
