@@ -99,3 +99,7 @@ numbers = [5,1,8,2]
 maximum = convertors.find_max(numbers)
 print(max(numbers))
 ```
+
+### package
++ a set of modules: directory with "__init__.py" file
+
