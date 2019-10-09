@@ -1,6 +1,8 @@
 ---
-title: Python_3
+title: Python Note 3
 tags: Python, Note
 ---
+# Python Note 3
+
 
 
