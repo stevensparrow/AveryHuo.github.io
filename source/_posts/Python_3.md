@@ -116,4 +116,17 @@ import  random
 members = ["Jack", "Rose", "Bob", "Avery", "Mosh"]
 m = random.choice(members)
 print(m)
+
+#exercise
+import random
+class Dice:
+    def roll(self):
+        r1 = random.randint(0, 5)
+        r2 = random.randint(0, 5)
+        return r1,r2  #Python will auto make it to Tuple
+
+
+
+mydice = Dice()
+print(mydice.roll())
 ```
