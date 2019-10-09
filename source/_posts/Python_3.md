@@ -111,6 +111,7 @@ shopping.test()
 ```
 ### use python build-in module
 + search https://docs.python.org/3/py-modindex.html
++ PEP: python enhancement proposal
 ```
 import  random
 members = ["Jack", "Rose", "Bob", "Avery", "Mosh"]
@@ -119,7 +120,7 @@ print(m)
 
 #exercise
 import random
-class Dice:
+class Dice: #will get PEP 8 warning
     def roll(self):
         r1 = random.randint(0, 5)
         r2 = random.randint(0, 5)
