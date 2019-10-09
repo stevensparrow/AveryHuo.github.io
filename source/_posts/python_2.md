@@ -46,7 +46,7 @@ result = square(3)
 print(result)
 ```
 
-+ ### Error code
++ ### Error Handling
 + try except
 ```
 try:
