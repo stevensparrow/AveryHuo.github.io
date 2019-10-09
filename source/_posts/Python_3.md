@@ -111,7 +111,7 @@ shopping.test()
 ```
 
 ### use python build-in module
-+ search https://docs.python.org/3/py-modindex.html
++ search [python module index](https://docs.python.org/3/py-modindex.html)
 + PEP: python enhancement proposal
 ```
 import  random
