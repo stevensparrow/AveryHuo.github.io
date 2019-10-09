@@ -62,7 +62,7 @@ while True:
 ```
 
 + ### inheritance
-+ use 'pass' to let python pass the line
++ use bracket to inherit parent class
 ```
 class Mammal:
 	def walk(self):
