@@ -109,3 +109,11 @@ from ecommerce import shopping
 test()
 shopping.test()
 ```
+### use python build-in module
++ search https://docs.python.org/3/py-modindex.html
+```
+import  random
+members = ["Jack", "Rose", "Bob", "Avery", "Mosh"]
+m = random.choice(members)
+print(m)
+```
