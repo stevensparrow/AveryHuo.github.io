@@ -48,3 +48,13 @@ print(result)
 
 + ### Error code
 + try except
+```
+try:
+	day = int(input("input day:"))
+	income = 2000 / day
+	print(day)
+except ZeroDivisionError:
+	print("day can't be zero")
+except ValueError:
+	print("Invalid input")
+```
