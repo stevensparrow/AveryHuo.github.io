@@ -87,4 +87,5 @@ dog1.bark()
 + ### module
 ```
 import converters #to import converters.py
+from converters import kg_to_lbs
 ```
