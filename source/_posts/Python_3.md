@@ -4,7 +4,7 @@ tags: Python, Note
 ---
 # Python Note 3
 
-+ ### Classes
+### Classes
 + Use Pacal naming convertion,not like variables/function use lower cases and underscore connection.
 + Basic usage:
 ```
@@ -22,7 +22,7 @@ point1.draw()
 print(point1.x)
 ```
 
-+ ### Constructor
+### Constructor
 ```
 class Point:
 	def __init__(self, x, y):
@@ -61,7 +61,7 @@ while True:
 
 ```
 
-+ ### inheritance
+### inheritance
 + use bracket to inherit parent class
 ```
 class Mammal:
@@ -84,7 +84,7 @@ dog1.bark()
 
 ```
 
-+ ### module
+### module
 + each file refer a module
 ```
 import converters #to import converters.py
