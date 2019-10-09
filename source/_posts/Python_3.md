@@ -89,4 +89,13 @@ dog1.bark()
 ```
 import converters #to import converters.py
 from converters import kg_to_lbs
+
+#exercise
+import  convertors
+from convertors import weight_to_lbs
+
+print(weight_to_lbs())
+numbers = [5,1,8,2]
+maximum = convertors.find_max(numbers)
+print(max(numbers))
 ```
