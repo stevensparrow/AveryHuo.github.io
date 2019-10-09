@@ -61,3 +61,26 @@ while True:
 
 ```
 
++ ### inheritance
++ use 'pass' to let python pass the line
+```
+class Mammal:
+	def walk(self):
+		print("walk")
+
+
+class Dog(Mammal):
+	def bark(self):
+		print("bark")
+
+
+class Cat(Mammal):
+	pass  # tell python to pass this line
+
+
+dog1 = Dog()
+dog1.walk()
+dog1.bark()
+
+```
+
