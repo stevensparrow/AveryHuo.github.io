@@ -99,6 +99,8 @@ print(m)
 ```
 ?i ignorecase
 ?m multi-line search
+?s dotall, 点号也可表示\n
+?x 格式化正则中的空格
 ```
 m = re.findall(r'(?m)(^th[\w ]+)', """
 This line is the first,
@@ -106,5 +108,15 @@ another line,
 that line, it's the best
 """)
 
+print(m)
+```
+```
+m = re.search(r'''(?x)
+ \((\d{3})\) # 区号
+ [ ] # 空白符
+ (\d{3}) # 前缀
+ - # 横线
+ (\d{4}) # 终点数字
+ ''', '(800) 555-1212').group()
 print(m)
 ```
