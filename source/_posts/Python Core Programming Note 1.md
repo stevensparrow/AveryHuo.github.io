@@ -63,5 +63,15 @@ print(m)
 
 ### Regular Expression -> Split()
 ```
+data = (
+ 'Mountain View, CA 94040',
+ 'Sunnyvale, CA',
+ 'Los Altos, 94023',
+ 'Cupertino 95014',
+ 'Palo Alto CA',
+ )
 
+for d in data:
+     v = re.split(r", |(?= (?:\d{5}|[A-Z]{2})) ",d)
+     print(v)
 ```
