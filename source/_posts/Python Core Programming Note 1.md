@@ -60,3 +60,5 @@ def repl_t(txt):
 m = re.subn('(-{1,2})\d?',repl_t,"d----asf-s-a-123")
 print(m)
 ```
+
+### Regular Expression -> Split()
