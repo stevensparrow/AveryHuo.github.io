@@ -126,3 +126,13 @@ print(m)
 m = re.findall(r'http://(?:\w+\.)*(\w+\.com)','http://google.com http://www.google.com http://code.google.com')
 print(m)
 ```
+
+### 贪婪与非贪婪
+一个方案是使用“非贪婪”操作符“?”。读者可以在“*”、“+”或者“?”之后使
+用该操作符。该操作符将要求正则表达式引擎匹配尽可能少的字符。
+```
+data = 'Thu Feb 15 17:46:04 2007::uzifzf@dpyivihw.gov::1171590364-6-8'
+patt = '.+?(\d+-\d+-\d+)'
+m = re.match(patt, data).group(1)
+print(m)
+```
