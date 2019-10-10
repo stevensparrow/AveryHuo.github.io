@@ -37,3 +37,12 @@ else:
 # . 匹配除\n外的任意字符，其他如\t,\.都可以
 ```
 
+## 分组
+```
+import re
+m = re.search('\w+@(\w+\.)*(\w+)*\.com','aaa@aa.a.com')
+if m is not None:
+    print(m.group())
+else:
+    print("none found")
+```
