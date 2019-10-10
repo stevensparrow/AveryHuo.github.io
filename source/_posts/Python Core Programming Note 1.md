@@ -97,4 +97,14 @@ print(m)
 m = re.sub('\B(?=(?:\d{3})+(?!\d))',',',"123456789")
 print(m)
 ```
+?i ignorecase
+?m multi-line search
+```
+m = re.findall(r'(?m)(^th[\w ]+)', """
+This line is the first,
+another line,
+that line, it's the best
+""")
 
+print(m)
+```
