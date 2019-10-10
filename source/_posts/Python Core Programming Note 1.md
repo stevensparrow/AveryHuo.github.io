@@ -101,6 +101,7 @@ print(m)
 ?m multi-line search
 ?s dotall, 点号也可表示\n
 ?x 格式化正则中的空格
+?: 分组查询但不保存在结果中
 ```
 m = re.findall(r'(?m)(^th[\w ]+)', """
 This line is the first,
