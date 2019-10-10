@@ -34,5 +34,5 @@ if m is not None:
     print(m.group())
 else:
     print("none found")
-# . 匹配除\n外的任意字符
+# . 匹配除\n外的任意字符，其他如\t,\.都可以
 ```
