@@ -88,4 +88,6 @@ exp1(?!exp2) 查找后面不是exp2的exp1
 ```
 m = re.findall(r'(?<!YES)yes','YESyes? YESYes . YESyesYES!! ')
 print(m)
+m = re.sub('\B(?=(?:\d{3})+(?!\d))',',',"123456789")
+print(m)
 ```
