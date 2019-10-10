@@ -120,3 +120,8 @@ m = re.search(r'''(?x)
  ''', '(800) 555-1212').group()
 print(m)
 ```
+
+```
+m = re.findall(r'http://(?:\w+\.)*(\w+\.com)','http://google.com http://www.google.com http://code.google.com')
+print(m)
+```
