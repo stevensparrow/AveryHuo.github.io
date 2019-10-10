@@ -46,3 +46,16 @@ if m is not None:
 else:
     print("none found")
 ```
+
+## sub() & subn()
+```
+def repl_t(txt):
+    if txt.group(0) == '-':
+        return 'x'
+    elif txt.group(0) == '--':
+        return '-'
+    elif txt.group(0) == '-1':
+        return '\"good\"'
+m = re.subn('(-{1,2})\d?',repl_t,"d----asf-s-a-123")
+print(m)
+```
