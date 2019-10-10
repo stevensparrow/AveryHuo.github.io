@@ -27,3 +27,12 @@ else:
 	
 ## 5
 ```
+```
+import re
+m = re.search('..[\d]{1,3}','\na51')
+if m is not None:
+    print(m.group())
+else:
+    print("none found")
+# . 匹配除\n外的任意字符
+```
