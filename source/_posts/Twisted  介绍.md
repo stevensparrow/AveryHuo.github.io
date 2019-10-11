@@ -375,3 +375,15 @@ twistd web –port 8080 –path .
 ```
 twistd dns –p 5553 –hosts-file=hosts
 ```
+
+
+这条命令在端口5553上启动一个DNS服务器，解析指定的文件hosts中的域名，这个文件的内容格式同/etc/hosts一样。
+```
+sudo twistd conch –p tcp:2222
+```
+
+这条命令在端口2222上启动一个SSH服务器。ssh的密钥必须独立设定。
+```
+twistd mail –E –H localhost –d localhost=emails
+```
+
