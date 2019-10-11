@@ -1,6 +1,10 @@
 ---
 title: Python Note 1
-tags: Python,Note
+categories:
+- Python笔记
+tags: 
+- Python
+- Note
 ---
 # Python Note 1
 
