@@ -360,3 +360,10 @@ reactor.run()
 
 Deferred对象创建时包含两个添加回调的阶段。第一阶段，addCallbacks将 processPage和logError添加到它们各自归属的回调链中。然后addBoth再将finishProcessing同时添加到这两个回调链上。用图解的方式来看，回调链应该如图所示：
 ![Deferred 流程示例](./images/1570783134086.png)
+
+Deferred对象只能被激活一次，如果试图重复激活将引发一个异常。这使得Deferred对象的语义相当接近于同步版中的try/except块。从而让异步事件的处理能更容易推断，避免由于针对单个事件的回调调用多了一个或少了一个而产生微妙的bug。
+
+理解Deferred对象对于理解Twisted程序的执行流是非常重要的。然而当使用Twisted为我们提供的针对网络协议的高层抽象时，通常情况下我们完全不需要直接使用Deferred对象。
+
+Deferred对象所包含的抽象概念是非常强大的，这种思想已经被许多其他的事件驱动平台所借用，包括jQuery、Dojo和Mochikit。
+
