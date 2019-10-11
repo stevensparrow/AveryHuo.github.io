@@ -199,3 +199,59 @@ getPeer                 取得连接中对端的地址信息
 getHost                 取得连接中本端的地址信息
 
 将transports从协议中分离出来也使得对这两个层次的测试变得更加简单。可以通过简单地写入一个字符串来模拟传输，用这种方式来检查。
+
+###### Protocols
+
+Protocols描述了如何以异步的方式处理网络中的事件。HTTP、DNS以及IMAP是应用层协议中的例子。Protocols实现了IProtocol接口，它包含如下的方法：
+>makeConnection               在transport对象和服务器之间建立一条连接
+connectionMade               连接建立起来后调用
+dataReceived                 接收数据时调用
+connectionLost               关闭连接时调用
+
+我们最好以一个例子来说明reactor、protocols以及transports这三者之间的关系。以下是完整的echo服务器和客户端的实现，首先来看看服务器部分：
+```
+from twisted.internet import protocol, reactor
+
+class Echo(protocol.Protocol):
+    def dataReceived(self, data):
+        # As soon as any data is received, write it back
+        self.transport.write(data)
+
+class EchoFactory(protocol.Factory):
+    def buildProtocol(self, addr):
+        return Echo()
+
+reactor.listenTCP(8000, EchoFactory())
+reactor.run()
+```
+接着是客户端部分：
+```
+from twisted.internet import reactor, protocol
+
+class EchoClient(protocol.Protocol):
+    def connectionMade(self):
+        self.transport.write("hello, world!")
+
+def dataReceived(self, data):
+    print "Server said:", data
+        self.transport.loseConnection()
+
+def connectionLost(self, reason):
+    print "connection lost"
+
+class EchoFactory(protocol.ClientFactory):
+    def buildProtocol(self, addr):
+        return EchoClient()
+
+def clientConnectionFailed(self, connector, reason):
+    print "Connection failed - goodbye!"
+        reactor.stop()
+
+def clientConnectionLost(self, connector, reason):
+    print "Connection lost - goodbye!"
+        reactor.stop()
+
+reactor.connectTCP("localhost", 8000, EchoFactory())
+reactor.run()
+```
+运行服务器端脚本将启动一个TCP服务器，监听端口8000上的连接。服务器采用的是Echo协议，数据经TCP transport对象写出。运行客户端脚本将对服务器发起一个TCP连接，回显服务器端的回应然后终止连接并停止reactor事件循环。这里的Factory用来对连接的双方生成protocol对象实例。两端的通信是异步的，connectTCP负责注册回调函数到reactor事件循环中，当socket上有数据可读时通知回调处理。
