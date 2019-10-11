@@ -1,6 +1,11 @@
 ---
 title: Twisted  介绍
-tags: Python, Note
+categories:
+- Python笔记
+tags: 
+- Python
+- Core Programming
+- Note
 ---
 
 ## Twisted
