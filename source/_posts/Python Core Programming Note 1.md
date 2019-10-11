@@ -55,7 +55,8 @@ else:
 ```
 
 ## sub() & subn()
-```
+
+```python
 #使用函数作为参数
 def repl_t(txt):
     if txt.group(0) == '-':
