@@ -263,6 +263,10 @@ Twisted是用来创建具有可扩展性、跨平台的网络服务器和客户�
 
 + **Service**
 Service就是IService接口下实现的可以启动和停止的组件。Twisted自带有TCP、FTP、HTTP、SSH、DNS等服务以及其他协议的实现。其中许多Service都可以注册到单独的应用中。IService接口的核心是：
+>startService    启动服务。可能包含加载配置数据，设定数据库连接或者监听某个端口
+stopService     关闭服务。可能包含将状态保存到磁盘，关闭数据库连接或者停止监听端口
+
+我们的Echo服务使用TCP协议，因此我们可以使用Twisted中IService接口下默认的TCPServer实现。
 
 + **Application**
 + **TAC文件**
