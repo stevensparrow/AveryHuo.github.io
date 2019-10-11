@@ -10,7 +10,8 @@ tags:
 
 + ### Function definition
 + As python recommended, left two blank lines after function
-```
+
+```python
 def greet_user():
     print("GO")
     print("Hi THERE!")
@@ -20,7 +21,8 @@ greet_user()
 ```
 
 + ### Function parameters
-```
+
+```python
 def greet_user(name):
     print(f"GO:{name}")
     print("Hi THERE!")
