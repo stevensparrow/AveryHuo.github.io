@@ -189,3 +189,5 @@ Deferred对象只能被激活一次，如果试图重复激活将引发一个异
 Deferred对象所包含的抽象概念是非常强大的，这种思想已经被许多其他的事件驱动平台所借用，包括jQuery、Dojo和Mochikit。
 
 
+###### Transports
+
