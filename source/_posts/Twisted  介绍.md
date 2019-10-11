@@ -393,4 +393,4 @@ twistd mail –E –H localhost –d localhost=emails
 
 在部署应用程序的方式上，Twisted通过TAC文件、插件以及命令行工具twistd的部署方式已经获得了成功。但是有趣的是，对于大多数大型Twisted应用程序来说，部署它们仍然需要重写一些这类管理和监控组件；Twisted的架构并没有对系统管理员的需求呈现出太多的友好性。这也反映了一个事实，那就是对于系统管理员来说Twisted历来就没有太多架构可言，而这些系统管理员才是部署和维护应用程序的专家。在这方面，Twisted在未来架构设计的决策上需要更积极的征求这类专家级用户的反馈意见。
 
-[内容引用自此处](https://www.cnblogs.com/xianguang/p/7027661.html)
+[本文内容引用自此处](https://www.cnblogs.com/xianguang/p/7027661.html)
