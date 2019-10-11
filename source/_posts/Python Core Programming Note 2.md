@@ -105,3 +105,27 @@ finally:
 
 ```
 + Client
+```
+from socket import *
+
+HOST = '127.0.0.1' 
+PORT = 21111
+BUFSIZ = 1024
+ADDR = (HOST, PORT)
+
+udpCliSocket = socket(AF_INET, SOCK_DGRAM)
+while True:
+    data = input('> ')
+    if not data:
+        break
+
+    udpCliSocket.sendto(data.encode('utf-8'),ADDR)
+    if data == ' ':
+        break
+    data,ADDR = udpCliSocket.recvfrom(BUFSIZ)
+    if not data:
+        break
+    print(data.decode('utf-8'))
+
+udpCliSocket.close()
+```
