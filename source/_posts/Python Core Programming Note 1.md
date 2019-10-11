@@ -14,7 +14,7 @@ tags:
 
 ## match() & search()
 
-```
+```python
 import re
 m = re.match('\d','a541')
 if m is not None:
