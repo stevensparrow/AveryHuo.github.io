@@ -312,7 +312,8 @@ $ twistd –y echo_server.tac
 ```
 
 在这个简单的例子里，twistd将这个应用程序作为守护进程来启动，日志记录在twistd.log文件中。启动和停止应用后，日志文件内容如下：
-```
+
+```python
 2011-11-19 22:23:07-0500 [-] Log opened.
 2011-11-19 22:23:07-0500 [-] twistd 11.0.0 (/usr/bin/python 2.7.1) starting up.
 2011-11-19 22:23:07-0500 [-] reactor class: twisted.internet.selectreactor.SelectReactor.
