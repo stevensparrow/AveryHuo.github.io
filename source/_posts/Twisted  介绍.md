@@ -191,3 +191,10 @@ Deferred对象所包含的抽象概念是非常强大的，这种思想已经被
 
 ###### Transports
 Transports代表网络中两个通信结点之间的连接。Transports负责描述连接的细节，比如连接是面向流式的还是面向数据报的，流控以及可靠性。TCP、UDP和Unix套接字可作为transports的例子。它们被设计为“满足最小功能单元，同时具有最大程度的可复用性”，而且从协议实现中分离出来，这让许多协议可以采用相同类型的传输。Transports实现了ITransports接口，它包含如下的方法：
+
+>write                   以非阻塞的方式按顺序依次将数据写到物理连接上
+writeSequence           将一个字符串列表写到物理连接上
+loseConnection          将所有挂起的数据写入，然后关闭连接
+getPeer                 取得连接中对端的地址信息
+getHost                 取得连接中本端的地址信息
+
