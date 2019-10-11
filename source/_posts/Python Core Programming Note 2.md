@@ -1,6 +1,10 @@
 ---
 title: Python Core Programming Note 2
-tags: 新建,模板,小书匠
+categories:
+- Python笔记
+tags: 
+- Python
+- Note
 ---
 
 ## Net Programming
