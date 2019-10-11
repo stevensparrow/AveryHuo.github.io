@@ -361,3 +361,17 @@ def makeService(self, options):
 
 serviceMaker = EchoServiceMaker()
 ```
+
+现在，我们的Echo服务器将作为一个服务选项出现在twistd –help的输出中。运行twistd echo –port=1235将在端口1235上启动一个Echo服务器。
+
+Twisted还带有一个可拔插的针对服务器端认证的模块twisted.cred，插件系统常见的用途就是为应用程序添加一个认证模式。我们可以使用twisted.cred中现成的AuthOptionMixin类来添加针对各种认证的命令行支持，或者是添加新的认证类型。比如，我们可以使用插件系统来添加基于本地Unix密码数据库或者是基于LDAP服务器的认证方式。
+
+twistd工具中附带有许多Twisted所支持的协议插件，只用一条单独的命令就可以完成启动服务器的工作了。这里有一些通过twistd启动服务器的例子：
+```
+twistd web –port 8080 –path .
+```
+
+这条命令将在8080端口启动一个HTTP服务器，在当前目录中负责处理静态和动态页面请求。
+```
+twistd dns –p 5553 –hosts-file=hosts
+```
