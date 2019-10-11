@@ -333,3 +333,25 @@ Deferred对象以抽象化的方式表达了一种思想，即结果还尚不存
 
 Deferred对象包含一对回调链，一个是针对操作成功的回调，一个是针对操作失败的回调。初始状态下Deferred对象的两条链都为空。在事件处理的过程中，每个阶段都为其添加处理成功的回调和处理失败的回调。当一个异步结果到来时，Deferred对象就被“激活”，那么处理成功的回调和处理失败的回调就可以以合适的方式按照它们添加进来的顺序依次得到调用。
 
+异步版URL获取器采用Deferred对象后的代码如下：
+```
+from twisted.internet import reactor
+import getPage
+
+def processPage(page):
+    print page
+
+def logError(error):
+    print error
+
+def finishProcessing(value):
+    print "Shutting down..."
+    reactor.stop()
+
+url = "http://google.com"
+deferred = getPage(url) # getPage returns a Deferred
+deferred.addCallbacks(success, failure)
+deferred.addBoth(stop)
+
+reactor.run()
+```
