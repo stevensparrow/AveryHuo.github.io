@@ -4,6 +4,7 @@ categories:
 - Python笔记
 tags: 
 - Python
+- Core Programming
 - Note
 ---
 
