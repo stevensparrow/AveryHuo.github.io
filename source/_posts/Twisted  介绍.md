@@ -269,5 +269,18 @@ stopService     关闭服务。可能包含将状态保存到磁盘，关闭数�
 我们的Echo服务使用TCP协议，因此我们可以使用Twisted中IService接口下默认的TCPServer实现。
 
 + **Application**
+Application是处于最顶层的Service，代表了整个Twisted应用程序。Service需要将其自身同Application注册，然后就可以用下面我们将介绍的部署工具twistd搜索并运行应用程序。我们将创建一个可以同Echo Service注册的Echo应用。
 + **TAC文件**
+当在一个普通的Python文件中管理Twisted应用程序时，需要由开发者负责编写启动和停止reactor事件循环以及配置应用程序的代码。在Twisted的基础组件中，协议的实现都是在一个模块中完成的，需要使用到这些协议的Service可以注册到一个Twisted应用程序配置文件中（TAC文件）去，这样reactor事件循环和程序配置就可以由外部组件来进行管理。
+
+要将我们的Echo服务器转变成一个Echo应用，我们可以按照以下几个简单的步骤来完成：
+
+1. 将Echo服务器的Protocol部分移到它们自己所归属的模块中去。
+
+2. 在TAC文件中：
+
+	1. 创建一个Echo应用。
+	2. 创建一个TCPServer的Service实例，它将使用我们的EchoFactory，然后同前面创建的应用完成注册。
+	3. 
+管理reactor事件循环的代码将由twistd来负责，我们下面会对此进行讨论。这样，应用程序的代码就变成这样了：
 + **twistd**
