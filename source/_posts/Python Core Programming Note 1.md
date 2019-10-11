@@ -1,6 +1,8 @@
 ---
 title: Python Core Programming Note 1
-tags: Python, Note
+tags: 
+- Python
+- Note
 ---
 
 ## Regular Expression
