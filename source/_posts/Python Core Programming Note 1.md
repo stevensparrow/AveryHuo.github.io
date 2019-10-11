@@ -70,7 +70,8 @@ print(m)
 ```
 
 ### Regular Expression -> Split()
-```
+
+```python
 data = (
  'Mountain View, CA 94040',
  'Sunnyvale, CA',
