@@ -92,7 +92,7 @@ dog1.bark()
 ```
 
 ### module
-+ each file refer a module
+> each file refer a module
 
 ```python
 import converters #to import converters.py
@@ -111,7 +111,7 @@ print(max(numbers))
 ### package
 + a set of modules: directory with "__init__.py" file
 
-```
+```python
 from ecommerce.shopping import test
 from ecommerce import shopping
 test()
