@@ -154,7 +154,7 @@ tcpServ.serve_forever()
         
 ```
 + Client
-需要把建立和连接放在每次循环中
+不同之处：需要把建立和连接放在每次循环中
 ```
 from socket import *
 
