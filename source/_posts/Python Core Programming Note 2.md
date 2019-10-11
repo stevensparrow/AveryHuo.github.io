@@ -240,3 +240,16 @@ Twisted是一个事件驱动型的网络引擎。由于事件驱动编程模型�
 Twisted中的客户端和服务器是用Python开发的，采用了一致性的接口。这使得开发新的客户端和服务器变得很容易实现，可以在客户端和服务器之间共享代码，在协议之间共享应用逻辑，以及对某个实现的代码做测试。
 
 ###### **React模式**
+Twisted实现了设计模式中的反应堆（reactor）模式，这种模式在单线程环境中调度多个事件源产生的事件到它们各自的事件处理例程中去。
+
+Twisted的核心就是reactor事件循环。Reactor可以感知网络、文件系统以及定时器事件。它等待然后处理这些事件，从特定于平台的行为中抽象出来，并提供统一的接口，使得在网络协议栈的任何位置对事件做出响应都变得简单。
+
+基本上reactor完成的任务就是：
+```
+while True:
+    timeout = time_until_next_timed_event()
+    events = wait_for_events(timeout)
+    events += timed_events_until(now())
+    for event in events:
+        event.process()
+```
