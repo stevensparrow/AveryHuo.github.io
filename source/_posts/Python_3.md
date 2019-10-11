@@ -119,9 +119,10 @@ shopping.test()
 ```
 
 ### use python build-in module
-+ search [python module index](https://docs.python.org/3/py-modindex.html)
-+ PEP: python enhancement proposal
-```
+> search [python module index](https://docs.python.org/3/py-modindex.html)
+> PEP: python enhancement proposal
+
+```python
 import  random
 members = ["Jack", "Rose", "Bob", "Avery", "Mosh"]
 m = random.choice(members)
