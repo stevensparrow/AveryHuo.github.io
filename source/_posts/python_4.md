@@ -13,7 +13,8 @@ tags:
 + use as : pip install openpyxl  to install 
 
 ### Use openpyxl
-```
+
+```python
 import openpyxl as xl
 from openpyxl.chart import BarChart, Reference
 wb = xl.load_workbook("pydemo2/transactions.xlsx")
