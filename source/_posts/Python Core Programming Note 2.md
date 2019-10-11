@@ -12,7 +12,8 @@ tags:
 
 #### 1. TCP
 + Server:
-```
+
+```python
 from socket import *
 from time import ctime
 
@@ -30,7 +31,6 @@ try:
         print("waiting for connection...")
         tcpCliSocket, addr = tcpSerSocket.accept()
         print("connected from :",addr)
-
         while True:
             data = tcpCliSocket.recv(BUFSIZ)
             if not data:
@@ -38,7 +38,6 @@ try:
             print("rec:",data)
             send_str = '[%s] %s' %(bytes(ctime(), 'utf-8'), 'Oh?')
             tcpCliSocket.send(send_str.encode('utf-8'))
-            
         tcpCliSocket.close()
 except EOFError:
     print("Error: EOFEError")
@@ -46,8 +45,8 @@ except KeyboardInterrupt:
     print("Error: EOFEError")
 finally:
     tcpSerSocket.close()
-
 ```
+
 + Client
 ```
 from socket import *

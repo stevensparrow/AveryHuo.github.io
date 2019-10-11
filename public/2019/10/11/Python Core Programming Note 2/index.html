@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>Hello World | Avery</title>
-  <meta name="keywords" content>
-  <meta name="description" content="Hello World | Avery">
+  <title>Python Core Programming Note 2 | Avery</title>
+  <meta name="keywords" content=" Python , Core Programming , Note ">
+  <meta name="description" content="Python Core Programming Note 2 | Avery">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="这是关于我，有空再加吧">
 <meta name="keywords" content="Learn+Study">
@@ -384,24 +384,40 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Python Core Programming Note 2" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hello World</h1>
+        <h1 class="article-title">Python Core Programming Note 2</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            
+                <a href="javascript:" data-rel="Python笔记">Python笔记</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="javascript:" class="color2">Python</a>
+            
+            <a href="javascript:" class="color2">Core Programming</a>
+            
+            <a href="javascript:" class="color5">Note</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-10-05 17:16:15'>2019-10-05 17:16</time>
+        创建时间:<time class="date" title='更新时间: 2019-10-11 17:54:44'>2019-10-11 17:11</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:73</span>
+        <span>字数:452</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -420,7 +436,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Net-Programming"><span class="toc-text">Net Programming</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-TCP"><span class="toc-text">1. TCP</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-UDP"><span class="toc-text">2. UDP</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用SocketServer"><span class="toc-text">使用SocketServer</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -436,19 +452,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h2 id="Net-Programming"><a href="#Net-Programming" class="headerlink" title="Net Programming"></a>Net Programming</h2><h4 id="1-TCP"><a href="#1-TCP" class="headerlink" title="1. TCP"></a>1. TCP</h4><ul>
+<li>Server:</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> time <span class="keyword">import</span> ctime</span><br><span class="line"></span><br><span class="line">HOST = <span class="string">''</span></span><br><span class="line">PORT = <span class="number">21111</span></span><br><span class="line">BUFSIZ = <span class="number">1024</span></span><br><span class="line">ADDR = (HOST, PORT)</span><br><span class="line"></span><br><span class="line">tcpSerSocket = socket(AF_INET, SOCK_STREAM)</span><br><span class="line">tcpSerSocket.bind(ADDR)</span><br><span class="line">tcpSerSocket.listen(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        print(<span class="string">"waiting for connection..."</span>)</span><br><span class="line">        tcpCliSocket, addr = tcpSerSocket.accept()</span><br><span class="line">        print(<span class="string">"connected from :"</span>,addr)</span><br><span class="line">        <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">            data = tcpCliSocket.recv(BUFSIZ)</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> data:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            print(<span class="string">"rec:"</span>,data)</span><br><span class="line">            send_str = <span class="string">'[%s] %s'</span> %(bytes(ctime(), <span class="string">'utf-8'</span>), <span class="string">'Oh?'</span>)</span><br><span class="line">            tcpCliSocket.send(send_str.encode(<span class="string">'utf-8'</span>))</span><br><span class="line">        tcpCliSocket.close()</span><br><span class="line"><span class="keyword">except</span> EOFError:</span><br><span class="line">    print(<span class="string">"Error: EOFEError"</span>)</span><br><span class="line"><span class="keyword">except</span> KeyboardInterrupt:</span><br><span class="line">    print(<span class="string">"Error: EOFEError"</span>)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    tcpSerSocket.close()</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Client<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">from socket import *</span><br><span class="line"></span><br><span class="line">HOST = &apos;127.0.0.1&apos; </span><br><span class="line">PORT = 21111</span><br><span class="line">BUFSIZ = 1024</span><br><span class="line">ADDR = (HOST, PORT)</span><br><span class="line"></span><br><span class="line">tcpCliSocket = socket(AF_INET, SOCK_STREAM)</span><br><span class="line">tcpCliSocket.connect(ADDR)</span><br><span class="line"></span><br><span class="line">while True:</span><br><span class="line">    data = input(&apos;&gt; &apos;)</span><br><span class="line">    if not data:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line">    tcpCliSocket.send(data.encode(&apos;utf-8&apos;))</span><br><span class="line">    data = tcpCliSocket.recv(BUFSIZ)</span><br><span class="line">    if not data:</span><br><span class="line">        break</span><br><span class="line">    print(data.decode(&apos;utf-8&apos;))</span><br><span class="line"></span><br><span class="line">tcpCliSocket.close()</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="2-UDP"><a href="#2-UDP" class="headerlink" title="2. UDP"></a>2. UDP</h4><ul>
+<li><p>Server</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">from socket import *</span><br><span class="line">from time import ctime</span><br><span class="line"></span><br><span class="line">HOST = &apos;&apos;</span><br><span class="line">PORT = 21111</span><br><span class="line">BUFSIZ = 1024</span><br><span class="line">ADDR = (HOST, PORT)</span><br><span class="line"></span><br><span class="line">udpSerSocket = socket(AF_INET, SOCK_DGRAM)</span><br><span class="line">udpSerSocket.bind(ADDR)</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    while True:</span><br><span class="line">        print(&quot;waiting for message...&quot;)</span><br><span class="line">        msg, addr = udpSerSocket.recvfrom(BUFSIZ)</span><br><span class="line">        if msg.decode(&apos;utf-8&apos;) == &apos; &apos;:</span><br><span class="line">            break</span><br><span class="line">        print(&apos;Rev client:&apos;,msg)</span><br><span class="line">        send_str = &apos;[%s] %s&apos; %(bytes(ctime(), &apos;utf-8&apos;), msg)</span><br><span class="line">        udpSerSocket.sendto(send_str.encode(&apos;utf-8&apos;),addr)</span><br><span class="line">        </span><br><span class="line">except EOFError:</span><br><span class="line">    print(&quot;Error: EOFEError&quot;)</span><br><span class="line">except KeyboardInterrupt:</span><br><span class="line">    print(&quot;Error: EOFEError&quot;)</span><br><span class="line">finally:</span><br><span class="line">    udpSerSocket.close()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Client</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">from socket import *</span><br><span class="line"></span><br><span class="line">HOST = &apos;127.0.0.1&apos; </span><br><span class="line">PORT = 21111</span><br><span class="line">BUFSIZ = 1024</span><br><span class="line">ADDR = (HOST, PORT)</span><br><span class="line"></span><br><span class="line">udpCliSocket = socket(AF_INET, SOCK_DGRAM)</span><br><span class="line">while True:</span><br><span class="line">    data = input(&apos;&gt; &apos;)</span><br><span class="line">    if not data:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line">    udpCliSocket.sendto(data.encode(&apos;utf-8&apos;),ADDR)</span><br><span class="line">    if data == &apos; &apos;:</span><br><span class="line">        break</span><br><span class="line">    data,ADDR = udpCliSocket.recvfrom(BUFSIZ)</span><br><span class="line">    if not data:</span><br><span class="line">        break</span><br><span class="line">    print(data.decode(&apos;utf-8&apos;))</span><br><span class="line"></span><br><span class="line">udpCliSocket.close()</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="使用SocketServer"><a href="#使用SocketServer" class="headerlink" title="使用SocketServer"></a>使用SocketServer</h3><ul>
+<li><p>Server</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">from socketserver import (TCPServer as TCP, StreamRequestHandler as SRH)</span><br><span class="line">from time import ctime</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">HOST = &apos;&apos;</span><br><span class="line">PORT = 21111</span><br><span class="line">BUFSIZ = 1024</span><br><span class="line">ADDR = (HOST, PORT)</span><br><span class="line"></span><br><span class="line">class MyRequestHandler(SRH):</span><br><span class="line">    def handle(self):</span><br><span class="line">        print(&quot;connected from..&quot;, self.client_address)</span><br><span class="line">        send_str = &apos;[%s] %s&apos; %(bytes(ctime(), &apos;utf-8&apos;), self.rfile.readline())</span><br><span class="line">        self.wfile.write(send_str.encode(&apos;utf-8&apos;))</span><br><span class="line"></span><br><span class="line">tcpServ = TCP(ADDR, MyRequestHandler)</span><br><span class="line">print(&quot;waiting for connection...&quot;)</span><br><span class="line">tcpServ.serve_forever()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Client<br>不同之处：需要把建立和连接放在每次循环中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">from socket import *</span><br><span class="line"></span><br><span class="line">HOST = &apos;127.0.0.1&apos; </span><br><span class="line">PORT = 21111</span><br><span class="line">BUFSIZ = 1024</span><br><span class="line">ADDR = (HOST, PORT)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">while True:</span><br><span class="line">    tcpCliSocket = socket(AF_INET, SOCK_STREAM)</span><br><span class="line">    tcpCliSocket.connect(ADDR)</span><br><span class="line">    data = input(&apos;&gt; &apos;)</span><br><span class="line">    if not data:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line">    send_data = &quot;%s\n&quot; % data</span><br><span class="line">    tcpCliSocket.send(send_data.encode(&apos;utf-8&apos;))</span><br><span class="line">    data = tcpCliSocket.recv(BUFSIZ)</span><br><span class="line">    if not data:</span><br><span class="line">        break</span><br><span class="line">    print(data.decode(&apos;utf-8&apos;))</span><br><span class="line">    tcpCliSocket.close()</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+</li>
+</ul>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -462,12 +493,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Hello World</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">73</span></p>
+    <p><span class="copy-title">文章标题:</span>Python Core Programming Note 2</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">452</span></p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="Avery Huo">Avery Huo</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-10-05, 17:16:15</p>
-    <p><span class="copy-title">最后更新:</span>2019-10-05, 17:16:15</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/10/05/hello-world/" title="Hello World">https://AveryHuo.github.io/2019/10/05/hello-world/</a>
+    <p><span class="copy-title">发布时间:</span>2019-10-11, 17:11:09</p>
+    <p><span class="copy-title">最后更新:</span>2019-10-11, 17:54:44</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/10/11/Python Core Programming Note 2/" title="Python Core Programming Note 2">https://AveryHuo.github.io/2019/10/11/Python Core Programming Note 2/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
