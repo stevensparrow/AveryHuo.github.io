@@ -44,7 +44,8 @@ This is test3!
 
 + ### List
 * 普遍用法
-```
+
+```python
 names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']
 print(names[2:])  #Print will start from 'Mosh'''
 print(names[:])  #Print all'
