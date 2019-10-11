@@ -180,7 +180,4 @@ while True:
     print(data.decode('utf-8'))
     tcpCliSocket.close()
 
-
-
-
 ```
