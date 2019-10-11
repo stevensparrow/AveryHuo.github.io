@@ -55,7 +55,8 @@ print(result)
 
 + ### Error Handling
 + try except
-```
+
+```python
 try:
 	day = int(input("input day:"))
 	income = 2000 / day
