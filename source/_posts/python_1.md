@@ -60,9 +60,10 @@ matrix = [
 matrix[0][-3] = 20
 print(matrix)
 ```
+
 * 编辑类
 
-```
+```python
 numbers = [5,2,1,7]
 numbers.insert(-2,20)
 numbers.remove(2)
@@ -89,7 +90,8 @@ print(uniques)
 
 + ### Tuple
 + 类似于List，但不可修改
-```
+
+```python
 numbers = (5,20,1,5,7,5,6,4,5)
 numbers[0] = 1 #TypeError: 'tuple' object does not support item assignment
 ```
