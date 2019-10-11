@@ -36,7 +36,8 @@ This is test3!
  	print(f"i:{i}")
  ```
  * 使用重复*个数输出字符
- ```
+
+```python
  for i in range(5):
  	print(f"i:{i}"*4)
  ```
