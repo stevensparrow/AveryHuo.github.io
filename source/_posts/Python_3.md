@@ -9,9 +9,10 @@ tags:
 # Python Note 3
 
 ### Classes
-+ Use Pacal naming convertion,not like variables/function use lower cases and underscore connection.
-+ Basic usage:
-```
+> Use Pacal naming convertion,not like variables/function use lower cases and underscore connection.
+> Basic usage:
+
+```python
 class Point:
 	def draw(self):
 		print("draw")
