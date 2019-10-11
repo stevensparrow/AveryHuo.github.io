@@ -68,8 +68,9 @@ while True:
 ```
 
 ### inheritance
-+ use bracket to inherit parent class
-```
+> use bracket to inherit parent class
+
+```python
 class Mammal:
 	def walk(self):
 		print("walk")
