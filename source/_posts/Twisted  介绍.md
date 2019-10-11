@@ -99,7 +99,7 @@ Twisted的reactor实现同时也考虑了正确使用底层的非阻塞式API，
 
 以同步的方式获取URL：
 
-```
+```python
 import getPage
 
 def processPage(page):
@@ -122,7 +122,8 @@ finally:
     finishProcessing()
 ```
 以异步的方式获取URL：
-```
+
+```python
 from twisted.internet import reactor
 import getPage
 
