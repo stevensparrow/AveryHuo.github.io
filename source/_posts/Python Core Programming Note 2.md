@@ -130,3 +130,25 @@ while True:
 udpCliSocket.close()
 ```
 
+### SocketServer
+```
+from socketserver import (TCPServer as TCP, StreamRequestHandler as SRH)
+from time import ctime
+
+
+HOST = ''
+PORT = 21111
+BUFSIZ = 1024
+ADDR = (HOST, PORT)
+
+class MyRequestHandler(SRH):
+    def handle(self):
+        print("connected from..", self.client_address)
+        send_str = '[%s] %s' %(bytes(ctime(), 'utf-8'), self.rfile.readline())
+        self.wfile.write(send_str.encode('utf-8'))
+
+tcpServ = TCP(ADDR, MyRequestHandler)
+print("waiting for connection...")
+tcpServ.serve_forever()
+        
+```
