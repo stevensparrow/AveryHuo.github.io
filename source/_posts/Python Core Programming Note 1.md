@@ -13,6 +13,7 @@ tags:
 ![续](./images/1570674953248.png)
 
 ## match() & search()
+
 ```
 import re
 m = re.match('\d','a541')
