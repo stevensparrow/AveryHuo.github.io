@@ -72,3 +72,36 @@ tcpCliSocket.close()
 
 #### 2. UDP
 
++ Server
+```
+from socket import *
+from time import ctime
+
+HOST = ''
+PORT = 21111
+BUFSIZ = 1024
+ADDR = (HOST, PORT)
+
+udpSerSocket = socket(AF_INET, SOCK_DGRAM)
+udpSerSocket.bind(ADDR)
+
+try:
+    while True:
+        print("waiting for message...")
+        msg, addr = udpSerSocket.recvfrom(BUFSIZ)
+        if msg.decode('utf-8') == ' ':
+            break
+        print('Rev client:',msg)
+        send_str = '[%s] %s' %(bytes(ctime(), 'utf-8'), msg)
+        udpSerSocket.sendto(send_str.encode('utf-8'),addr)
+        
+except EOFError:
+    print("Error: EOFEError")
+except KeyboardInterrupt:
+    print("Error: EOFEError")
+finally:
+    udpSerSocket.close()
+
+
+```
++ Client
