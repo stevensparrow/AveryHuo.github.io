@@ -281,6 +281,6 @@ Application是处于最顶层的Service，代表了整个Twisted应用程序。S
 
 	1. 创建一个Echo应用。
 	2. 创建一个TCPServer的Service实例，它将使用我们的EchoFactory，然后同前面创建的应用完成注册。
-	3. 
+	
 管理reactor事件循环的代码将由twistd来负责，我们下面会对此进行讨论。这样，应用程序的代码就变成这样了：
 + **twistd**
