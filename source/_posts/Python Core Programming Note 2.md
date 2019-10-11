@@ -68,8 +68,6 @@ while True:
 
 tcpCliSocket.close()
 
-
-
 ```
 
 #### 2. UDP
