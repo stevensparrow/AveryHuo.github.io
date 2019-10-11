@@ -253,3 +253,13 @@ while True:
     for event in events:
         event.process()
 ```
+
+Twisted目前在所有平台上的默认reactor都是基于poll API的（UNIX规范第3版（SUSv3）中描述）。此外，Twisted还支持一些特定于平台的高容量多路复用API。这些reactor包括基于FreeBSD中kqueue机制的KQueue reactor，支持epoll接口的系统（目前是Linux 2.6）中的epoll reactor，以及基于Windows下的输入输出完成端口的IOCP reactor。
+
+在实现轮询的相关细节中，Twisted需要考虑的包括：
+
++ 网络和文件系统的限制
++ 缓冲行为
++ 如何检测连接丢失
++ 出现错误时的返回值
+Twisted的reactor实现同时也考虑了正确使用底层的非阻塞式API，并正确处理各种边界情况。由于Python中没有暴露出IOCP API，因此Twisted需要维护自己的实现。
