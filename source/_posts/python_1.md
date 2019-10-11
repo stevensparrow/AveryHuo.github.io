@@ -10,7 +10,8 @@ tags:
 
 + ### while结构
  注： """  多行string
-```
+ 
+```python
 n = 0
 while n < 5:
 	print("""
@@ -23,12 +24,14 @@ This is test3!
 
 + ### For结构
  * 普通使用
- ```
+ 
+ ```python
  for i in range(5):
  	print()
  ```
  * Use curly braces, 显示变量
-```
+
+```python
  for i in range(5):
  	print(f"i:{i}")
  ```
