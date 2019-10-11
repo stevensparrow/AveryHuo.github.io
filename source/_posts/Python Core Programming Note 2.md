@@ -42,6 +42,33 @@ except KeyboardInterrupt:
 finally:
     tcpSerSocket.close()
 
+```
++ Client
+```
+from socket import *
+
+HOST = '127.0.0.1' 
+PORT = 21111
+BUFSIZ = 1024
+ADDR = (HOST, PORT)
+
+tcpCliSocket = socket(AF_INET, SOCK_STREAM)
+tcpCliSocket.connect(ADDR)
+
+while True:
+    data = input('> ')
+    if not data:
+        break
+
+    tcpCliSocket.send(data.encode('utf-8'))
+    data = tcpCliSocket.recv(BUFSIZ)
+    if not data:
+        break
+    print(data.decode('utf-8'))
+
+tcpCliSocket.close()
+
+
 
 ```
 
