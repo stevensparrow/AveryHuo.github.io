@@ -44,7 +44,8 @@ else:
 ```
 
 ## 分组
-```
+
+```python
 import re
 m = re.search('\w+@(\w+\.)*(\w+)*\.com','aaa@aa.a.com')
 if m is not None:
