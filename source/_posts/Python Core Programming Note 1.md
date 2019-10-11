@@ -1,5 +1,7 @@
 ---
 title: Python Core Programming Note 1
+categories:
+- Python笔记
 tags: 
 - Python
 - Note
