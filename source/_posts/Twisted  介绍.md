@@ -214,7 +214,8 @@ dataReceived                 接收数据时调用
 connectionLost               关闭连接时调用
 
 我们最好以一个例子来说明reactor、protocols以及transports这三者之间的关系。以下是完整的echo服务器和客户端的实现，首先来看看服务器部分：
-```
+
+```python
 from twisted.internet import protocol, reactor
 
 class Echo(protocol.Protocol):
@@ -230,7 +231,8 @@ reactor.listenTCP(8000, EchoFactory())
 reactor.run()
 ```
 接着是客户端部分：
-```
+
+```python
 from twisted.internet import reactor, protocol
 
 class EchoClient(protocol.Protocol):
@@ -342,7 +344,7 @@ $ twistd –y echo_server.tac
 
 我们已经将Echo服务转换为一个Twisted应用程序了，而将其转换为一个Twisted插件也是非常简单直接的。在我们之前的Echo模块中，除了包含有Echo协议和EchoFactory的定义之外，现在我们还要添加一个名为twistd的目录，其中还包含着一个名为plugins的子目录，这里正是我们需要定义echo插件的地方。通过这个插件，我们可以启动一个echo服务，并将需要使用的端口号作为参数指定给twistd工具。
 
-```
+```python
 from zope.interface import implements
 
 from twisted.python import usage
@@ -375,23 +377,27 @@ serviceMaker = EchoServiceMaker()
 Twisted还带有一个可拔插的针对服务器端认证的模块twisted.cred，插件系统常见的用途就是为应用程序添加一个认证模式。我们可以使用twisted.cred中现成的AuthOptionMixin类来添加针对各种认证的命令行支持，或者是添加新的认证类型。比如，我们可以使用插件系统来添加基于本地Unix密码数据库或者是基于LDAP服务器的认证方式。
 
 twistd工具中附带有许多Twisted所支持的协议插件，只用一条单独的命令就可以完成启动服务器的工作了。这里有一些通过twistd启动服务器的例子：
-```
+
+```python
 twistd web –port 8080 –path .
 ```
 
 这条命令将在8080端口启动一个HTTP服务器，在当前目录中负责处理静态和动态页面请求。
-```
+
+```python
 twistd dns –p 5553 –hosts-file=hosts
 ```
 
 
 这条命令在端口5553上启动一个DNS服务器，解析指定的文件hosts中的域名，这个文件的内容格式同/etc/hosts一样。
-```
+
+```python
 sudo twistd conch –p tcp:2222
 ```
 
 这条命令在端口2222上启动一个SSH服务器。ssh的密钥必须独立设定。
-```
+
+```python
 twistd mail –E –H localhost –d localhost=emails
 ```
 
