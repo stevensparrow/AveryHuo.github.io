@@ -71,7 +71,8 @@ Twisted实现了设计模式中的反应堆（reactor）模式，这种模式在
 Twisted的核心就是reactor事件循环。Reactor可以感知网络、文件系统以及定时器事件。它等待然后处理这些事件，从特定于平台的行为中抽象出来，并提供统一的接口，使得在网络协议栈的任何位置对事件做出响应都变得简单。
 
 基本上reactor完成的任务就是：
-```
+
+```python
 while True:
     timeout = time_until_next_timed_event()
     events = wait_for_events(timeout)
