@@ -328,3 +328,4 @@ reactor.run()
 
 这个玩具式的例子告诉我们在开发Twisted的头几年里这种复杂性令程序员感到非常沮丧。而Twisted应对这种复杂性的方式是新增一个称为Deferred（延迟）的对象。
 
+###### Deferreds
