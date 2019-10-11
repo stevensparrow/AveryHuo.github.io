@@ -289,7 +289,8 @@ Application是处于最顶层的Service，代表了整个Twisted应用程序。S
 	
 管理reactor事件循环的代码将由twistd来负责，我们下面会对此进行讨论。这样，应用程序的代码就变成这样了：
 echo.py文件：
-```
+
+```python
 from twisted.internet import protocol, reactor
 
 class Echo(protocol.Protocol):
@@ -305,7 +306,8 @@ class EchoFactory(protocol.Factory):
 twistd（读作“twist-dee”）是一个跨平台的用来部署Twisted应用程序的工具。它执行TAC文件并负责处理启动和停止应用程序。作为Twisted在网络编程中具有“内置电池”能力的一部分，twistd自带有一些非常有用的配置标志，包括将应用程序转变为守护进程、定义日志文件的路径、设定特权级别、在chroot下运行、使用非默认的reactor，甚至是在profiler下运行应用程序。
 
 我们可以像这样运行这个Echo服务应用：
-```
+
+```python
 $ twistd –y echo_server.tac
 ```
 
