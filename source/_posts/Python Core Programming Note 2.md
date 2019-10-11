@@ -264,3 +264,67 @@ Twisted目前在所有平台上的默认reactor都是基于poll API的（UNIX规
 + 出现错误时的返回值
 
 Twisted的reactor实现同时也考虑了正确使用底层的非阻塞式API，并正确处理各种边界情况。由于Python中没有暴露出IOCP API，因此Twisted需要维护自己的实现。
+
+###### **管理回调链**
+
+回调是事件驱动编程模型中的基础，也是reactor通知应用程序事件已经处理完成的方式。随着程序规模不断扩大，基于事件驱动的程序需要同时处理事件处理成功和出错的情况，这使得程序变得越来越复杂。若没有注册一个合适的回调，程序就会阻塞，因为这个事件处理的过程绝不会发生。出现错误时需要通过应用程序的不同层次从网络栈向上传递回调链。
+
+下面是两段Python伪码，分别是同步和异步模式下获取URL的玩具代码。让我们相互比较一下这两个版本，看看基于事件驱动的程序有什么缺陷：
+
+以同步的方式获取URL：
+
+```
+import getPage
+
+def processPage(page):
+    print page
+
+def logError(error):
+    print error
+
+def finishProcessing(value):
+    print "Shutting down..."
+    exit(0)
+
+url = "http://google.com"
+try:
+    page = getPage(url)
+    processPage(page)
+except Error, e:
+    logError(error)
+finally:
+    finishProcessing()
+```
+以异步的方式获取URL：
+```
+from twisted.internet import reactor
+import getPage
+
+def processPage(page):
+    print page
+    finishProcessing()
+
+def logError(error):
+    print error
+    finishProcessing()
+
+def finishProcessing(value):
+    print "Shutting down..."
+    reactor.stop()
+
+url = "http://google.com"
+# getPage takes: url, 
+# success callback, error callback
+getPage(url, processPage, logError)
+
+reactor.run()
+```
+
+在异步版的URL获取器中，reactor.run()启动reactor事件循环。在同步和异步版程序中，我们假定getPage函数处理获取页面的工作。如果获取成功就调用processPage，如果尝试获取页面时出现了Exception（异常），logError就得到调用。无论哪种情况，最后都要调用finishProcessing。
+
+异步版中的logError回调正对应于同步版中的try/except块。对processPage的回调对应于else块，无条件回调的finishProcessing就对应于finally块。
+
+在同步版中，代码结构直接显示出有一个try/except块，logError和processPage这两者间只会取其一调用一次，而finishProcessing总是会被调用一次。在异步版中需要由程序员自己负责正确调用成功和失败情况下的回调链。如果由于编程错误，在processPage或者logError的回调链之后没有调用finishProcessing，reactor事件循环将永远不会停止，程序就会卡住。
+
+这个玩具式的例子告诉我们在开发Twisted的头几年里这种复杂性令程序员感到非常沮丧。而Twisted应对这种复杂性的方式是新增一个称为Deferred（延迟）的对象。
+
