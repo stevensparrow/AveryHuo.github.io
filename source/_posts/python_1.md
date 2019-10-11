@@ -111,7 +111,8 @@ print(f"{a},{b},{c} <=> {x}, {y}, {z}")
 ```
 
 + ### Dictionary
-```
+
+```python
 customer = {
     "name": "John",
     "age": 30,
