@@ -154,3 +154,32 @@ tcpServ.serve_forever()
         
 ```
 + Client
+```
+from socket import *
+
+HOST = '127.0.0.1' 
+PORT = 21111
+BUFSIZ = 1024
+ADDR = (HOST, PORT)
+
+
+
+while True:
+    tcpCliSocket = socket(AF_INET, SOCK_STREAM)
+    tcpCliSocket.connect(ADDR)
+    data = input('> ')
+    if not data:
+        break
+
+    send_data = "%s\n" % data
+    tcpCliSocket.send(send_data.encode('utf-8'))
+    data = tcpCliSocket.recv(BUFSIZ)
+    if not data:
+        break
+    print(data.decode('utf-8'))
+    tcpCliSocket.close()
+
+
+
+
+```
