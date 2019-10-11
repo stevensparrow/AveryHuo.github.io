@@ -262,6 +262,8 @@ Twisted是用来创建具有可扩展性、跨平台的网络服务器和客户�
 应用程序基础组件包含4个主要部分：服务（Service）、应用（Application）、配置管理（通过TAC文件和插件）以及twistd命令行程序。为了说明这个基础组件，我们将上一节的Echo服务器转变成一个应用。
 
 + **Service**
+Service就是IService接口下实现的可以启动和停止的组件。Twisted自带有TCP、FTP、HTTP、SSH、DNS等服务以及其他协议的实现。其中许多Service都可以注册到单独的应用中。IService接口的核心是：
+
 + **Application**
 + **TAC文件**
 + **twistd**
