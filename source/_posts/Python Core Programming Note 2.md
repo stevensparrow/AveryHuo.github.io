@@ -355,3 +355,7 @@ deferred.addBoth(stop)
 
 reactor.run()
 ```
+
+在这个版本中调用的事件处理函数与之前相同，但它们都注册到了一个单独的Deferred对象上，而不是分散在代码各处再以参数形式传递给getPage。
+
+Deferred对象创建时包含两个添加回调的阶段。第一阶段，addCallbacks将 processPage和logError添加到它们各自归属的回调链中。然后addBoth再将finishProcessing同时添加到这两个回调链上。用图解的方式来看，回调链应该如图所示：
