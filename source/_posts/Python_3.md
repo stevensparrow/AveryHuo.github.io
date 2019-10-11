@@ -109,7 +109,7 @@ print(max(numbers))
 ```
 
 ### package
-+ a set of modules: directory with "__init__.py" file
+> a set of modules: directory with "__init__.py" file
 
 ```python
 from ecommerce.shopping import test
