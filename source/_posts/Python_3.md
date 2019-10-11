@@ -141,7 +141,8 @@ class Dice: #will get PEP 8 warning
 mydice = Dice()
 print(mydice.roll())
 ```
-```
+
+```python
 from pathlib import Path
 
 path = Path("pydemo2/ecommerce")
