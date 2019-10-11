@@ -297,3 +297,67 @@ class EchoFactory(protocol.Factory):
 ```
 
 + **twistd**
+twistd（读作“twist-dee”）是一个跨平台的用来部署Twisted应用程序的工具。它执行TAC文件并负责处理启动和停止应用程序。作为Twisted在网络编程中具有“内置电池”能力的一部分，twistd自带有一些非常有用的配置标志，包括将应用程序转变为守护进程、定义日志文件的路径、设定特权级别、在chroot下运行、使用非默认的reactor，甚至是在profiler下运行应用程序。
+
+我们可以像这样运行这个Echo服务应用：
+```
+$ twistd –y echo_server.tac
+```
+
+在这个简单的例子里，twistd将这个应用程序作为守护进程来启动，日志记录在twistd.log文件中。启动和停止应用后，日志文件内容如下：
+```
+2011-11-19 22:23:07-0500 [-] Log opened.
+2011-11-19 22:23:07-0500 [-] twistd 11.0.0 (/usr/bin/python 2.7.1) starting up.
+2011-11-19 22:23:07-0500 [-] reactor class: twisted.internet.selectreactor.SelectReactor.
+2011-11-19 22:23:07-0500 [-] echo.EchoFactory starting on 8000
+2011-11-19 22:23:07-0500 [-] Starting factory <echo.EchoFactory instance at 0x12d8670>
+2011-11-19 22:23:20-0500 [-] Received SIGTERM, shutting down.
+2011-11-19 22:23:20-0500 [-] (TCP Port 8000 Closed)
+2011-11-19 22:23:20-0500 [-] Stopping factory <echo.EchoFactory instance at 0x12d8670>
+2011-11-19 22:23:20-0500 [-] Main loop terminated.
+2011-11-19 22:23:20-0500 [-] Server Shut Down.
+```
+
+通过使用Twisted框架中的基础组件来运行服务，这么做使得开发人员能够不用再编写类似守护进程和记录日志这样的冗余代码了。这同样也为部署应用程序建立了一个标准的命令行接口。
+
+###### Plugins
+
+对于运行Twisted应用程序的方法，除了基于TAC文件外还有一种可选的方法，这就是插件系统。TAC系统可以很方便的将Twisted预定义的服务同应用程序配置文件注册，而插件系统能够方便的将用户自定义的服务注册为twistd工具的子命令，然后扩展应用程序的命令行接口。
+
+在使用插件系统时：
+
+1. 由于只有plugin API需要保持稳定，这使得第三方开发者能很容易地扩展软件。
+
+2. 插件发现能力已经集成到系统中了。插件可以在程序首次运行时加载并保存，每次程序启动时会重新触发插件发现过程，或者也可以在程序运行期间反复轮询新插件，这使得在程序已经启动后我们还可以判断是否有新的插件安装上了。
+
+当使用Twisted插件系统来扩展软件时，我们要做的就是创建IPlugin接口下实现的对象并将它们放到一个特定的位置中，这里插件系统知道该如何去找到它们。
+
+我们已经将Echo服务转换为一个Twisted应用程序了，而将其转换为一个Twisted插件也是非常简单直接的。在我们之前的Echo模块中，除了包含有Echo协议和EchoFactory的定义之外，现在我们还要添加一个名为twistd的目录，其中还包含着一个名为plugins的子目录，这里正是我们需要定义echo插件的地方。通过这个插件，我们可以启动一个echo服务，并将需要使用的端口号作为参数指定给twistd工具。
+
+```
+from zope.interface import implements
+
+from twisted.python import usage
+from twisted.plugin import IPlugin
+from twisted.application.service import IServiceMaker
+from twisted.application import internet
+
+from echo import EchoFactory
+
+class Options(usage.Options):
+    optParameters = [["port", "p", 8000, "The port number to listen on."]]
+
+class EchoServiceMaker(object):
+    implements(IServiceMaker, IPlugin)
+    tapname = "echo"
+    description = "A TCP-based echo server."
+    options = Options
+
+def makeService(self, options):
+    """
+    Construct a TCPServer from a factory defined in myproject.
+    """
+    return internet.TCPServer(int(options["port"]), EchoFactory())
+
+serviceMaker = EchoServiceMaker()
+```
