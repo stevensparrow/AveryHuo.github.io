@@ -193,4 +193,62 @@ main()
 
 ```
 
+> 实例：
+
+```python
+
+```
+
+
+ ```python
+ from my_thread import MyThread
+from time import ctime, sleep
+
+
+def fib(x):
+    sleep(0.002)
+    if x < 2: return 1
+    return fib(x-2) + fib(x-1)
+
+
+def fac(x):
+    sleep(0.1)
+    if x < 2: return 1
+    return x * fac(x-1)
+
+
+def sum(x):
+    sleep(0.2)
+    if x < 2: return 1
+    return x + sum(x-1)
+
+
+funcs = [fib, fac, sum]
+n = 12
+
+def main():
+    print("****** Single THREAD ********")
+    for i in range(len(funcs)):
+        print("start function %s" % funcs[i].__name__)
+        print(funcs[i](n))
+        print("end function %s" % funcs[i].__name__)
+
+    threads = []
+    print("****** Multi THREAD ********")
+    for i in range(len(funcs)):
+        t = MyThread(funcs[i], (n,), funcs[i].__name__)
+        threads.append(t)
+
+    for i in range(len(funcs)):
+        threads[i].start()
+
+    for i in range(len(funcs)):
+        threads[i].join()
+        print(threads[i].get_result())
+
+    print("all done")
+main()
+
+ ```
+
 
