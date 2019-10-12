@@ -105,6 +105,48 @@ main()
 
 > 类形式创建
 
+```python
+import threading as thread
+from time import sleep, ctime
+
+loops = [3,2]
+
+class MyThread():
+    def __init__(self, func, args, name=''):
+        self.func = func
+        self.args = args
+        self.name = name
+    def __call__(self):
+        self.func(*self.args)
+        
+
+def loop(nloop, nsec):
+    print("thread start! :",nloop , ctime())
+    sleep(nsec)
+    print("thread end! :",nloop , ctime())
+
+
+def main():
+    print(f"starting at :{ctime()}")
+    threads = []
+    for i in range(len(loops)):
+        t = thread.Thread(target=MyThread(loop,(i,loops[i]),loop.__name__))
+        t.daemon = True
+        threads.append(t)
+
+    for i in range(len(loops)):
+        threads[i].start()
+
+    for i in range(len(loops)):
+        threads[i].join()
+    
+    print("all done")
+
+main()
+
+
+
+```
 
 
 > 子类形式创建
