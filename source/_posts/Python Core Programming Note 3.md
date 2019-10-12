@@ -50,3 +50,36 @@ thread.daemon = True（调用 thread.setDaemon(True)的旧方法已经弃用了�
 法）。一个新的子线程会继承父线程的守护标记。整个 Python 程序（可以解读为：主线
 程）将在所有非守护线程退出之后才退出，换句话说，就是没有剩下存活的非守护线
 程时。
+
+```python
+import threading as thread
+from time import sleep, ctime
+
+loops = [3,2]
+def loop(nloop, nsec):
+    print("thread start! :",nloop , ctime())
+    sleep(nsec)
+    print("thread end! :",nloop , ctime())
+
+
+def main():
+    print(f"starting at :{ctime()}")
+    threads = []
+    for i in range(len(loops)):
+        t = thread.Thread(target=loop, args=(i, loops[i]))
+        t.daemon = True
+        threads.append(t)
+
+    for i in range(len(loops)):
+        threads[i].start()
+
+    for i in range(len(loops)):
+        threads[i].join()
+    
+    print("all done")
+
+main()
+
+
+
+```
