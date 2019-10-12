@@ -161,21 +161,23 @@ class MyThread(thread.Thread):
         self.args = args
         self.name = name
 
+    def get_result(self):
+        return self.res
+
     def run(self):
-        self.func(*self.args)
+        print('starting', self.name, 'at: ', ctime())
+        self.res = self.func(*self.args)
+        print('finished', self.name, 'at: ', ctime())
         
 
 def loop(nloop, nsec):
-    print("thread start! :",nloop , ctime())
     sleep(nsec)
-    print("thread end! :",nloop , ctime())
 
 
 def main():
-    print(f"starting at :{ctime()}")
     threads = []
     for i in range(len(loops)):
-        t = MyThread(loop, (i, loops[i]), loop.__name__) #Changed:no need to use threading.Thread() method
+        t = MyThread(loop, (i, loops[i]), loop.__name__+str(i)) #Changed:no need to use threading.Thread() method
         t.daemon = True
         threads.append(t)
 
@@ -188,6 +190,7 @@ def main():
     print("all done")
 
 main()
+
 
 
 
