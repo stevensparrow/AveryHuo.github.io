@@ -219,6 +219,7 @@ class MyThread(thread.Thread):
 
 
  ```python
+ #main.py
  from my_thread import MyThread
 from time import ctime, sleep
 
