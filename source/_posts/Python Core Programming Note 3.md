@@ -61,6 +61,18 @@ thread.daemon = True（调用 thread.setDaemon(True)的旧方法已经弃用了�
 这些线程完成（例如其他处理或者等待新的客户端请求），就可以不调用 join()。 join()方法只
 有在你需要等待线程完成的时候才是有用的。
 
+
+>使用 Thread 类，可以有很多方法来创建线程。我们将介绍其中比较相似的三种方法。选
+择你觉得最舒服的，或者是最适合你的应用和未来扩展的方法（我们更倾向于最后一种方案）。
+• 创建 Thread 的实例，传给它一个函数。
+• 创建 Thread 的实例，传给它一个可调用的类实例。
+• 派生 Thread 的子类，并创建子类的实例。
+你会发现你将选择第一个或第三个方案。当你需要一个更加符合面向对象的接口时，
+会选择后者；否则会选择前者。老实说，你会发现第二种方案显得有些尴尬并且稍微难以
+阅读，以下示例详细介绍：
+
+> 函数形式创建
+
 ```python
 import threading as thread
 from time import sleep, ctime
@@ -91,27 +103,171 @@ def main():
 main()
 ```
 
-#使用了 . 来替换 ` ，这样才能显示源码
+> 类形式创建
 
-<pre class="mermaid">
-classDiagram
-Class01 <|-- AveryLongClass : Cool
-<<interface>> Class01
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 --> C2 : Where am i?
-Class09 --* C3
-Class09 --|> Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-Class08 <--> C2: Cool label
-class Class10 {
-  <<service>>
-  int id
-  size()
-}
-</pre>
+```python
+import threading as thread
+from time import sleep, ctime
+
+loops = [3,2]
+
+class MyThread():
+    def __init__(self, func, args, name=''):
+        self.func = func
+        self.args = args
+        self.name = name
+    def __call__(self):
+        self.func(*self.args)
+        
+
+def loop(nloop, nsec):
+    print("thread start! :",nloop , ctime())
+    sleep(nsec)
+    print("thread end! :",nloop , ctime())
+
+
+def main():
+    print(f"starting at :{ctime()}")
+    threads = []
+    for i in range(len(loops)):
+        t = thread.Thread(target=MyThread(loop,(i,loops[i]),loop.__name__))
+        t.daemon = True
+        threads.append(t)
+
+    for i in range(len(loops)):
+        threads[i].start()
+
+    for i in range(len(loops)):
+        threads[i].join()
+    
+    print("all done")
+
+main()
+```
+
+
+> 子类形式创建
+
+```python
+import threading as thread
+from time import sleep, ctime
+
+loops = [3,2]
+
+class MyThread(thread.Thread):
+    def __init__(self, func, args, name=''):
+        thread.Thread.__init__(self) #Changed: need to inherit and call parent's init
+        self.func = func
+        self.args = args
+        self.name = name
+
+    def get_result(self):
+        return self.res
+
+    def run(self):
+        print('starting', self.name, 'at: ', ctime())
+        self.res = self.func(*self.args)
+        print('finished', self.name, 'at: ', ctime())
+        
+
+def loop(nloop, nsec):
+    sleep(nsec)
+
+
+def main():
+    threads = []
+    for i in range(len(loops)):
+        t = MyThread(loop, (i, loops[i]), loop.__name__+str(i)) #Changed:no need to use threading.Thread() method
+        t.daemon = True
+        threads.append(t)
+
+    for i in range(len(loops)):
+        threads[i].start()
+
+    for i in range(len(loops)):
+        threads[i].join()
+    
+    print("all done")
+
+main()
+
+```
+
+> 实例：
+
+```python
+#my_thread.py
+import threading as thread
+from time import ctime
+
+class MyThread(thread.Thread):
+    def __init__(self, func, args, name=''):
+        thread.Thread.__init__(self)  # Changed: need to inherit and call parent's init
+        self.func = func
+        self.args = args
+        self.name = name
+
+    def get_result(self):
+        return self.res
+
+    def run(self):
+        print('starting', self.name, 'at: ', ctime())
+        self.res = self.func(*self.args)
+        print('finished', self.name, 'at: ', ctime())
+
+```
+
+
+ ```python
+ #main.py
+ from my_thread import MyThread
+from time import ctime, sleep
+
+
+def fib(x):
+    sleep(0.002)
+    if x < 2: return 1
+    return fib(x-2) + fib(x-1)
+
+
+def fac(x):
+    sleep(0.1)
+    if x < 2: return 1
+    return x * fac(x-1)
+
+
+def sum(x):
+    sleep(0.2)
+    if x < 2: return 1
+    return x + sum(x-1)
+
+
+funcs = [fib, fac, sum]
+n = 12
+
+def main():
+    print("****** Single THREAD ********")
+    for i in range(len(funcs)):
+        print("start function %s" % funcs[i].__name__)
+        print(funcs[i](n))
+        print("end function %s" % funcs[i].__name__)
+
+    threads = []
+    print("****** Multi THREAD ********")
+    for i in range(len(funcs)):
+        t = MyThread(funcs[i], (n,), funcs[i].__name__)
+        threads.append(t)
+
+    for i in range(len(funcs)):
+        threads[i].start()
+
+    for i in range(len(funcs)):
+        threads[i].join()
+        print(threads[i].get_result())
+
+    print("all done")
+main()
+
+ ```
+
+
