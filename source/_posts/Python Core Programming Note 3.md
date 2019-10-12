@@ -196,6 +196,7 @@ main()
 > 实例：
 
 ```python
+#my_thread.py
 import threading as thread
 from time import ctime
 
