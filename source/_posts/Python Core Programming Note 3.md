@@ -148,6 +148,51 @@ main()
 
 > 子类形式创建
 
+```python
+import threading as thread
+from time import sleep, ctime
+
+loops = [3,2]
+
+class MyThread(thread.Thread):
+    def __init__(self, func, args, name=''):
+        thread.Thread.__init__(self) #Changed: need to inherit and call parent's init
+        self.func = func
+        self.args = args
+        self.name = name
+
+    def run(self):
+        self.func(*self.args)
+        
+
+def loop(nloop, nsec):
+    print("thread start! :",nloop , ctime())
+    sleep(nsec)
+    print("thread end! :",nloop , ctime())
+
+
+def main():
+    print(f"starting at :{ctime()}")
+    threads = []
+    for i in range(len(loops)):
+        t = MyThread(loop, (i, loops[i]), loop.__name__) #Changed:no need to use threading.Thread() method
+        t.daemon = True
+        threads.append(t)
+
+    for i in range(len(loops)):
+        threads[i].start()
+
+    for i in range(len(loops)):
+        threads[i].join()
+    
+    print("all done")
+
+main()
+
+
+
+```
+
 
 
 
