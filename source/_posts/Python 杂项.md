@@ -8,8 +8,11 @@ tags:
 ---
 ## Python 杂项
 
+### 关于 * args 和 **kwargs参数的用法
 
-#### * 允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple。
+> * 允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple。
+
+```python
 def f(a,*args):
     print(args)
 
@@ -23,9 +26,11 @@ def calc(*numbers):
     print(sum)
 
 calc(1,2,3,4)
+```
 
+>  ** ,关键字参数允许你传入0个或任意个含参数名的参数,这些关键字参数在函数内部自动组装为一个dict。
 
-####  ** ,关键字参数允许你传入0个或任意个含参数名的参数,这些关键字参数在函数内部自动组装为一个dict。
+```python
 def d(**kargs):
     print(kargs)
     
@@ -41,3 +46,4 @@ def person(name,age,**kw):
     print('name:',name,'age:',age,'other:',kw)
     
 person('Adam', 45, gender='M', job='Engineer')
+```
