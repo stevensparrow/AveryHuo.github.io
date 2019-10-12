@@ -196,6 +196,23 @@ main()
 > 实例：
 
 ```python
+import threading as thread
+from time import ctime
+
+class MyThread(thread.Thread):
+    def __init__(self, func, args, name=''):
+        thread.Thread.__init__(self)  # Changed: need to inherit and call parent's init
+        self.func = func
+        self.args = args
+        self.name = name
+
+    def get_result(self):
+        return self.res
+
+    def run(self):
+        print('starting', self.name, 'at: ', ctime())
+        self.res = self.func(*self.args)
+        print('finished', self.name, 'at: ', ctime())
 
 ```
 
