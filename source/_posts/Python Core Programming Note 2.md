@@ -48,7 +48,8 @@ finally:
 ```
 
 + Client
-```
+
+```python
 from socket import *
 
 HOST = '127.0.0.1' 
@@ -77,7 +78,8 @@ tcpCliSocket.close()
 #### 2. UDP
 
 + Server
-```
+
+```python
 from socket import *
 from time import ctime
 
@@ -105,11 +107,11 @@ except KeyboardInterrupt:
     print("Error: EOFEError")
 finally:
     udpSerSocket.close()
-
-
 ```
+
 + Client
-```
+
+```python
 from socket import *
 
 HOST = '127.0.0.1' 
@@ -136,7 +138,8 @@ udpCliSocket.close()
 
 ### 使用SocketServer
 + Server
-```
+
+```python
 from socketserver import (TCPServer as TCP, StreamRequestHandler as SRH)
 from time import ctime
 
@@ -157,8 +160,10 @@ print("waiting for connection...")
 tcpServ.serve_forever()
         
 ```
+
 + Client
 不同之处：需要把建立和连接放在每次循环中
+
 ```
 from socket import *
 
