@@ -56,6 +56,14 @@ I'm giving you something.
  7. here we go <=> start
  It's starting now. let do this..
  
+ 8. professional
+ n. someone who get paid to do something.
  
+ 9.invite
+n. I'll send you an invite.
  
+ 10. networking
+ n. meeting people that could, related to you professionally.
  
+ 11. keeping up
+ e.g.: keeping up with fashion. 
