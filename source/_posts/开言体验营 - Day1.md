@@ -51,5 +51,10 @@ eg. : > Spencer, you are very handsome.
  5. contact request
  
  6. here you go
- I'm giving you something.
+I'm giving you something.
+ 
+ 7. here we go
+ It's starting now. let do this..
+ 
+ 
  
