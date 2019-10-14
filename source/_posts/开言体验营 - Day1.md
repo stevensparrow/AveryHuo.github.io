@@ -29,6 +29,16 @@ n. 公众号
 7. networking
 n. 建立人脉
 
+### Dialog
+> A: It was great meeting you.
+> B: Likewise. Let's keep in touch. Could I have you wechat?
+> A: Sure. Just a sec, let me pull up my QR code. Here you go.
+> B: Great. Opps, that didn't work, let me try scanning you again, here we go.
+> A: Wonderful. I just accepted your contact request.
+> B: Great! Now we are connected. I'm in a great Wechat Group for marketting professionals. Would you like to join?
+> A: Sure, I'd love to.
+> B: I'll send you a invite right away. I find it great for networking, keeping up with industry news and local events.
+
 
 ### Dialog study
 1. likewise
@@ -70,3 +80,5 @@ n. I'll send you an invite.
  
  12. local events
  this dialogue is probably a networking event.
+ 
+ 
