@@ -66,4 +66,4 @@ n. I'll send you an invite.
  n. meeting people that could, related to you professionally.
  
  11. keeping up
- e.g.: keeping up with fashion. 
+ e.g.: I keep up with fashion. 
