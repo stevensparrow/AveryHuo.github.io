@@ -23,6 +23,10 @@ n. 专业人士
 5. keeping up
 v. 跟上，追踪
 
+6. public accounts
+n. 公众号
 
+7. networking
+n. 建立人脉
 
 
