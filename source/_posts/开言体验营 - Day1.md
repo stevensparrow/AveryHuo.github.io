@@ -66,4 +66,7 @@ n. I'll send you an invite.
  n. meeting people that could, related to you professionally.
  
  11. keeping up
- e.g.: I keep up with fashion. 
+ e.g.: I keep up with fashion. keeping up with industry news.
+ 
+ 12. local events
+ this dialogue is probably a networking event.
