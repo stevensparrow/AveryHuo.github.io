@@ -37,7 +37,8 @@ n. 建立人脉
 > A: Wonderful. I just accepted your contact request.
 > B: Great! Now we are connected. I'm in a great Wechat Group for marketting professionals. Would you like to join?
 > A: Sure, I'd love to.
-> B: I'll send you a invite right away. I find it great for networking, keeping up with industry news and local events.
+> B: I'll send you a invite right away. I find it great for networking, keeping up with industry news and local events.The people in the group is very helpful. I'll recommend a few great public account for you to follow, too.
+> 
 
 
 ### Dialog study
