@@ -44,3 +44,12 @@ eg. : > Spencer, you are very handsome.
 3. pull up 
  This is always about computers or phones, or things like that you can open something.
  e.g.: Let me pull up my QR code.
+ 
+ 4. QR code
+ quick response
+ 
+ 5. contact request
+ 
+ 6. here you go
+ I'm giving you something.
+ 
