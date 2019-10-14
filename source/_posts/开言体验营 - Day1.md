@@ -37,4 +37,10 @@ n. 建立人脉
 eg. : > Spencer, you are very handsome.
 		> Ah, likewise.
 		> Thank you. 
-2. 
+2.  Could I have you wechat?
+    more polite: > may I add you on wechat?
+	or  > do you have wechat?
+	
+3. pull up 
+ This is always about computers or phones, or things like that you can open something.
+ e.g.: Let me pull up my QR code.
