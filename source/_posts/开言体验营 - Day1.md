@@ -30,3 +30,11 @@ n. 公众号
 n. 建立人脉
 
 
+### Dialog study
+1. likewise
+* means 'the same'
+* almost anything where you would need to say blah blah blah **too**..
+eg. : > Spencer, you are very handsome.
+		> Ah, likewise.
+		> Thank you. 
+2. 
