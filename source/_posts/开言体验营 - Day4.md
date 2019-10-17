@@ -12,6 +12,8 @@ tags:
 1. Chinese zodiac 生肖
 2. literal translation
 3. tons 
+4. beer 
+	e.g. I had tons of beer last night.
 
 ### Dialog
 
