@@ -15,6 +15,7 @@ tags:
 4. beer 
 	e.g. I had tons of beer last night.
 5. wacky -> weird
+6. silly 
 ### Dialog
 
 ### Dialog study
