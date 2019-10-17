@@ -14,7 +14,7 @@ tags:
 3. tons 
 4. beer 
 	e.g. I had tons of beer last night.
-
+5. wacky -> weird
 ### Dialog
 
 ### Dialog study
