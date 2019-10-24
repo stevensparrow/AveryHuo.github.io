@@ -101,6 +101,14 @@ conda deactivate mysite
 conda remove -n mysite --all
 ```
 
+### 重命名环境
+
+把一个原来叫做py2的环境重新命名成python2：
+
+``` 
+conda create -n python2 --clone py2
+conda remove -n py2 --all
+```
 
 
 
