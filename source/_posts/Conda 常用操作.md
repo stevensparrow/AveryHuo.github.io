@@ -71,6 +71,35 @@ conda config --get channels
 vim ~/.condarc
 ``` 
 
+### 创建环境
+
+如创建一个python2.7环境且名为mysite
+
+``` 
+conda create -n mysite python=2.7
+``` 
+
+### 激活、退出环境
+
+激活：
+windows环境下不用加conda前缀，mac及旧版本下可能需要使用source activate
+
+```
+conda activate mysite
+```
+
+退出：
+同激活
+
+``` 
+conda deactivate mysite
+```
+
+### 删除环境
+
+``` 
+conda remove -n mysite --all
+```
 
 
 
