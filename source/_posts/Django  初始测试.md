@@ -30,6 +30,7 @@ class Choice(models.Model):
 
 > 2. 执行生成数据库
 
+
 ```
 python manage.py migrate
 ```
