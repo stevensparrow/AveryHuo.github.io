@@ -17,6 +17,9 @@ migrate：使数据库状态与当前模型集和迁移集同步。说白了，�
 2、如果不想使用 Django 的 makemigrations 和 migrate 功能，但是不小心执行了这两个命令会发生什么，
 首先在该app下建立 migrations目录，并记录下你所有的关于modes.py的改动，比如0001_initial.py，
 接着执行migrate的话，这时候会作用到数据库文件，产生对应的表
+3、官方解释：
+运行 python manage.py makemigrations 为模型的改变生成迁移文件。
+运行 python manage.py migrate 来应用数据库迁移。
 参考： https://blog.csdn.net/weixin_43507484/article/details/87950788
 
 > 1. 先执行一下迁移
@@ -60,6 +63,18 @@ INSTALLED_APPS = [
 
 ```
 python manage.py makemigrations polls
+```
+
+输出迁移过程中可能执行的sql
+
+```
+python manage.py sqlmigrate polls 0001
+```
+
+最后，正式执行迁移
+
+```
+python manage.py migrate
 ```
 
 
