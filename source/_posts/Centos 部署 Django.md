@@ -42,9 +42,92 @@ ls -l /usr/local/include/*sqlite*
 ```
 wget https://www.python.org/ftp/python/3.6.6/Python-3.6.6.tgz
 tar -zxvf Python-3.6.6.tgz
-
-#进入解压好的目录
-sudo LD_RUN_PATH=/usr/local/lib ./configure --enable-optimizations
-sudo LD_RUN_PATH=/usr/local/lib make altinstall
 ```
 
+进入解压好的目录
+```
+
+sudo LD_RUN_PATH=/usr/local/lib ./configure --enable-optimizations
+sudo LD_RUN_PATH=/usr/local/lib make altinstall
+
+```
+
+建立软链接
+
+```
+ln -s /usr/local/python3/bin/python3.6 /usr/bin/python3
+ln -s /usr/local/python3/bin/pip3.6 /usr/bin/pip3
+```
+
+看Python3和pip3安装情况
+```
+python3
+
+pip3 -V
+```
+
+卸载：
+
+```
+whereis python
+rm -rf ....
+```
+
+### 4. virtualenv安装
+
+```
+pip3 install virtualenv
+```
+
+建立链接
+```
+ln -s /usr/local/python3/bin/virtualenv /usr/bin/virtualenv
+```
+ 
+ 创建虚拟环境
+ 
+ ```
+ mkdir -p /data/env
+ mkdir -p /data/wwwroot
+
+virtualenv --python=/usr/bin/python3 pyweb
+ ```
+
+进入虚拟环境
+
+```
+cd /data/env/pyweb/bin
+source activate
+```
+
+退出虚拟环境
+
+```
+deactivate
+```
+
+### 5.虚拟环境下安装django, uwsgi
+
+```
+pip3 install django （如果用于生产的话，则需要指定安装和你项目相同的版本）
+pip3 install uwsgi
+
+ln -s /usr/local/python3/bin/uwsgi /usr/bin/uwsgi
+```
+
+### 6. Django下创建项目和app
+
+```
+django-admin.py startproject mysite
+
+cd mysite
+
+python3 manage.py startapp blog
+```
+
+
+
+### 参考文章
+https://www.cnblogs.com/djangocn/p/9538551.html
+https://stackoverflow.com/questions/55674176/django-cant-find-new-sqlite-version-sqlite-3-8-3-or-later-is-required-found
+https://blog.csdn.net/yohjob/article/details/90760862
