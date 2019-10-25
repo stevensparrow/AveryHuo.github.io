@@ -36,3 +36,15 @@ sudo make install
 ls -l /usr/local/lib/*sqlite*
 ls -l /usr/local/include/*sqlite*
 ```
+
+### 3.Python 安装
+
+```
+wget https://www.python.org/ftp/python/3.6.6/Python-3.6.6.tgz
+tar -zxvf Python-3.6.6.tgz
+
+#进入解压好的目录
+sudo LD_RUN_PATH=/usr/local/lib ./configure --enable-optimizations
+sudo LD_RUN_PATH=/usr/local/lib make altinstall
+```
+
