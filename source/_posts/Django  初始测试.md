@@ -40,11 +40,26 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
 ```
 
+> 3. 激活模型
+
+```
+#mysite/settings.py
+INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+```
+
 > 2. 执行生成数据库
 
 
 ```
-python manage.py migrate
+python manage.py makemigrations polls
 ```
 
 
