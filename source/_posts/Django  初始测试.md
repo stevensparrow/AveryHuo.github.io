@@ -79,7 +79,57 @@ python manage.py migrate
 
 
 
+### 使用API
+
+进入项目的Python控制台
+
+```
+python manage.py shell
+
+from polls.models import Choice, Question  # Import the model classes we just wrote.
+Question.objects.all()
+```
+
+给模型添加__str__()函数，这样默认输出将会改变
+
+```
+from django.db import models
+
+class Question(models.Model):
+    # ...
+    def __str__(self):
+        return self.question_text
+
+class Choice(models.Model):
+    # ...
+    def __str__(self):
+        return self.choice_text
+```
 
 
+
+### 使用管理员账号
+
+```
+python manage.py createsuperuser
+```
+
+此时进入xxxx/admin网址，登录就可看到数据库资源
+
+```
+python manage.py runserver
+```
+
+加入我们的项目
+
+```
+from django.contrib import admin
+
+from .models import Question
+
+admin.site.register(Question)
+```
+
+无需重启，直接刷新就可以看到项目在主界面
 
 
