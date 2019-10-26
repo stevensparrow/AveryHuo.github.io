@@ -1,7 +1,7 @@
 ---
 title: Django  初始测试
 categories:
-- Python-Web
+- Python的Web
 tags: 
 - Python
 - Note
