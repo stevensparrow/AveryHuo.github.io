@@ -1,7 +1,7 @@
 ---
 title: Conda 常用操作
 categories:
-- PythonWeb
+- Python下Web
 tags: 
 - Python
 - Note
