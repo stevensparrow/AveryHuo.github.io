@@ -19,4 +19,18 @@ tags:
 
 ### Dialog
 
+> Excuse me sir, how much is this souvenior?
+> Oh, that one there is $30.
+> Jeez! That's a lot! is that the best price you can give me?
+> I don't go bargaining. $25 is the cheapest I can go.
+> I see ,are you sure you can't go any lower?
+> Sorry , I can't, and you won't find a better price in the market.
+> How about two for 40?
+> No can do. But I can do three for 60.
+> Thanks, but no thanks.
+> Ok, ok! Two for 40!
+> Deal! You take credit?
+> Cash only , sir!
+
+
 ### Dialog study
