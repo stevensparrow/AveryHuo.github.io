@@ -11,7 +11,11 @@ tags:
 ### 预习
 1. souvenior
 + 纪念品
-2. 
+2. jeez
++ 叹词
+3. no can do
+无能为力。
+
 
 
 ### Dialog
