@@ -64,6 +64,11 @@ STATICFILES_DIR = (os.path.join(BASE_DIR, 'static'),)
 
 注：需要在pycharm中设置templates标志
 
+
+
+
+## First Page
+
 + APP中新建urls.py
 在文件中配置路径表：
 
@@ -76,9 +81,12 @@ urlpatterns = [
 ]
 ```
 
-
-## First Page
-
++ 创建视图（与上面的Home匹配）
+在views.py
+```
+def home(request):
+    return render(request, 'base.html')
+```
 
 
 
