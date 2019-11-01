@@ -83,6 +83,7 @@ urlpatterns = [
 
 + 创建视图（与上面的Home匹配）
 在views.py
+
 ```
 def home(request):
     return render(request, 'base.html')
