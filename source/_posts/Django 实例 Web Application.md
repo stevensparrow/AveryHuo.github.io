@@ -62,6 +62,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 > 底部加入:
 STATICFILES_DIR = (os.path.join(BASE_DIR, 'static'),)
 
+> TEMPLATES块中设置DIRS
+> 'DIRS': [TEMPLATE_DIR],
+
 注：需要在pycharm中设置templates标志
 
 + 启用admin
