@@ -64,7 +64,10 @@ STATICFILES_DIR = (os.path.join(BASE_DIR, 'static'),)
 
 注：需要在pycharm中设置templates标志
 
-
++ 启用admin
+```
+python manage.py createsuperuser
+```
 
 
 ## First Page
@@ -89,7 +92,24 @@ def home(request):
     return render(request, 'base.html')
 ```
 
++ 创建数据表
 
+models.py中
 
+```
+class Search(models.Model):
+    search = models.CharField(max_length=500)
+    created = models.DateTimeField(auto_now=True)
 
+```
+记得执行migrate操作
+
++ 添加admin管理
+
+```
+from .models import Search
+
+# Register your models here.
+admin.site.register(Search)
+```
 
