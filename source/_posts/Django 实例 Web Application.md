@@ -65,7 +65,7 @@ STATICFILES_DIR = (os.path.join(BASE_DIR, 'static'),)
 注：需要在pycharm中设置templates标志
 
 + APP中新建urls.py
-配置路径表：
+在文件中配置路径表：
 
 ```
 from . import views
