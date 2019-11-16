@@ -32,7 +32,7 @@ https://tortoisegit.org/download/
 
 ## 切换到自己所在的分支
 > 美术： art 
-> 程序&开发： develop
+> 策划和程序： feature
 
 ![enter description here](./images/1573883470572.png)
 
