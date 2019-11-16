@@ -34,6 +34,7 @@ https://tortoisegit.org/download/
 > 美术： art 
 > 程序&开发： develop
 
+![enter description here](./images/1573883470572.png)
 
 ## 【可选】用旧项目的library
 >复制原SVN的UNITY目录下的library文件夹，粘贴到已经拉下来的unity目录下。这样重打开项目不用等待太多。
@@ -42,6 +43,5 @@ https://tortoisegit.org/download/
 ![enter description here](./images/1573881886011.png)
 
 ## 如何提交
-
 ![enter description here](./images/1573880787198.png)
 
