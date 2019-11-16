@@ -22,3 +22,8 @@ https://tortoisegit.org/download/
 ## 装好之后设置账号信息
 
 ![enter description here](./images/1573879504277.png)
+
+
+## 如何提交
+
+![enter description here](./images/1573879565628.png)
