@@ -24,6 +24,14 @@ https://tortoisegit.org/download/
 ![enter description here](./images/1573879504277.png)
 
 
+## 克隆服务端的项目代码
+
+## 【可选】用旧项目的library
+>复制原SVN的UNITY目录下的library文件夹，粘贴到已经拉下来的unity目录下。这样重打开项目不用等待太多。
+
+## 如何拉取
+
 ## 如何提交
 
-![enter description here](./images/1573879565628.png)
+![enter description here](./images/1573880787198.png)
+
