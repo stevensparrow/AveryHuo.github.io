@@ -19,4 +19,6 @@ https://tortoisegit.org/download/
 
 注：安装过程选择默认选项
 
+## 装好之后设置账号信息
 
+![enter description here](./images/1573879504277.png)
