@@ -25,11 +25,17 @@ https://tortoisegit.org/download/
 
 
 ## 克隆服务端的项目代码
+>1.右键选择git clone. 
+2.输入项目地址：http://172.16.100.8:8081/x1/client.git 
+
+![enter description here](./images/1573881914065.png)
+
 
 ## 【可选】用旧项目的library
 >复制原SVN的UNITY目录下的library文件夹，粘贴到已经拉下来的unity目录下。这样重打开项目不用等待太多。
 
 ## 如何拉取
+![enter description here](./images/1573881886011.png)
 
 ## 如何提交
 
