@@ -6,6 +6,10 @@ tags:
 - Git
 ---
 
+## 登录公司Gitlab注册账号
+http://172.16.100.8:8081
+注册完后将账号名发送给各小组负责人。
+
 ## 安装Git
 
 以下网站里选择自己电脑平台，下载安装即可
@@ -26,7 +30,7 @@ https://tortoisegit.org/download/
 
 ## 克隆服务端的项目代码
 >1.右键选择git clone. 
-2.输入项目地址：http://172.16.100.8:8081/x1/client.git 
+2.输入项目地址：http://172.16.100.8:8081/x1client/client.git 
 
 ![enter description here](./images/1573881914065.png)
 
@@ -45,3 +49,22 @@ https://tortoisegit.org/download/
 ## 如何提交
 ![enter description here](./images/1573880787198.png)
 
+## 日常工作流推荐
+本地更改用一个新分支，提交之前可以去主工作分支rebase一个最新版，然后再提交本地，再切到主工作分支merge.
+
+```
+git branch 'my'
+git checkout 'my'
+# do some work
+git add .
+git commit -m 'my work done!'
+git rebase -i feature #get latest feature branch commits
+#fix conflict if needed
+git checkout feature
+git merge my #take care! use merge here
+git push
+```
+
+
+
+注： 一定不要在主工作分支上执行rebase，这样会要求push --force的操作，这种操作将直接覆盖所有的其他人的提交，导致历史树的变更。
