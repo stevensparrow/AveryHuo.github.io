@@ -18,3 +18,15 @@ tail -f ../logs/catalina.out              //查看指定文件夹里的日志
  
 ls –a                                     //显示当前目录中的所有文件，包含隐藏文件
 ```
+
+
+## windows 查看服务
+
+```
+sc query redis //查询redis的服务
+
+sc stop/start redis
+sc showid redis
+sc qc redis //查询信息
+sc enumdepend redis //查询依赖
+```
