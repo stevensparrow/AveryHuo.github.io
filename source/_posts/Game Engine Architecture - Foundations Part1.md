@@ -19,6 +19,34 @@ of Fun for Game Design **a game to be an interactive experience that provides th
   soft 意味着deadline不影响玩家，hard往往造成严重的后果。
   
 
+## Game genres
+
+### FPS
+
+>first-person shooters aim to provide their players with the illusion of being
+immersed in a detailed, hyperrealistic world
+
+>First-person shooters typically focus on technologies such as:
+>* efficient rendering of large 3D virtual worlds;
+>* a responsive camera control/aiming mechanic;
+>* high-fidelity animations of the player’s virtual arms and weapons;
+>* a wide range of powerful handheld weaponry;
+>* a forgiving player character motion and collision model, which often
+gives these games a “floaty” feel;
+>* high-fidelity animations and artificial intelligence for the non-player
+characters (NPCs)—the player’s enemies and allies; and
+>* small-scale online multiplayer capabilities (typically supporting up to
+64 simultaneous players), and the ubiquitous “death match” gameplay
+mode.
+
+> 高效渲染3D虚拟世界
+> 有响应式的相机控制与射击目标指向机制
+> 高质量的玩家手臂和武器控制
+> 丰富的装备选择
+> 丰富的人物动画库和碰撞模型
+> 非玩家（NPC）的高质量动作和人工智能
+> 小型的多人同屏（<64）和频繁的角色死亡重生的游戏机制
+
 
 
 
