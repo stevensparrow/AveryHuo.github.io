@@ -46,3 +46,9 @@ tags:
 ## gamut
 
 ## akin
+
+## craft
+
+## genre
+
+## optimal
