@@ -53,3 +53,22 @@ tags:
 ## optimal
 
 ## trade-off
+
+## corridor
+
+## roaming
+
+## confined
+
+## traversal
+
+## forgiving
+
+## fidelity
+
+## ubiquitous
+
+## dungeon crawl
+
+
+
