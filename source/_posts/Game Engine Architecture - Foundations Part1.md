@@ -59,4 +59,10 @@ platformer genre exists almost exclusively on consoles); and
 > * a complex camera collision system for ensuring that the view point never
 “clips” through background geometry or dynamic foreground objects
 
+> 移动平台，楼梯等模块
+> 场景的混淆视听的组件
+> 第三人称使用的相机跟随
+> 复杂的相机机制以显示当前游戏所需的空间
+
+
 
