@@ -15,7 +15,9 @@ of Fun for Game Design **a game to be an interactive experience that provides th
 
 >游戏： 一个交互性的经历提供一个玩家学习或将要学习的技能的挑战集合（持续提升的）
 
-
+* soft real-time game & hard real-time game
+  soft 意味着deadline不影响玩家，hard往往造成严重的后果。
+  
 
 
 
