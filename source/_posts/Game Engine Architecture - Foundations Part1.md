@@ -47,7 +47,16 @@ mode.
 > 非玩家（NPC）的高质量动作和人工智能
 > 小型的多人同屏（<64）和频繁的角色死亡重生的游戏机制
 
+### Platformers and Other Third-Person Games
 
-
+> Technologies specifically:
+> * moving platforms, ladders, ropes, trellises and other interesting locomotion modes;
+> * puzzle-like environmental elements;
+> * a third-person “follow camera” which stays focused on the player character and whose rotation is typically controlled by the human player via
+the right joypad stick (on a console) or the mouse (on a PC—note that
+while there are a number of popular third-person shooters on a PC, the
+platformer genre exists almost exclusively on consoles); and
+> * a complex camera collision system for ensuring that the view point never
+“clips” through background geometry or dynamic foreground objects
 
 
