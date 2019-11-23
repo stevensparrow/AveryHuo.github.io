@@ -10,4 +10,18 @@ tags:
 - English
 ---
 
+## hence
 
+## emit
+
+## derivative
+
+## comprise
+
+## manipulate
+
+## indistinguishable
+
+## vehicle
+
+## loosely
