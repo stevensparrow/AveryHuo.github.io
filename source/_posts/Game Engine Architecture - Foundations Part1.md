@@ -116,3 +116,12 @@ addition to deploying his or her forces.
 >* User interaction is typically via single-click and area-based selection of
 units, plus menus or toolbars containing commands, equipment, unit
 types, building types, etc.
+
+> 每一个单元都占有相对少的资源，以便支持更多单元的同屏
+> 高地的地型常用于场景中
+> 玩家可自己支配自己的势力在地图，如创建一些建筑等
+> 交互模式传统上来说是用单击或区域选择
+
+
+### Massively Multiplayer Online Games (MMO)
+
