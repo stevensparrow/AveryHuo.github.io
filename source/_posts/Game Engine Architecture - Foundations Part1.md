@@ -138,4 +138,6 @@ serve as the game developer’s primary source of revenue.
 > 核心在于服务器的强大。
 
 ### Player-Authored Content
+> 以玩家为主的游戏模式，代表性如我的世界，Little Big Planet2
+
 
