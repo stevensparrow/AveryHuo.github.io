@@ -87,3 +87,17 @@ subsurface scattering and sweat effects;
 > 头发衣服的模拟
 
 
+### Racing Games
+>Some of the technological properties of a typical racing game include the
+following techniques:
+>* Various “tricks” are used when rendering distant background elements,
+such as employing two-dimensional cards for trees, hills and mountains.
+>* The track is often broken down into relatively simple two-dimensional
+regions called “sectors.” These data structures are used to optimize
+rendering and visibility determination, to aid in artificial intelligence
+and path finding for non-human-controlled vehicles, and to solve many
+other technical problems.
+>*The camera typically follows behind the vehicle for a third-person perspective, or is sometimes situated inside the cockpit first-person style.
+>*When the track involves tunnels and other “tight” spaces, a good deal
+of effort is often put into ensuring that the camera does not collide with
+background geometry
