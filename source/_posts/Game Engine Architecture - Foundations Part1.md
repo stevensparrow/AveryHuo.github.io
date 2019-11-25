@@ -102,4 +102,8 @@ other technical problems.
 of effort is often put into ensuring that the camera does not collide with
 background geometry
 
->  
+>  背景元素的各种2D的以假乱真的方法
+>  赛道的设计，使用2维的Sectors的数据结构，用于优化渲染和视觉效果，也可辅助设计AI的寻路等
+>  相机的视角以塞车后方的第三方人称或驾驶室的第一人称角色
+
+### Real-Time Strategy(RTS)
