@@ -109,10 +109,10 @@ background geometry
 ### Real-Time Strategy(RTS)
 
 > Include the following techniques:
-> *Each unit is relatively low-res, so that the game can support large numbers of them on-screen at once.
-> *Height-field terrain is usually the canvas upon which the game is designed and played.
-> *The player is often allowed to build new structures on the terrain in
+>* Each unit is relatively low-res, so that the game can support large numbers of them on-screen at once.
+>* Height-field terrain is usually the canvas upon which the game is designed and played.
+>* The player is often allowed to build new structures on the terrain in
 addition to deploying his or her forces.
-> * User interaction is typically via single-click and area-based selection of
+>* User interaction is typically via single-click and area-based selection of
 units, plus menus or toolbars containing commands, equipment, unit
 types, building types, etc.
