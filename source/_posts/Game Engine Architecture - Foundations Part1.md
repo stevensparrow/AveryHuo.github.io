@@ -62,5 +62,28 @@ platformer genre exists almost exclusively on consoles); and
 > 第三人称使用的相机跟随
 > 复杂的相机机制以显示当前游戏所需的空间
 
+### Fighting Games
+
+> Efforts on:
+> * a rich set of fighting animations;
+>*  accurate hit detection;
+>* a user input system capable of detecting complex button and joystick
+>combinations; and
+>*  crowds, but otherwise relatively static backgrounds
+
+> State-of-the-art fighting games:
+>*  high-definition character graphics, including realistic skin shaders with
+subsurface scattering and sweat effects;
+>* high-fidelity character animations; and
+>*  physics-based cloth and hair simulations for the characters.
+
+> 丰富的对战性的动画集
+> 精准的碰撞检测
+> 连招所用的组合键设计
+> 观众相关的人群背景设计
+
+> 高质量的人物画面及皮肤shader支持
+> 高质量的动画
+> 头发衣服的模拟
 
 
