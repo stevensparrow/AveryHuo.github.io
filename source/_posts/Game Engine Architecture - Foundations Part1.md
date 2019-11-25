@@ -141,3 +141,13 @@ serve as the game developer’s primary source of revenue.
 > 以玩家为主的游戏模式，代表性如我的世界，Little Big Planet2
 
 
+### Other Genres
+
+> sports
+> RPG
+> God games, e.g. Populous 
+> Social simulation games , e.g. SimCity
+> puzzle game , e.g.Tetris
+> non-electronic games
+> web-based game
+
