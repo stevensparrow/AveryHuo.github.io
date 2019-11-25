@@ -20,7 +20,7 @@
 <meta name="twitter:description" content="这是关于我，有空再加吧">
 
 
-<link rel="icon" href="/img/avatar.jpg">
+<link rel="icon" href="/img/my.jpg">
 
 <link href="/css/style.css?v=1.0.1" rel="stylesheet">
 
@@ -56,7 +56,7 @@
 <aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
-    <img class="avatar" src="/img/avatar.jpg" />
+    <img class="avatar" src="/img/my.jpeg" />
 </a>
 <div class="author">
     <span>Avery Huo</span>
@@ -304,7 +304,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="31">
-<input type="hidden" id="yelog_site_word_count" value="18k">
+<input type="hidden" id="yelog_site_word_count" value="17.8k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -556,7 +556,7 @@
            data-tag="Git"
            data-author="" >
             <span class="post-title" title="客户端更换Git指南">客户端更换Git指南</span>
-            <span class="post-date" title="2019-11-25 11:25:48">2019/11/25</span>
+            <span class="post-date" title="2019-11-25 12:21:59">2019/11/25</span>
         </a>
         
         <a  class="英语学习 "
@@ -683,12 +683,12 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-25 11:25:48'>2019-11-25 11:25</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-25 12:21:59'>2019-11-25 12:21</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:384</span>
+        <span>字数:202</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -707,7 +707,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#登录公司Gitlab注册账号"><span class="toc-text">登录公司Gitlab注册账号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Git"><span class="toc-text">安装Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Git工具"><span class="toc-text">安装Git工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#装好之后设置账号信息"><span class="toc-text">装好之后设置账号信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#克隆服务端的项目代码"><span class="toc-text">克隆服务端的项目代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#切换到自己所在的分支"><span class="toc-text">切换到自己所在的分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#【可选】用旧项目的library"><span class="toc-text">【可选】用旧项目的library</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何拉取"><span class="toc-text">如何拉取</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何提交"><span class="toc-text">如何提交</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#日常工作流推荐"><span class="toc-text">日常工作流推荐</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Git"><span class="toc-text">安装Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Git工具"><span class="toc-text">安装Git工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#装好之后设置账号信息"><span class="toc-text">装好之后设置账号信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#克隆服务端的项目代码"><span class="toc-text">克隆服务端的项目代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#切换到自己所在的分支"><span class="toc-text">切换到自己所在的分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#【可选】用旧项目的library"><span class="toc-text">【可选】用旧项目的library</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何拉取"><span class="toc-text">如何拉取</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何提交"><span class="toc-text">如何提交</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -723,35 +723,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="登录公司Gitlab注册账号"><a href="#登录公司Gitlab注册账号" class="headerlink" title="登录公司Gitlab注册账号"></a>登录公司Gitlab注册账号</h2><p><a href="http://172.16.100.8:8081">http://172.16.100.8:8081</a><br>注册完后将账号名发送给各小组负责人。</p>
-<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>以下网站里选择自己电脑平台，下载安装即可<br><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a><br>注：安装过程选择默认选项</p>
+        <h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>以下网站里选择自己电脑平台，下载安装即可<br><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a><br>注：安装过程选择默认选项</p>
 <h2 id="安装Git工具"><a href="#安装Git工具" class="headerlink" title="安装Git工具"></a>安装Git工具</h2><p>推荐使用乌龟工具，界面与之前的SVN近似，而且可以结合window文件系统。<br><a href="https://tortoisegit.org/download/">https://tortoisegit.org/download/</a></p>
 <p>注：安装过程选择默认选项</p>
-<h2 id="装好之后设置账号信息"><a href="#装好之后设置账号信息" class="headerlink" title="装好之后设置账号信息"></a>装好之后设置账号信息</h2><p><img src="./images/1573879504277.png" alt="enter description here"></p>
+<h2 id="装好之后设置账号信息"><a href="#装好之后设置账号信息" class="headerlink" title="装好之后设置账号信息"></a>装好之后设置账号信息</h2><p><img src="/images/1573879504277.png" alt="enter description here"></p>
 <h2 id="克隆服务端的项目代码"><a href="#克隆服务端的项目代码" class="headerlink" title="克隆服务端的项目代码"></a>克隆服务端的项目代码</h2><blockquote>
-<p>1.右键选择git clone.<br>2.输入项目地址：<a href="http://172.16.100.8:8081/x1client/client.git">http://172.16.100.8:8081/x1client/client.git</a> </p>
+<p>1.右键选择git clone.<br>2.输入项目地址：<a href="http://172.16.100.8:8081/x1/client.git">http://172.16.100.8:8081/x1/client.git</a> </p>
 </blockquote>
-<p><img src="./images/1573881914065.png" alt="enter description here"></p>
+<p><img src="/img/1573881914065.png" alt="enter description here"></p>
 <h2 id="切换到自己所在的分支"><a href="#切换到自己所在的分支" class="headerlink" title="切换到自己所在的分支"></a>切换到自己所在的分支</h2><blockquote>
 <p>美术： art<br>策划和程序： feature</p>
 </blockquote>
-<p><img src="./images/1573883470572.png" alt="enter description here"></p>
+<p><img src="/img/1573883470572.png" alt="enter description here"></p>
 <h2 id="【可选】用旧项目的library"><a href="#【可选】用旧项目的library" class="headerlink" title="【可选】用旧项目的library"></a>【可选】用旧项目的library</h2><blockquote>
 <p>复制原SVN的UNITY目录下的library文件夹，粘贴到已经拉下来的unity目录下。这样重打开项目不用等待太多。</p>
 </blockquote>
-<h2 id="如何拉取"><a href="#如何拉取" class="headerlink" title="如何拉取"></a>如何拉取</h2><p><img src="./images/1573881886011.png" alt="enter description here"></p>
-<h2 id="如何提交"><a href="#如何提交" class="headerlink" title="如何提交"></a>如何提交</h2><p><img src="./images/1573880787198.png" alt="enter description here"></p>
-<h2 id="日常工作流推荐"><a href="#日常工作流推荐" class="headerlink" title="日常工作流推荐"></a>日常工作流推荐</h2><p>本地更改用一个新分支，提交之前可以去主工作分支rebase一个最新版，然后再提交本地，再切到主工作分支merge.</p>
-<pre><code>git branch &#39;my&#39;
-git checkout &#39;my&#39;
-# do some work
-git add .
-git commit -m &#39;my work done!&#39;
-git rebase -i feature #get latest feature branch commits
-#fix conflict if needed
-git checkout feature
-git merge my #take care! use merge here
-git push</code></pre><p>注： 一定不要在主工作分支上执行rebase，这样会要求push –force的操作，这种操作将直接覆盖所有的其他人的提交，导致历史树的变更。</p>
+<h2 id="如何拉取"><a href="#如何拉取" class="headerlink" title="如何拉取"></a>如何拉取</h2><p><img src="/img/1573881886011.png" alt="enter description here"></p>
+<h2 id="如何提交"><a href="#如何提交" class="headerlink" title="如何提交"></a>如何提交</h2><p><img src="/img/1573880787198.png" alt="enter description here"></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1024037035@qq.com </span>
@@ -766,10 +754,10 @@ git push</code></pre><p>注： 一定不要在主工作分支上执行rebase，�
 
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>客户端更换Git指南</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">384</span></p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">202</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Avery Huo">Avery Huo</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-11-25, 11:25:48</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-25, 11:25:48</p>
+    <p><span class="copy-title">发布时间:</span>2019-11-25, 12:21:59</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-25, 12:21:59</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/25/客户端更换Git指南/" title="客户端更换Git指南">https://AveryHuo.github.io/2019/11/25/客户端更换Git指南/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
