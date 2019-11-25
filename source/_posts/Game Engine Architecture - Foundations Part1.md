@@ -125,3 +125,14 @@ types, building types, etc.
 
 ### Massively Multiplayer Online Games (MMO)
 
+>* An MMO is defined as any game that supports huge numbers of
+simultaneous players (from thousands to hundreds of thousands), usually all
+playing in one very large, persistent virtual world (i.e., a world whose internal
+state persists for very long periods of time, far beyond that of any one player’s
+gameplay session). 
+>* Hence, perhaps the most important
+role of the central server is to handle the billing and micro-transactions which
+serve as the game developer’s primary source of revenue.
+> MMO：支持超多在线在在一个虚拟世界中游玩的游戏
+> 分类有MMORPG,MMORTS, MMOFPS
+> 核心在于服务器的强大。
