@@ -67,5 +67,10 @@ tags:
 
 ## dungeon crawl
 
+## devote
 
+## kart
 
+## cockpit
+
+## colaborate
