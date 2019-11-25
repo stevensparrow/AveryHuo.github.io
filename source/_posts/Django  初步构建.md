@@ -1,7 +1,7 @@
 ---
 title: Django  初步构建
 categories:
-- Python Web
+- Python
 tags: 
 - Python
 - Note

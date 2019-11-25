@@ -1,7 +1,7 @@
 ---
 title: Centos 部署 Django
 categories:
-- Python的Web
+- Python
 tags: 
 - Python
 - Note

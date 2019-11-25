@@ -1,7 +1,7 @@
 ---
 title: Python Note 2
 categories:
-- Python笔记
+- Python
 tags: 
 - Python
 - Note

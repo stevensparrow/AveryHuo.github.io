@@ -1,7 +1,7 @@
 ---
 title:  Python 杂项
 categories:
-- Python笔记
+- Python
 tags: 
 - Python
 - Note

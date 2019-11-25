@@ -1,9 +1,7 @@
 ---
 title: Game Engine Architecture - Foundations Part1 
 categories:
-- Reading
-- Book
-- Learn
+- IT阅读
 tags: 
 - Game
 ---

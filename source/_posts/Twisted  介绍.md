@@ -1,7 +1,7 @@
 ---
 title: Twisted  介绍
 categories:
-- Python笔记
+- Python
 tags: 
 - Python
 - Core Programming

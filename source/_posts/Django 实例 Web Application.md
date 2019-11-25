@@ -1,7 +1,7 @@
 ---
 title: Django 实例 Web Application
 categories:
-- Python Web
+- Python
 tags: 
 - Python
 - Note
