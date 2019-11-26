@@ -84,6 +84,11 @@ increasingly blurred as characters become more and more realistic.
 
 >Endorphin and Euphoria. These are animation packages that produce
 character motion using advanced biomechanical models of realistic human movement.
+> Endorphin, is a Maya plug-in that permits animators to
+run full biomechanical simulations on characters and export the resulting animations as if they had been hand animated
+>Euphoria, is a real-time version of Endorphin intended
+to produce physically and biomechanically accurate character motion at runtime under the influence of unpredictable forces.
+
 
 
 
