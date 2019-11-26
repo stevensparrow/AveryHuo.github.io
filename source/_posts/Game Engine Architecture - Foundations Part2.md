@@ -80,8 +80,10 @@ increasingly blurred as characters become more and more realistic.
 
 > Edge  PS3 from Sony
 
+### Biomechanical Character Models
 
-
+>Endorphin and Euphoria. These are animation packages that produce
+character motion using advanced biomechanical models of realistic human movement.
 
 
 
