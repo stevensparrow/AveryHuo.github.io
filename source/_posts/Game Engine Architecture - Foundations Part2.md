@@ -55,10 +55,10 @@ C++ 库
 ### 图形
 
 >硬件图形库
-> Glide
-> OpenGL
-> DirectX
-> libgcm
-> Edge
-> 
+> Glide  早期的3D图形SDK，针对Voodoo显卡。
+> OpenGL widely used!
+> DirectX Microsoft's 3D graphics SDK
+> libgcm   更底层的接口针对PS3的图形硬件，OpenGL更高效处理的选择。
+> Edge Naughty Dog 和Sony提供的PS3平台的库
+
 
