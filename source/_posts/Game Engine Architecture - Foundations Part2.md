@@ -116,3 +116,10 @@ any game engine.
 
 #### Scene Graph / Culling Optimizations
 
+> For very small game worlds, a simple frustum cull (i.e., removing objects
+that the camera cannot “see”) is probably all that is required. For larger game
+worlds, a more advanced spatial subdivision data structure might be used to
+improve rendering efficiency by allowing the potentially visible set (PVS) of
+objects to be determined very quickly. 
+> potentially visible set (PVS)
+
