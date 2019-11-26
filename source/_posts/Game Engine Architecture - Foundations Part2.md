@@ -104,3 +104,15 @@ behavior across all hardware platforms.
 > The rendering engine is one of the largest and most complex components of
 any game engine.
 
+#### Low-Level Renderer
+![Low-Level Renderer](./img/1574756479212.png)
+
+> Graphics Device Interface
+> DirectX, OpenGL
+
+> The low-level renderer usually provides a viewport abstraction with an associated camera-to-world matrix and 3D projection parameters, such as field of view and the location of the near and far clip planes.
+
+>  底层的渲染提供一个显示区域，关联到相机-世界和投影的参数。
+
+#### Scene Graph / Culling Optimizations
+
