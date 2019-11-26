@@ -43,7 +43,7 @@ gradually closing (for better or for worse).
 > Granny, Havok Animation，处理动画骨骼等
 > Euphoria， 小型的游戏开发套件：https://sourceforge.net/projects/euphoriasdk/
 
-### 数据结构与算法
+#### 数据结构与算法
 
 C++ 库
 1. STL : strings, data structures, stream-based I/O  
@@ -52,7 +52,7 @@ C++ 库
 4. Loki :Powerful generic programming template library
 
 
-### 图形
+#### 图形
 
 >硬件图形库
 > Glide  早期的3D图形SDK，针对Voodoo显卡。
@@ -61,13 +61,13 @@ C++ 库
 > libgcm   更底层的接口针对PS3的图形硬件，OpenGL更高效处理的选择。
 > Edge Naughty Dog 和Sony提供的PS3平台的库
 
-### 物理与碰撞
+#### 物理与碰撞
 
 > Havok industrial-strength physics and collision engine.
 > PhysX  NVIDIA
 > Open Dynamics Engine.  open source
 
-### 角色动画
+#### 角色动画
 
 > Granny:
 > In my opinion, the Granny SDK
@@ -80,7 +80,7 @@ increasingly blurred as characters become more and more realistic.
 
 > Edge  PS3 from Sony
 
-### Biomechanical Character Models
+#### Biomechanical Character Models
 
 >Endorphin and Euphoria. These are animation packages that produce
 character motion using advanced biomechanical models of realistic human movement.
