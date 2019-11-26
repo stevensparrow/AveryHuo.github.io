@@ -100,3 +100,7 @@ https://space.bilibili.com/430600560/channel/detail?cid=75669
 behavior across all hardware platforms.
 
 
+### Rendering Engine
+> The rendering engine is one of the largest and most complex components of
+any game engine.
+
