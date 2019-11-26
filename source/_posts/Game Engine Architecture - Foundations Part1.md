@@ -174,3 +174,15 @@ ships. This makes UE4 a viable choice for small independent game studios.
 https://github.com/EpicGames/UnrealEngine
 
 ### The Half-Life Source Engine
+
+> Source is a high-quality engine, rivaling Unreal Engine 4 in terms of graphics capabilities and tool set.
+
+https://www.moddb.com/games/half-life-source
+
+### DICE's Frostbite
+寒霜
+
+ >Frostbite boasts a powerful unified asset creation tool called
+FrostEd, a powerful tools pipeline known as Backend Services, and a powerful
+runtime game engine. 
+>https://www.ea.com/frostbite/engine
