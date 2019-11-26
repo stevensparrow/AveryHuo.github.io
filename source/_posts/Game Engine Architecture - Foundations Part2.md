@@ -127,3 +127,14 @@ objects to be determined very quickly.
 > 理想状态下，底层渲染应该完全不关心spatial subdivision或scene graph的使用类型。 
 >OGRE open source rendering engine (http://www.ogre3d.org) is a great example of this principle in action. OGRE provides a plug-and-play scene graph
 architecture. Game developers can either select from a number of preimplemented scene graph designs, or they can provide a custom scene graph implementation.
+
+#### Front End
+> HUD, Heads-up Display
+> 在顶层显示
+> FMV, Full-Motion Video 动作完整的视频回放
+This system is responsible for playing full-screen movies that have been recorded earlier.
+> IGC, in-game cinematics system.  游戏内的视频，一般当玩家不可操作时显示
+
+
+
+
