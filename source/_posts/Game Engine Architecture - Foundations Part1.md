@@ -6,7 +6,7 @@ tags:
 - Game
 ---
 
-## What is Game?
+## (1.2)What is Game?
 
 >In his excellent book, A Theory
 of Fun for Game Design **a game to be an interactive experience that provides the player with an increasingly challenging sequence of patterns which he or she learns and eventually masters**.
@@ -17,7 +17,7 @@ of Fun for Game Design **a game to be an interactive experience that provides th
   soft 意味着deadline不影响玩家，hard往往造成严重的后果。
   
 
-## Game genres
+## (1.4) Game genres
 
 ### FPS
 
@@ -150,4 +150,20 @@ serve as the game developer’s primary source of revenue.
 > puzzle game , e.g.Tetris
 > non-electronic games
 > web-based game
+
+## (1.5) Game Engine Survey
+
+### The Quake Family of Engines
+1992 Written by Id Software. 
+
+Quake , Quake II source code is freely available!
+
+### The Unreal Family of Engines
+
+Major competitor to Quake from 1998 written by Epic Games, Inc.
+2004 UE2. 
+> Unreal is an incredibly powerful prototyping
+tool and commercial game development platform, and it can be used to build
+virtually any 3D first-person or third-person game (not to mention games in
+other genres as well).
 
