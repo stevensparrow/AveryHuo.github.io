@@ -197,6 +197,7 @@ runtime game engine.
 
 >In an effort to make developing games for Sony’s PlayStation 3 platform more
 accessible, Sony introduced PhyreEngine at the Game Developer’s Conference (GDC) in 2008.
-
+>It is available free of charge to any licensed Sony developer as part of the PlayStation SDK
+>
 >为了针对sony ps3平台更好的开发游戏，2008年在GDC大会上推出
 
