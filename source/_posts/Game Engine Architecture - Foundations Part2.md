@@ -96,6 +96,7 @@ https://space.bilibili.com/430600560/channel/detail?cid=75669
 
 ### Platform Independence Layer
 
-
+>the platform independence layer ensures consistent
+behavior across all hardware platforms.
 
 
