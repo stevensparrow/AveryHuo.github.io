@@ -182,7 +182,7 @@ https://www.moddb.com/games/half-life-source
 ### DICE's Frostbite
 寒霜
 
- >Frostbite boasts a powerful unified asset creation tool called
+ >DICE's efforts to create a game engine for Battlefield Bad Company in 2006! Frostbite boasts a powerful unified asset creation tool called
 FrostEd, a powerful tools pipeline known as Backend Services, and a powerful
-runtime game engine. EA
+runtime game engine. 
 >https://www.ea.com/frostbite/engine
