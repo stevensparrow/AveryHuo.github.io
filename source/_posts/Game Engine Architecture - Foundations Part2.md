@@ -91,7 +91,7 @@ to produce physically and biomechanically accurate character motion at runtime u
 
 > Endorphin， MAYA插件，执行动作的角色将运行一个完整的生物力学模拟同时导出动画。
 > Euphoria,  在一些不可预测的因素影响下，将动作更精细的模拟表现出来。
-
+https://space.bilibili.com/430600560/channel/detail?cid=75669
 
 
 
