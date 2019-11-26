@@ -233,3 +233,8 @@ language.
 ### Open Source Engines
 
 > https://en.wikipedia.org/wiki/List_of_game_engines
+> OGRE
+> Panda3D
+> Yake <-OGRE
+> Crystal Space 
+> Torque and Irrlicht
