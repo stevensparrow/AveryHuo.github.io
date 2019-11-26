@@ -61,4 +61,13 @@ C++ 库
 > libgcm   更底层的接口针对PS3的图形硬件，OpenGL更高效处理的选择。
 > Edge Naughty Dog 和Sony提供的PS3平台的库
 
+### 物理与碰撞
+
+> Havok industrial-strength physics and collision engine.
+> PhysX  NVIDIA
+> Open Dynamics Engine.  open source
+
+
+
+
 
