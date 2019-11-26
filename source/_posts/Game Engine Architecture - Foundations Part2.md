@@ -75,7 +75,13 @@ has the best-designed and most logical animation API of any I’ve seen,
 commercial or proprietary, especially its excellent handling of time
 
 > Havok Animation
-> Edge
+>  The line between physics and animation is becoming
+increasingly blurred as characters become more and more realistic.
+
+> Edge  PS3 from Sony
+
+
+
 
 
 
