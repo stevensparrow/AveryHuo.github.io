@@ -184,5 +184,5 @@ https://www.moddb.com/games/half-life-source
 
  >Frostbite boasts a powerful unified asset creation tool called
 FrostEd, a powerful tools pipeline known as Backend Services, and a powerful
-runtime game engine. 
+runtime game engine. EA
 >https://www.ea.com/frostbite/engine
