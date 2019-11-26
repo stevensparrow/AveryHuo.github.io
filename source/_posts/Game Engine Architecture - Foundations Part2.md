@@ -148,17 +148,17 @@ This system is responsible for playing full-screen movies that have been recorde
 and debugging tools. For example, they might include one or more of the
 following:
 >* a mechanism for manually instrumenting the code, so that specific sections of code can be timed;
->*a facility for displaying the profiling statistics on-screen while the game
+>* a facility for displaying the profiling statistics on-screen while the game
 is running;
->*a facility for dumping performance stats to a text file or to an Excel
+>* a facility for dumping performance stats to a text file or to an Excel
 spreadsheet;
->*a facility for determining how much memory is being used by the engine, and by each subsystem, including various on-screen displays;
->*the ability to dump memory usage, high water mark and leakage stats
+>* a facility for determining how much memory is being used by the engine, and by each subsystem, including various on-screen displays;
+>* the ability to dump memory usage, high water mark and leakage stats
 when the game terminates and/or during gameplay;
->*tools that allow debug print statements to be peppered throughout the
+>* tools that allow debug print statements to be peppered throughout the
 code, along with an ability to turn on or off different categories of debug
 output and control the level of verbosity of the output; and
->*the ability to record game events and then play them back. This is tough
+>* the ability to record game events and then play them back. This is tough
 to get right, but when done properly it can be a very valuable tool for
 tracking down bugs.
 
