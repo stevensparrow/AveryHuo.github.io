@@ -9,3 +9,14 @@ tags:
 ## (1.6) Runtime Engine Architecture
 
 ![Runtime Engine Architecture](./img/1574738644796.png)
+
+>硬件层 
+>驱动层
+> 系统层 
+>ＳＤＫ层
+＞平台依赖层 
+> 核心库
+>资源库 
+>　渲染，调试，物理检测，游戏平台基础
+＞游戏级渲染，各上层动画机制，相机机制，ＡＩ机制
+＞游戏逻辑层
