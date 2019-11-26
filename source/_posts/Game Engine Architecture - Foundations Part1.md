@@ -167,3 +167,10 @@ tool and commercial game development platform, and it can be used to build
 virtually any 3D first-person or third-person game (not to mention games in
 other genres as well).
 
+> Epic now offers full access to Unreal Engine 4, source code and
+all, for a low monthly subscription fee plus a cut of your game’s profits if it
+ships. This makes UE4 a viable choice for small independent game studios.
+
+https://github.com/EpicGames/UnrealEngine
+
+### The Half-Life Source Engine
