@@ -33,3 +33,22 @@ Windows employ a time-sliced approach to sharing the hardware with multiple runn
 >So the gap between console and PC development is
 gradually closing (for better or for worse).
 
+###  3rd Party SDKS
+
+> DirectX Opengl
+> Havok, PhysX ODE etc.. 实现增强物理效果的SDK
+> Boost++ C++标准库之一
+> STL C++标准库之一
+> Kynapse 游戏AI开发的中间件
+> Granny, Havok Animation，处理动画骨骼等
+> Euphoria， 小型的游戏开发套件：https://sourceforge.net/projects/euphoriasdk/
+
+### 数据结构与算法
+
+C++ 库
+1. STL : strings, data structures, stream-based I/O  
+2. STLport :portable and optimized of STL
+3. Boost :Powerful data structures and algorithms library
+4. Loki :Powerful generic programming template library
+
+
