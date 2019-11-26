@@ -69,7 +69,11 @@ C++ 库
 
 ### 角色动画
 
-> Granny
+> Granny:
+> In my opinion, the Granny SDK
+has the best-designed and most logical animation API of any I’ve seen,
+commercial or proprietary, especially its excellent handling of time
+
 > Havok Animation
 > Edge
 
