@@ -128,13 +128,17 @@ objects to be determined very quickly.
 >OGRE open source rendering engine (http://www.ogre3d.org) is a great example of this principle in action. OGRE provides a plug-and-play scene graph
 architecture. Game developers can either select from a number of preimplemented scene graph designs, or they can provide a custom scene graph implementation.
 
-#### Front End
+### Front End
+![Front End](./img/1574759871996.png)
+
 > HUD, Heads-up Display
 > 在顶层显示
 > FMV, Full-Motion Video 动作完整的视频回放
 This system is responsible for playing full-screen movies that have been recorded earlier.
 > IGC, in-game cinematics system.  游戏内的视频，一般当玩家不可操作时显示
 
+
+### Profiling and Debugging Tools
 
 
 
