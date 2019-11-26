@@ -67,7 +67,11 @@ C++ 库
 > PhysX  NVIDIA
 > Open Dynamics Engine.  open source
 
+### 角色动画
 
+> Granny
+> Havok Animation
+> Edge
 
 
 
