@@ -121,5 +121,9 @@ that the camera cannot “see”) is probably all that is required. For larger g
 worlds, a more advanced spatial subdivision data structure might be used to
 improve rendering efficiency by allowing the potentially visible set (PVS) of
 objects to be determined very quickly. 
+
 > potentially visible set (PVS)
 
+> 理想状态下，底层渲染应该完全不关心spatial subdivision或scene graph的使用类型。 
+>OGRE open source rendering engine (http://www.ogre3d.org) is a great example of this principle in action. OGRE provides a plug-and-play scene graph
+architecture. Game developers can either select from a number of preimplemented scene graph designs, or they can provide a custom scene graph implementation.
