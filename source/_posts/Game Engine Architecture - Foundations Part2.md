@@ -8,7 +8,7 @@ tags:
 
 ## (1.6) Runtime Engine Architecture
 
-![Runtime Engine Architecture](./img/1574738644796.png)
+![Runtime Engine Architecture](/img/1574738644796.png)
 
 >自底向上的顺序大概为：
 >硬件层 
@@ -186,4 +186,5 @@ adapted PhysX to run on its latest GPUs.
 >* skeletal animation, 骨骼动画，
 >* vertex animation， 顶点动画
 >* morph targets.， 拉伸变形目标
->
+
+![enter description here](./img/1574826629863.png)
