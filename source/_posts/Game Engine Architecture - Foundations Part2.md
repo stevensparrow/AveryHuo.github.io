@@ -187,4 +187,6 @@ adapted PhysX to run on its latest GPUs.
 >* vertex animation， 顶点动画
 >* morph targets.， 拉伸变形目标
 
-![enter description here](./img/1574826629863.png)
+![enter description here](/img/1574826629863.png)
+![enter description here](/img/1574826985515.png)
+
