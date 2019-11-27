@@ -165,7 +165,7 @@ tracking down bugs.
 ### Collisions & Physics
 
 Collision and physics are usually quite tightly coupled. 
->
+
 >* Havok is the gold standard in the industry today. It is feature-rich and
 performs well across the boards.
 >* PhysX by NVIDIA is another excellent collision and dynamics engine.
