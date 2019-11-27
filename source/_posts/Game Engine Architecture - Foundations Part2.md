@@ -174,4 +174,5 @@ designed as the interface to Ageia’s new physics accelerator chip. The
 SDK is now owned and distributed by NVIDIA, and the company has
 adapted PhysX to run on its latest GPUs.
 
-
+>Open source physics and collision engines are also available. Perhaps the
+best-known of these is the Open Dynamics Engine (ODE)
