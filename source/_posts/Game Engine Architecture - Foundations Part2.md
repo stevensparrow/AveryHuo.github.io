@@ -168,7 +168,7 @@ Collision and physics are usually quite tightly coupled.
 >
 > *Havok is the gold standard in the industry today. It is feature-rich and
 performs well across the boards.
-• PhysX by NVIDIA is another excellent collision and dynamics engine.
+>* PhysX by NVIDIA is another excellent collision and dynamics engine.
 It was integrated into Unreal Engine 4 and is also available for free as
 a stand-alone product for PC game development. PhysX was originally
 designed as the interface to Ageia’s new physics accelerator chip. The
