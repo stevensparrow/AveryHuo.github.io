@@ -175,5 +175,14 @@ SDK is now owned and distributed by NVIDIA, and the company has
 adapted PhysX to run on its latest GPUs.
 
 >Open source physics and collision engines are also available. Perhaps the best-known of these is the Open Dynamics Engine (ODE)
->V-Collide and RAPID are other popular non-commercial collision detection engines.
+>I-Collide, V-Collide and RAPID are other popular non-commercial collision detection engines. 开发于University of North Carolina
 >http://www.ode.org
+
+
+### Animations
+>类型：
+>* sprite/texture animation,
+>* rigid body hierarchy animation,
+>* skeletal animation,
+>* vertex animation, and
+>* morph targets.
