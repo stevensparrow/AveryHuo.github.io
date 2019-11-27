@@ -182,7 +182,8 @@ adapted PhysX to run on its latest GPUs.
 ### Animations
 >类型：
 >* sprite/texture animation,
->* rigid body hierarchy animation,
->* skeletal animation,
->* vertex animation, and
->* morph targets.
+>* rigid body hierarchy animation, 
+>* skeletal animation, 骨骼动画，
+>* vertex animation， 顶点动画
+>* morph targets.， 拉伸变形目标
+>
