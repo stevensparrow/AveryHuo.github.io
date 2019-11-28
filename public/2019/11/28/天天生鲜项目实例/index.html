@@ -48,7 +48,7 @@
 </head>
 <div style="display: none">
   <input class="theme_disqus_on" value="true">
-  <input class="theme_preload_comment" value="true">
+  <input class="theme_preload_comment" value="false">
   <input class="theme_blog_path" value>
 </div>
 
@@ -304,7 +304,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="31">
-<input type="hidden" id="yelog_site_word_count" value="19.9k">
+<input type="hidden" id="yelog_site_word_count" value="21.3k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -436,11 +436,11 @@
         </a>
         
         <a  class="IT阅读 "
-           href="/2019/11/26/Game Engine Architecture - English/"
+           href="/2019/11/28/Game Engine Architecture - English/"
            data-tag="Game,English"
            data-author="" >
             <span class="post-title" title="Game Engine Architecture - English">Game Engine Architecture - English</span>
-            <span class="post-date" title="2019-11-26 17:51:23">2019/11/26</span>
+            <span class="post-date" title="2019-11-28 18:34:49">2019/11/28</span>
         </a>
         
         <a  class="IT阅读 "
@@ -620,11 +620,11 @@
         </a>
         
         <a  class="Python "
-           href="/2019/11/25/天天生鲜项目实例/"
+           href="/2019/11/28/天天生鲜项目实例/"
            data-tag="Python,Note,Django,实例"
            data-author="" >
             <span class="post-title" title="天天生鲜项目实例">天天生鲜项目实例</span>
-            <span class="post-date" title="2019-11-25 11:25:48">2019/11/25</span>
+            <span class="post-date" title="2019-11-28 18:47:33">2019/11/28</span>
         </a>
         
         <a  class="Python "
@@ -636,11 +636,11 @@
         </a>
         
         <a  class="IT阅读 "
-           href="/2019/11/26/Game Engine Architecture - Foundations Part2/"
+           href="/2019/11/28/Game Engine Architecture - Foundations Part2/"
            data-tag="Game"
            data-author="" >
             <span class="post-title" title="Game Engine Architecture - Foundations Part2">Game Engine Architecture - Foundations Part2</span>
-            <span class="post-date" title="2019-11-26 17:51:23">2019/11/26</span>
+            <span class="post-date" title="2019-11-28 18:34:49">2019/11/28</span>
         </a>
         
     </nav>
@@ -685,12 +685,12 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-25 12:43:28'>2019-11-25 11:25</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-28 18:47:33'>2019-11-28 18:47</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1.6k</span>
+        <span>字数:2.3k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -705,22 +705,11 @@
         </span>
         
         
-        <span class="top-comment" title="跳转至评论区">
-            <a href="#comments">
-                评论:<span class="count-comment">
-                    <span class="spinner">
-                      <div class="cube1"></div>
-                      <div class="cube2"></div>
-                    </span>
-                </span>
-            </a>
-        </span>
-        
     </div>
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#相关背景概念"><span class="toc-text">相关背景概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据库设计"><span class="toc-text">数据库设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目搭建"><span class="toc-text">项目搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#13-可能出现的问题"><span class="toc-text">13.  可能出现的问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#User模块-注册"><span class="toc-text">User模块 - 注册</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#相关背景概念"><span class="toc-text">相关背景概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据库设计"><span class="toc-text">数据库设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目搭建"><span class="toc-text">项目搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#13-可能出现的问题"><span class="toc-text">13.  可能出现的问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#User模块-注册"><span class="toc-text">User模块 - 注册</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#User-模块-用户中心"><span class="toc-text">User 模块 - 用户中心</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -739,12 +728,12 @@
         <h2 id="相关背景概念"><a href="#相关背景概念" class="headerlink" title="相关背景概念"></a>相关背景概念</h2><blockquote>
 <p>B2B, O2O, B2C, C2C..</p>
 </blockquote>
-<h2 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h2><p><img src="./images/1573441070020.png" alt="enter description here"></p>
+<h2 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h2><p><img src="/img/1573441070020.png" alt="enter description here"></p>
 <blockquote>
-<p>对数据库进行授权<br><img src="./images/1573442010455.png" alt="enter description here"></p>
+<p>对数据库进行授权<br><img src="/img/1573442010455.png" alt="enter description here"></p>
 </blockquote>
 <blockquote>
-<p>使用后台管理<br><img src="./images/1573442404015.png" alt="enter description here"></p>
+<p>使用后台管理<br><img src="/img/1573442404015.png" alt="enter description here"></p>
 </blockquote>
 <h2 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h2><p><strong>1.一个模块对应一个APP</strong><br><strong>2.将所有app归类到一个apps文件夹</strong><br><strong>3.[可选]  设置一个系统路径，这样就不用注册APP时添加前缀文件夹</strong></p>
 <pre><code class="python">sys.path.insert(0, os.path.join(BASE_DIR, &#39;apps&#39;))</code></pre>
@@ -895,7 +884,7 @@ def send_register_active_email(to_email, username, token):
             # 激活链接过期
             return HttpResponse(&#39;激活链接已过期&#39;)</code></pre>
 <p><strong>4.使用celery做为异步处理</strong></p>
-<p><img src="./images/1574171584470.png" alt="enter description here"></p>
+<p><img src="/img/1574171584470.png" alt="enter description here"></p>
 <p>1.配置一个项目目录为：celery_tasks/tasks.py的文件<br>2.在tasks.py写入配置如 </p>
 <pre><code class="python"># use celery
 from celery import Celery
@@ -978,7 +967,97 @@ else:
 else:
     username = &#39;&#39;
     checked = &#39;&#39;
-return render(request, &#39;login.html&#39;, {&#39;username&#39;:username, &#39;checked&#39;:checked})</code></pre>
+return render(request, &#39;login.html&#39;, {&#39;username&#39;:username, &#39;checked&#39;:checked})</code></pre><h2 id="User-模块-用户中心"><a href="#User-模块-用户中心" class="headerlink" title="User 模块 - 用户中心"></a>User 模块 - 用户中心</h2><p><strong>从模板网页中抽象</strong></p>
+<ol>
+<li>将共同部分放在一个html， 不同部分使用</li>
+</ol>
+<p>base_user_center.html:</p>
+<p><img src="/img/1574937645193.png" alt="enter description here"></p>
+<p>2.在对应的功能页面继承</p>
+<p><img src="/img/1574937788143.png" alt="enter description here"></p>
+<p><strong>使用if 做功能块显示隐藏</strong></p>
+<p>如上方的：</p>
+<p><img src="/img/1574937430699.png" alt="enter description here"></p>
+<p><strong>使用官方提供的授权管理</strong></p>
+<p>有些页面需要登录后才能显示，如这里的用户中心页<br>使用django的login_required装饰器来做</p>
+<p><a href="https://docs.djangoproject.com/en/2.2/topics/auth/default/">https://docs.djangoproject.com/en/2.2/topics/auth/default/</a></p>
+<ol>
+<li>当用户已登录过，将直接跳转至所需页面</li>
+<li>当未登录，将默认跳转至/accounts/login/?next=/polls/3/.</li>
+<li>login_url可在settings.LOGIN_URL中配置 或login_url参数中配置</li>
+<li>next可在redirect_field_name参数中配置</li>
+</ol>
+<pre><code class="python">from django.contrib.auth.decorators import login_required
+
+@login_required(login_url=&#39;/accounts/login/&#39;)
+def my_view(request):</code></pre>
+<ol start="5">
+<li>处理用户通过非登录界面过来的<pre><code class="python"># 处理通过跳转的请求值#
+             # 设置下一步自动跳转 #
+             next_url = request.GET.get(&#39;next&#39;, reverse(&#39;goods:index&#39;))
+             response = redirect(reverse(next_url))</code></pre>
+</li>
+</ol>
+<blockquote>
+<p>注意：需要将form表单的action设成无action，这样提交的内容将按当前内容来指定！</p>
+</blockquote>
+<p>6.使用Mixin优化写法</p>
+<ul>
+<li>新建utils文件夹，新建一个LoginRequireMixin类</li>
+</ul>
+<pre><code class="python">class LoginRequiredMixin(object):
+    @classmethod
+    def as_view(cls, **initkwargs):
+        view = super(LoginRequiredMixin, cls).as_view(**initkwargs)
+        return login_required(view)</code></pre>
+<p>在所有view函数中继承</p>
+<pre><code class="python">class AddressView(LoginRequiredMixin, View):
+    pass</code></pre>
+<blockquote>
+<p>Mixin的原理是，执行一个子类没有的函数，Python继承规则是第一个父类先找，找到cls所代表的类的父类，再调用其as_view<br>super(A,cls) 找到A的父类，并将cls转成父类对象！</p>
+</blockquote>
+<p><strong>使用官方提供的是否登录标识</strong></p>
+<pre><code class="python">if request.user.is_authenticated:
+    # Do something for authenticated users.
+    ...
+else:
+    # Do something for anonymous users.
+    ...</code></pre>
+<p>因此在html中加入如下代码：</p>
+<p><img src="/img/1574937768754.png" alt="enter description here"></p>
+<p><strong>使用官方提供的退出登录</strong></p>
+<p>logout函数</p>
+<pre><code class="html">&lt;a href=&quot;{% url 'user:logout' %}&quot;&gt;退出&lt;/a&gt;</code></pre>
+<pre><code class="python">class LogoutView(View):
+    def get(self, request):
+        logout(request)
+        return redirect(reverse(&#39;goods:index&#39;))</code></pre>
+<p><strong>实现地址页的功能</strong></p>
+<blockquote>
+<p>1.使用request.user拿到user对象<br>2.Address.objects.create/get 来操作数据库<br>3.post请求中收到后再进行操作<br>4.Post请求完毕后，在get请求中再取数据库的地址来到html<br>5.显示get请求的结果到html</p>
+</blockquote>
+<p><strong>抽象Model里的管理器</strong></p>
+<p>model.py里：</p>
+<p>需要继承manager</p>
+<pre><code class="python">class AddressManager(models.Manager):
+    &#39;&#39;&#39;自定义模型管理器&#39;&#39;&#39;
+    def get_default_address(self, user):
+        #self.model: 获取self对象所在模型类
+        try:
+            address = self.get(user=user, is_default=True)
+        except self.DoesNotExist as e:
+            address = None
+        return address
+
+class Address(BaseModel):
+    &quot;&quot;&quot;地址模型类&quot;&quot;&quot;
+    pass
+    # 在这里使用定义的管理器
+    objects = AddressManager()</code></pre>
+<blockquote>
+<p>需要使用Address.objects.get_default_address来调用。这样传入self</p>
+</blockquote>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1024037035@qq.com </span>
     </div>
@@ -992,42 +1071,17 @@ return render(request, &#39;login.html&#39;, {&#39;username&#39;:username, &#39;
 
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>天天生鲜项目实例</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">1.6k</span></p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">2.3k</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Avery Huo">Avery Huo</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-11-25, 11:25:48</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-25, 12:43:28</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/25/天天生鲜项目实例/" title="天天生鲜项目实例">https://AveryHuo.github.io/2019/11/25/天天生鲜项目实例/</a>
+    <p><span class="copy-title">发布时间:</span>2019-11-28, 18:47:33</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-28, 18:47:33</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/28/天天生鲜项目实例/" title="天天生鲜项目实例">https://AveryHuo.github.io/2019/11/28/天天生鲜项目实例/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
 </div>
 
 
-
-    <section id="comments" class="disqus">
-    <style> aside.comment-bar { margin: auto 30px; }</style>
-    <div id="disqus_thread"></div>
-    <script>
-        var disqus_config = function(){
-            this.page.url = 'https://AveryHuo.github.io/2019/11/25/天天生鲜项目实例/';
-            this.page.identifier = '2019/11/25/天天生鲜项目实例/';
-        };
-        var loadComment = function(){
-            var d = document, s = d.createElement('script');
-            s.src = '//.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        }
-    </script>
-    
-    <script> loadComment(); </script>
-
-
-</section>
-
-<!-- Add comment count-->
-<span class="disqus-comment-count" style="display: none" data-disqus-identifier="2019/11/25/天天生鲜项目实例/"></span>
-<span class="disqus-comment-count" style="display: none" data-disqus-url="https://AveryHuo.github.io/2019/11/25/天天生鲜项目实例/"></span>
 
 
 

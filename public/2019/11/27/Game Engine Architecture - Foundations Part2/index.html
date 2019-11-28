@@ -48,7 +48,7 @@
 </head>
 <div style="display: none">
   <input class="theme_disqus_on" value="true">
-  <input class="theme_preload_comment" value="true">
+  <input class="theme_preload_comment" value="false">
   <input class="theme_blog_path" value>
 </div>
 
@@ -304,7 +304,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="31">
-<input type="hidden" id="yelog_site_word_count" value="19.9k">
+<input type="hidden" id="yelog_site_word_count" value="20.1k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -636,11 +636,11 @@
         </a>
         
         <a  class="IT阅读 "
-           href="/2019/11/26/Game Engine Architecture - Foundations Part2/"
+           href="/2019/11/27/Game Engine Architecture - Foundations Part2/"
            data-tag="Game"
            data-author="" >
             <span class="post-title" title="Game Engine Architecture - Foundations Part2">Game Engine Architecture - Foundations Part2</span>
-            <span class="post-date" title="2019-11-26 17:51:23">2019/11/26</span>
+            <span class="post-date" title="2019-11-27 11:54:07">2019/11/27</span>
         </a>
         
     </nav>
@@ -679,12 +679,12 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-26 17:51:23'>2019-11-26 17:51</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-27 11:54:07'>2019-11-27 11:54</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1.1k</span>
+        <span>字数:1.2k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -699,22 +699,11 @@
         </span>
         
         
-        <span class="top-comment" title="跳转至评论区">
-            <a href="#comments">
-                评论:<span class="count-comment">
-                    <span class="spinner">
-                      <div class="cube1"></div>
-                      <div class="cube2"></div>
-                    </span>
-                </span>
-            </a>
-        </span>
-        
     </div>
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-6-Runtime-Engine-Architecture"><span class="toc-text">(1.6) Runtime Engine Architecture</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#操作系统层"><span class="toc-text">操作系统层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3rd-Party-SDKS"><span class="toc-text">3rd Party SDKS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#数据结构与算法"><span class="toc-text">数据结构与算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#图形"><span class="toc-text">图形</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#物理与碰撞"><span class="toc-text">物理与碰撞</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#角色动画"><span class="toc-text">角色动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#生物力学角色模型-Biomechanical-Character-Models"><span class="toc-text">生物力学角色模型 Biomechanical Character Models</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Platform-Independence-Layer"><span class="toc-text">Platform Independence Layer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Rendering-Engine"><span class="toc-text">Rendering Engine</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Low-Level-Renderer"><span class="toc-text">Low-Level Renderer</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Scene-Graph-Culling-Optimizations"><span class="toc-text">Scene Graph / Culling Optimizations</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Front-End"><span class="toc-text">Front End</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Profiling-and-Debugging-Tools"><span class="toc-text">Profiling and Debugging Tools</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-6-Runtime-Engine-Architecture"><span class="toc-text">(1.6) Runtime Engine Architecture</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#操作系统层"><span class="toc-text">操作系统层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3rd-Party-SDKS"><span class="toc-text">3rd Party SDKS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#数据结构与算法"><span class="toc-text">数据结构与算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#图形"><span class="toc-text">图形</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#物理与碰撞"><span class="toc-text">物理与碰撞</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#角色动画"><span class="toc-text">角色动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#生物力学角色模型-Biomechanical-Character-Models"><span class="toc-text">生物力学角色模型 Biomechanical Character Models</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Platform-Independence-Layer"><span class="toc-text">Platform Independence Layer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Rendering-Engine"><span class="toc-text">Rendering Engine</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Low-Level-Renderer"><span class="toc-text">Low-Level Renderer</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Scene-Graph-Culling-Optimizations"><span class="toc-text">Scene Graph / Culling Optimizations</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Front-End"><span class="toc-text">Front End</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Profiling-and-Debugging-Tools"><span class="toc-text">Profiling and Debugging Tools</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Collisions-amp-Physics"><span class="toc-text">Collisions &amp; Physics</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Animations"><span class="toc-text">Animations</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -730,7 +719,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1-6-Runtime-Engine-Architecture"><a href="#1-6-Runtime-Engine-Architecture" class="headerlink" title="(1.6) Runtime Engine Architecture"></a>(1.6) Runtime Engine Architecture</h2><p><img src="./img/1574738644796.png" alt="Runtime Engine Architecture"></p>
+        <h2 id="1-6-Runtime-Engine-Architecture"><a href="#1-6-Runtime-Engine-Architecture" class="headerlink" title="(1.6) Runtime Engine Architecture"></a>(1.6) Runtime Engine Architecture</h2><p><img src="/img/1574738644796.png" alt="Runtime Engine Architecture"></p>
 <blockquote>
 <p>自底向上的顺序大概为：<br>硬件层<br>驱动层<br>系统层<br>ＳＤＫ层<br>＞平台独立层<br>核心库<br>资源库<br>　渲染，调试，物理检测，游戏平台基础<br>＞游戏级渲染，各上层动画机制，相机机制，ＡＩ机制<br>＞游戏逻辑层</p>
 </blockquote>
@@ -813,6 +802,27 @@
 <li>the ability to record game events and then play them back. This is tough<br>to get right, but when done properly it can be a very valuable tool for<br>tracking down bugs.</li>
 </ul>
 </blockquote>
+<h3 id="Collisions-amp-Physics"><a href="#Collisions-amp-Physics" class="headerlink" title="Collisions &amp; Physics"></a>Collisions &amp; Physics</h3><p>Collision and physics are usually quite tightly coupled. </p>
+<blockquote>
+<ul>
+<li>Havok is the gold standard in the industry today. It is feature-rich and<br>performs well across the boards.</li>
+<li>PhysX by NVIDIA is another excellent collision and dynamics engine.<br>It was integrated into Unreal Engine 4 and is also available for free as<br>a stand-alone product for PC game development. PhysX was originally<br>designed as the interface to Ageia’s new physics accelerator chip. The<br>SDK is now owned and distributed by NVIDIA, and the company has<br>adapted PhysX to run on its latest GPUs.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Open source physics and collision engines are also available. Perhaps the best-known of these is the Open Dynamics Engine (ODE)<br>I-Collide, V-Collide and RAPID are other popular non-commercial collision detection engines. 开发于University of North Carolina<br><a href="http://www.ode.org">http://www.ode.org</a></p>
+</blockquote>
+<h3 id="Animations"><a href="#Animations" class="headerlink" title="Animations"></a>Animations</h3><blockquote>
+<p>类型：</p>
+<ul>
+<li>sprite/texture animation,</li>
+<li>rigid body hierarchy animation, </li>
+<li>skeletal animation, 骨骼动画，</li>
+<li>vertex animation， 顶点动画</li>
+<li>morph targets.， 拉伸变形目标</li>
+</ul>
+</blockquote>
+<p><img src="./img/1574826629863.png" alt="enter description here"></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1024037035@qq.com </span>
@@ -827,42 +837,17 @@
 
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>Game Engine Architecture - Foundations Part2</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">1.1k</span></p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">1.2k</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Avery Huo">Avery Huo</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-11-26, 17:51:23</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-26, 17:51:23</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/26/Game Engine Architecture - Foundations Part2/" title="Game Engine Architecture - Foundations Part2">https://AveryHuo.github.io/2019/11/26/Game Engine Architecture - Foundations Part2/</a>
+    <p><span class="copy-title">发布时间:</span>2019-11-27, 11:54:07</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-27, 11:54:07</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/27/Game Engine Architecture - Foundations Part2/" title="Game Engine Architecture - Foundations Part2">https://AveryHuo.github.io/2019/11/27/Game Engine Architecture - Foundations Part2/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
 </div>
 
 
-
-    <section id="comments" class="disqus">
-    <style> aside.comment-bar { margin: auto 30px; }</style>
-    <div id="disqus_thread"></div>
-    <script>
-        var disqus_config = function(){
-            this.page.url = 'https://AveryHuo.github.io/2019/11/26/Game Engine Architecture - Foundations Part2/';
-            this.page.identifier = '2019/11/26/Game Engine Architecture - Foundations Part2/';
-        };
-        var loadComment = function(){
-            var d = document, s = d.createElement('script');
-            s.src = '//.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        }
-    </script>
-    
-    <script> loadComment(); </script>
-
-
-</section>
-
-<!-- Add comment count-->
-<span class="disqus-comment-count" style="display: none" data-disqus-identifier="2019/11/26/Game Engine Architecture - Foundations Part2/"></span>
-<span class="disqus-comment-count" style="display: none" data-disqus-url="https://AveryHuo.github.io/2019/11/26/Game Engine Architecture - Foundations Part2/"></span>
 
 
 
