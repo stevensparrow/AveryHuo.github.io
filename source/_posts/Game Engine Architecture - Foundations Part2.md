@@ -252,5 +252,7 @@ used for static lighting offline);
 
 > Many game engines employ a scripting language in order to make development of game-specific gameplay rules and content easier and more rapid.
 
+### Artificial Intellience Foundations
 
+>This SDK provides low-level AI building blocks such as nav mesh generation, path finding, static and dynamic object avoidance, identification of vulnerabilities within a play space (e.g., an open window from which an ambush could come) and a well-defined interface between AI and animation. 
 
