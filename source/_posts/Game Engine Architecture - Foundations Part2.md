@@ -105,7 +105,7 @@ behavior across all hardware platforms.
 any game engine.
 
 #### Low-Level Renderer
-![Low-Level Renderer](./img/1574756479212.png)
+![Low-Level Renderer](/img/1574756479212.png)
 
 > Graphics Device Interface
 > DirectX, OpenGL
@@ -129,7 +129,7 @@ objects to be determined very quickly.
 architecture. Game developers can either select from a number of preimplemented scene graph designs, or they can provide a custom scene graph implementation.
 
 ### Front End
-![Front End](./img/1574759871996.png)
+![Front End](/img/1574759871996.png)
 
 > HUD, Heads-up Display
 > 在顶层显示
@@ -231,7 +231,7 @@ single PC, acts both as the client and the server in single-player campaigns.
 
 > 用于连接low-level engine systems 与 gameplay code。为了上层游戏逻辑可以更方便使用。
 
-![enter description here](./img/1574912330296.png)
+![enter description here](/img/1574912330296.png)
 
 ### Game Worlds and Object Models
 
