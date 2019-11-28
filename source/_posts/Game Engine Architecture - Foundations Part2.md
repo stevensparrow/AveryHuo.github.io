@@ -248,6 +248,9 @@ used for static lighting offline);
 >* cameras;
 
 
+### Scripting System & Event
+
+> Many game engines employ a scripting language in order to make development of game-specific gameplay rules and content easier and more rapid.
 
 
 
