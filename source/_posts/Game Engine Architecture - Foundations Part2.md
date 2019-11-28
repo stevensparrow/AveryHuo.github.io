@@ -190,3 +190,14 @@ adapted PhysX to run on its latest GPUs.
 ![enter description here](/img/1574826629863.png)
 ![enter description here](/img/1574826985515.png)
 
+### Human Interface Devices (HID)
+
+input from the player , 玩家的输入设备
+> keyboard, mouse
+> joypad
+> other specialized game controllers, like steering wheels, fishing rods,
+dance pads, the Wiimote, etc.  方向盘，鱼竿，跳舞板，手柄控制器等
+
+>It sometimes also includes a system for detecting
+chords (multiple buttons pressed together), sequences (buttons pressed in sequence within a certain time limit) and gestures (sequences of inputs from the
+buttons, sticks, accelerometers, etc.).
