@@ -201,3 +201,8 @@ dance pads, the Wiimote, etc.  方向盘，鱼竿，跳舞板，手柄控制器�
 >It sometimes also includes a system for detecting
 chords (multiple buttons pressed together), sequences (buttons pressed in sequence within a certain time limit) and gestures (sequences of inputs from the
 buttons, sticks, accelerometers, etc.).
+> 通常也会考虑检测组合按钮等情况
+
+
+
+
