@@ -218,8 +218,7 @@ audio engine internally called SoundR!OT
 
 ### Online Multiplayer/Networking
 
-> That
-said, it is usually better to design multiplayer features from day one, if you
+> Thatsaid, it is usually better to design multiplayer features from day one, if you
 have that luxury
 
 
