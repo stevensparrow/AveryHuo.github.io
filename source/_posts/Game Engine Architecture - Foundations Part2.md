@@ -222,9 +222,12 @@ audio engine internally called SoundR!OT
 have that luxury.
 尽早设置多人在线的模式
 
+> 从多人在线转单机版，往往较为简单
 >The Quake engine is well known
 for its client-on-top-of-server mode, in which a single executable, running on a
 single PC, acts both as the client and the server in single-player campaigns.
+
+
 
 
 
