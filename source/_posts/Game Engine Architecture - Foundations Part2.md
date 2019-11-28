@@ -227,7 +227,25 @@ have that luxury.
 for its client-on-top-of-server mode, in which a single executable, running on a
 single PC, acts both as the client and the server in single-player campaigns.
 
+### Gameplay Foundation Systems
 
+> 用于连接low-level engine systems 与 gameplay code。为了上层游戏逻辑可以更方便使用。
+
+![enter description here](./img/1574912330296.png)
+
+### Game Worlds and Object Models
+
+> 游戏内的对象：
+>* static background geometry, like buildings, roads, terrain (often a special case), etc.;
+>* dynamic rigid bodies, such as rocks, soda cans, chairs, etc.;
+>* player characters (PC);
+>* non-player characters (NPC);
+>* weapons;
+>* projectiles;
+>* vehicles;
+>* lights (which may be present in the dynamic scene at runtime, or only
+used for static lighting offline);
+>* cameras;
 
 
 
