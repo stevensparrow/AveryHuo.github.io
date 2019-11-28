@@ -205,7 +205,9 @@ buttons, sticks, accelerometers, etc.).
 > HID engine 组件通常设计为划分出低等级的游戏控制器到高级游戏操作。
 > 通常也会考虑检测组合按钮等情况
 
+### Audio
 
+Audio engines vary greatly in sophistication.
 
 
 
