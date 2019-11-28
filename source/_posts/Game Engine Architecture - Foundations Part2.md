@@ -258,3 +258,9 @@ used for static lighting offline);
 Kynogon 
 >A company called Kynogon developed a middleware SDK named Kynapse, which provided much of the low-level technology required to build commercially viable game AI.  This SDK provides low-level AI building blocks such as nav mesh generation, path finding, static and dynamic object avoidance, identification of vulnerabilities within a play space (e.g., an open window from which an ambush could come) and a well-defined interface between AI and animation. 
 
+###
+
+Practically speaking, this line is never perfectly distinct. At least
+some game-specific knowledge invariably seeps down through the gameplay
+foundations layer and sometimes even extends into the core of the engine
+itself.
