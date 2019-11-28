@@ -198,12 +198,14 @@ input from the player , 玩家的输入设备
 > other specialized game controllers, like steering wheels, fishing rods,
 dance pads, the Wiimote, etc.  方向盘，鱼竿，跳舞板，手柄控制器等
 
->he HID engine component is sometimes architected to divorce the lowlevel details of the game controller(s) on a particular hardware platform from
-the high-level game controls.
+>The HID engine component is sometimes architected to divorce the lowlevel details of the game controller(s) on a particular hardware platform from the high-level game controls.
 >It sometimes also includes a system for detecting
 chords (multiple buttons pressed together), sequences (buttons pressed in sequence within a certain time limit) and gestures (sequences of inputs from the
 buttons, sticks, accelerometers, etc.).
+> HID engine 组件通常设计为划分出低等级的游戏控制器到高级游戏操作。
 > 通常也会考虑检测组合按钮等情况
+
+
 
 
 
