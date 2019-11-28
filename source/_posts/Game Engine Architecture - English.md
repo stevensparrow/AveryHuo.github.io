@@ -95,3 +95,7 @@ tags:
 ## palette of matrices
 
 ## retrofit
+
+## trivial
+
+## intimately
