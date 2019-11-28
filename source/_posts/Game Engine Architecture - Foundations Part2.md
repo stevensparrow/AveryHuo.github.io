@@ -218,8 +218,13 @@ audio engine internally called SoundR!OT
 
 ### Online Multiplayer/Networking
 
-> Thatsaid, it is usually better to design multiplayer features from day one, if you
-have that luxury
+> That said, it is usually better to design multiplayer features from day one, if you
+have that luxury.
+尽早设置多人在线的模式
+
+>The Quake engine is well known
+for its client-on-top-of-server mode, in which a single executable, running on a
+single PC, acts both as the client and the server in single-player campaigns.
 
 
 
