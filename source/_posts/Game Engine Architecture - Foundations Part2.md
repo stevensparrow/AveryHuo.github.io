@@ -254,7 +254,7 @@ used for static lighting offline);
 
 ### Artificial Intellience Foundations
 
-游戏的人工智能模块
+游戏的人工智能模块，一些游戏引擎已经在引入这一模块到引擎，虽然这并不是引擎模块考虑的。
 Kynogon 
 >A company called Kynogon developed a middleware SDK named Kynapse, which provided much of the low-level technology required to build commercially viable game AI.  This SDK provides low-level AI building blocks such as nav mesh generation, path finding, static and dynamic object avoidance, identification of vulnerabilities within a play space (e.g., an open window from which an ambush could come) and a well-defined interface between AI and animation. 
 
