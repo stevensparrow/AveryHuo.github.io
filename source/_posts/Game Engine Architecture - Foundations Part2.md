@@ -209,8 +209,9 @@ buttons, sticks, accelerometers, etc.).
 
 Audio engines vary greatly in sophistication.
 > For DirectX platforms (PC, Xbox 360, Xbox One), Microsoft provides an excellent audio tool
-suite called XACT, supported at runtime by their feature-rich XAudio2 and
-X3DAudio APIs. Electronic Arts has developed an advanced, high-powered
+suite called XACT, supported at runtime by their feature-rich XAudio2 andX3DAudio APIs. 
+
+>Electronic Arts has developed an advanced, high-powered
 audio engine internally called SoundR!OT
 
 
