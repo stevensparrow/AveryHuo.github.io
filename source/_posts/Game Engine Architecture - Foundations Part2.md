@@ -214,6 +214,14 @@ suite called XACT, supported at runtime by their feature-rich XAudio2 andX3DAudi
 >Electronic Arts has developed an advanced, high-powered
 audio engine internally called SoundR!OT
 
+>In conjunction with first-party studios like Naughty Dog, Sony Computer Entertainment America (SCEA) provides a powerful 3D audio engine called Scream
+
+### Online Multiplayer/Networking
+
+> That
+said, it is usually better to design multiplayer features from day one, if you
+have that luxury
+
 
 
 
