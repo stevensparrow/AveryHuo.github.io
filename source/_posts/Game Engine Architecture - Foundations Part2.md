@@ -278,5 +278,12 @@ itself.
 
 游戏资源从3D mesh到图片bitmaps再到音频之类的，都需要设计师用工具制作，而这些工具被称为DCC（Digital Content Creation）
 
+> Maya,3d Max
+> SoundForge
+> Photoshop
+。。。
 
+>That said, tools must be relatively easy to use, and they absolutely must be reliable, if a game
+team is going to be able to develop a highly polished product in a timely
+manner
 
