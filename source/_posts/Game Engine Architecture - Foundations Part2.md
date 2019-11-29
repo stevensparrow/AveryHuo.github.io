@@ -274,3 +274,9 @@ itself.
 		细线箭头，表示不同数据资源之间的引用关系
 ![enter description here](/img/1574995793894.png)
 
+### Digital Content Creation Tools
+
+游戏资源从3D mesh到图片bitmaps再到音频之类的，都需要设计师用工具制作，而这些工具被称为DCC（Digital Content Creation）
+
+
+
