@@ -54,39 +54,84 @@ tags:
 <audio id="audio" controls="" preload="none">
       <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/intuitive--_gb_1.mp3">
       </audio>
-	  <audio id="audio" controls="" preload="none">
-      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/intuitive--_gb_1.mp3">
+<audio id="audio" controls="" preload="none">
+     <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/notion--_gb_1.mp3">
       </audio>
 	  
 ## insanely
-
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/insanely--_gb_1.mp3">
+      </audio>
+	  
 ## mod
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/mod--_gb_1.mp3">
+      </audio>
+	  
 
 ## considerable
 
+	  
+
 ## blurry
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/blurry--_gb_1.mp3">
+      </audio>
 
 ## orc
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/orc--_gb_1.mp3">
+      </audio>
 
 ## arguably
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/arguably--_gb_1.mp3">
+      </audio>
 
 ## reserve
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/reserve--_gb_1.mp3">
+      </audio>
 
 ## gamut
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/gamut--_gb_1.mp3">
+      </audio>
 
 ## akin
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/akin--_gb_1.mp3">
+      </audio>
 
 ## craft
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/craft--_gb_1.mp3">
+      </audio>
 
 ## genre
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/genre--_gb_1.mp3">
+      </audio>
 
 ## optimal
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/optimal--_gb_1.mp3">
+      </audio>
 
 ## trade-off
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/trade--_gb_1.mp3">
+      </audio>
 
 ## corridor
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/corridor--_gb_1.mp3">
+      </audio>
 
 ## roaming
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/roaming--_gb_1.mp3">
+      </audio>
 
 ## confined
 
@@ -95,18 +140,39 @@ tags:
 ## forgiving
 
 ## fidelity
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/fidelity--_gb_1.mp3">
+      </audio>
 
 ## ubiquitous
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/ubiquitous--_gb_1.mp3">
+      </audio>
 
 ## dungeon crawl
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/dungeon--_gb_1.mp3">
+      </audio>
 
 ## devote
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/devote--_gb_1.mp3">
+      </audio>
 
 ## kart
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/kart--_gb_1.mp3">
+      </audio>
 
 ## cockpit
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/cockpit--_gb_1.mp3">
+      </audio>
 
 ## colaborate
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/intuitive--_gb_1.mp3">
+      </audio>
 
 ## indie
 
