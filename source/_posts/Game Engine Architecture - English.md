@@ -169,7 +169,7 @@ tags:
       <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/cockpit--_gb_1.mp3">
       </audio>
 
-## colaborate
+## collaborate
 <audio id="audio" controls="" preload="none">
       <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/colaborate--_gb_1.mp3">
       </audio>
