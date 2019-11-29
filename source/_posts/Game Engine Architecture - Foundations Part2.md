@@ -283,7 +283,9 @@ itself.
 > Photoshop
 。。。
 
->That said, tools must be relatively easy to use, and they absolutely must be reliable, if a game
-team is going to be able to develop a highly polished product in a timely
-manner
+>That said, tools must be relatively **easy to use**, and they absolutely must be reliable, if a game team is going to be able to develop a highly polished product in a timely manner.
+>工具的使用需要按项目所需来决定，关键在于好用，不一定要非常完美的工具。
+
+
+
 
