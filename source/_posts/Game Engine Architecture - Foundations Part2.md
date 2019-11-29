@@ -265,3 +265,12 @@ Kynogon
 some game-specific knowledge invariably seeps down through the gameplay
 foundations layer and sometimes even extends into the core of the engine
 itself.
+
+
+## (1.7) Tools and the asset pipeline
+
+游戏数据层的组成：
+如图：粗黑箭头， 表示源数据是怎样从工具中生成出
+		细线箭头，表示不同数据资源之间的引用关系
+![enter description here](/img/1574995793894.png)
+
