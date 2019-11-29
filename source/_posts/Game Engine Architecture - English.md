@@ -171,33 +171,75 @@ tags:
 
 ## colaborate
 <audio id="audio" controls="" preload="none">
-      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/intuitive--_gb_1.mp3">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/colaborate--_gb_1.mp3">
       </audio>
 
 ## indie
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/indie--_gb_1.mp3">
+      </audio>
 
 ## leverage
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/leverage--_gb_1.mp3">
+      </audio>
 
 ## conductive
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/conductive--_gb_1.mp3">
+      </audio>
 
 ## primitives
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/primitive--_gb_1.mp3">
+      </audio>
 
 ## terminology
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/terminology--_gb_1.mp3">
+      </audio>
 
 ## subdivision
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/subdivision--_gb_1.mp3">
+      </audio>
 
 ## subsume
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/subsume--_gb_1.mp3">
+      </audio>
 
 ## latter 
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/latter--_gb_1.mp3">
+      </audio>
 ## former
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/former--_gb_1.mp3">
+      </audio>
 
 ## palette of matrices
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/palette--_gb_1.mp3">
+      </audio>
 
 ## retrofit
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/retrofit--_gb_1.mp3">
+      </audio>
 
 ## trivial
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/trivial--_gb_1.mp3">
+      </audio>
 
 ## intimately
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/intimate--_gb_1.mp3">
+      </audio>
 
-## prevade
+## pervade
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/pervade--_gb_1.mp3">
+      </audio>
 This model can end up pervading the entire engine.
