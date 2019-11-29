@@ -287,5 +287,21 @@ itself.
 >工具的使用需要按项目所需来决定，关键在于好用，不一定要非常完美的工具。
 
 
+### The Asset Conditioning Pipeline
+
+往往DCC生成的文件并不能直接在游戏开发中使用，原因有下：
+1. DCC导出的数据，存在许多游戏开发不需要的，比如maya中会存储directed acyclic graph的场景结点，和复杂的联结的网络结构。
+
+2. DCC文件格式加载读取很慢，而且通常格式是各个DCC专属的
+
+>Once data has been exported from the DCC app, it often must be further
+processed before being sent to the game engine. And if a game studio is shipping its game on more than one platform, the intermediate files might be processed differently for each target platform. 
+DCC应用一般需要生成给游戏引擎用的文件。
+
+>The pipeline from DCC app to game engine is sometimes called the asset
+conditioning pipeline (ACP). Every game engine has this in some form.
+这种途径：从DCC应用到游戏引擎通常被称为: ACP
+
+
 
 
