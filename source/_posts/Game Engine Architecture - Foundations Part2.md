@@ -384,3 +384,18 @@ Every asset also carries with it a great deal of metadata. metadata with the fol
 • The animator’s choice of compression technique and level. (Some assets
 can be highly compressed without noticeably degrading their quality,
 while others require less or no compression in order to look right ingame.)
+
+### Some Approaches to Tool Architecture
+
+As an interesting and unique example, Unreal’s world editor and asset
+manager, UnrealEd, is built right into the runtime game engine.It permits the tools to
+have total access to the full range of data structures used by the engine and
+avoids a common problem of having to have two representations of every
+data structure—one for the runtime engine and one for the tools.
+>  运行时编辑和访问游戏所有数据为开发带来便利和加速
+
+![一些游戏的工具架构](/img/1575083811284.png)
+![一些运行时可编辑的架构](/img/1575083796324.png)
+
+
+
