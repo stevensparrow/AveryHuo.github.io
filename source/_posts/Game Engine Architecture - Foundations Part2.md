@@ -347,5 +347,11 @@ over time.
 
 > Mesh与skeleton通常由DCC导出在一个文件里，当然，当有多个mesh对应一个骨骼时，骨骼通常需要单独导出，另外动画文件一般也是单独导出。有些引擎会让这三者在一个大文件里。
 
+>An unoptimized skeletal animation is defined by a stream of 4 × 3 matrix
+samples, taken at a frequency of at least 30 frames per second, for each of the
+joints in a skeleton (of which there can be 500 or more for a realistic humanoid
+character).
+因此动画文件一般需要使用高强度的压缩方式来存储。
+
 
 
