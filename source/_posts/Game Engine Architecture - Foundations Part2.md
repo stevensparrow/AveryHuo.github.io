@@ -372,3 +372,14 @@ based on Quake technology.
 >* The Half-Life 2 Source engine provides a world editor called Hammer.
 >* UnrealEd is the Unreal Engine’s world editor. This powerful tool also
 serves as the asset manager for all data types that the engine can consume.
+
+### The Resource Database
+
+Every asset also carries with it a great deal of metadata. metadata with the following information:
+• A unique id that identifies the animation clip at runtime.
+• The name and directory path of the source Maya (.ma or .mb) file.
+• The frame range—on which frame the animation begins and ends.
+• Whether or not the animation is intended to loop.
+• The animator’s choice of compression technique and level. (Some assets
+can be highly compressed without noticeably degrading their quality,
+while others require less or no compression in order to look right ingame.)
