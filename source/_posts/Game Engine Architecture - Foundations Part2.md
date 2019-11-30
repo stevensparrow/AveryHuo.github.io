@@ -327,4 +327,13 @@ prototyping purposes;
 • cannot support articulated objects or animated characters.
 
 
+### Skeletal Animation Data
+
+A skeletal mesh is a special kind of mesh that is bound to a skeletal hierarchy for
+the purposes of articulated animation. 
+>Each vertex of a skeletal mesh contains a list of indices indicating to which
+joint(s) in the skeleton it is bound. A vertex usually also includes a set of joint
+weights, specifying the amount of influence each joint has on the vertex.
+>骨骼mesh，包含骨骼连接点信息，通常还会有点的权重和数量影响的数据
+
 
