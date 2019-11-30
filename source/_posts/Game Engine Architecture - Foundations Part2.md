@@ -398,7 +398,7 @@ data structure—one for the runtime engine and one for the tools.
 ![一些运行时可编辑的架构](/img/1575083796324.png)
 
 ####  Web-Based User Interfaces
-网页基础的页面显示。
+网页基础的页面显示。这里主要指工具。
 >At Naughty Dog, we use a number of web-based
 UIs. Naughty Dog’s localization tool serves as the front-end portal into our
 localization database. Tasker is the web-based interface used by all Naughty
