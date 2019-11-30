@@ -302,6 +302,29 @@ DCC应用一般需要生成给游戏引擎用的文件。
 conditioning pipeline (ACP). Every game engine has this in some form.
 这种途径：从DCC应用到游戏引擎通常被称为: ACP
 
+### 3D Model/Mesh Data
+
+>A mesh is a complex shape composed of triangles and vertices. A mesh typically has one or more materials applied to it in order to define
+visual surface properties
+> MESH：由三角面和点组成的复杂的形状
+
+> In this book, I will use the term “mesh” to refer to a single renderable shape,
+and “model” to refer to a composite object that may contain multiple meshes,
+plus animation data and other metadata for use by the game.
+
+>Brush Geometry
+>Brush geometry is defined as a collection of convex hulls, each of which is defined by multiple planes.Brushes are typically created and edited directly in the game world editor. This is essentially an “old school” approach to creating
+renderable geometry, but it is still used in some engines.
+> 笔刷型的图形，每个都由多个平面组成，通常是凹凸面的一种实现工具。
+> Pros:
+• fast and easy to create;
+• accessible to game designers—often used to “block out” a game level for
+prototyping purposes;
+• can serve both as collision volumes and as renderable geometry.
+>Cons:
+• low-resolution;
+• difficult to create complex shapes;
+• cannot support articulated objects or animated characters.
 
 
 
