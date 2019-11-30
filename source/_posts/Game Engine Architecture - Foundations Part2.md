@@ -367,8 +367,8 @@ as Houdini, permit film-quality effects to be authored
 
 The game world is where everything in a game engine comes together. To my
 knowledge, there are no commercially available game world editors
->Some variant of the Radiant game editor is used by most game engines
+>* Some variant of the Radiant game editor is used by most game engines
 based on Quake technology.
-• The Half-Life 2 Source engine provides a world editor called Hammer.
-• UnrealEd is the Unreal Engine’s world editor. This powerful tool also
+>* The Half-Life 2 Source engine provides a world editor called Hammer.
+>* UnrealEd is the Unreal Engine’s world editor. This powerful tool also
 serves as the asset manager for all data types that the engine can consume.
