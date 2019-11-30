@@ -336,4 +336,12 @@ joint(s) in the skeleton it is bound. A vertex usually also includes a set of jo
 weights, specifying the amount of influence each joint has on the vertex.
 >骨骼mesh，包含骨骼连接点信息，通常还会有点的权重和数量影响的数据
 
+>In order to render a skeletal mesh, the game engine requires three distinct
+kinds of data:
+>1. the mesh itself,
+>2. the skeletal hierarchy (joint names, parent-child relationships and the
+base pose the skeleton was in when it was originally bound to the mesh),
+and58 1. Introduction
+>3. one or more animation clips, which specify how the joints should move
+over time.
 
