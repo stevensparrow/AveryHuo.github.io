@@ -353,5 +353,22 @@ joints in a skeleton (of which there can be 500 or more for a realistic humanoid
 character).
 因此动画文件一般需要使用高强度的压缩方式来存储。
 
+### Audio Data
 
+Audio clips are usually exported from Sound Forge or some other audio production tool in a variety of formats and at a number of different data sampling rates.
 
+### Particle Systems Data
+
+Modern games make use of complex particle effects. These are authored by
+artists who specialize in the creation of visual effects. Third-party tools, such
+as Houdini, permit film-quality effects to be authored
+
+### The World Editor
+
+The game world is where everything in a game engine comes together. To my
+knowledge, there are no commercially available game world editors
+>Some variant of the Radiant game editor is used by most game engines
+based on Quake technology.
+• The Half-Life 2 Source engine provides a world editor called Hammer.
+• UnrealEd is the Unreal Engine’s world editor. This powerful tool also
+serves as the asset manager for all data types that the engine can consume.
