@@ -345,3 +345,7 @@ and58 1. Introduction
 >3. one or more animation clips, which specify how the joints should move
 over time.
 
+> Mesh与skeleton通常由DCC导出在一个文件里，当然，当有多个mesh对应一个骨骼时，骨骼通常需要单独导出，另外动画文件一般也是单独导出。有些引擎会让这三者在一个大文件里。
+
+
+
