@@ -302,7 +302,7 @@ DCC应用一般需要生成给游戏引擎用的文件。
 conditioning pipeline (ACP). Every game engine has this in some form.
 这种途径：从DCC应用到游戏引擎通常被称为: ACP
 
-### 3D Model/Mesh Data
+#### 3D Model/Mesh Data
 
 >A mesh is a complex shape composed of triangles and vertices. A mesh typically has one or more materials applied to it in order to define
 visual surface properties
@@ -327,7 +327,7 @@ prototyping purposes;
 • cannot support articulated objects or animated characters.
 
 
-### Skeletal Animation Data
+#### Skeletal Animation Data
 
 A skeletal mesh is a special kind of mesh that is bound to a skeletal hierarchy for
 the purposes of articulated animation. 
@@ -353,15 +353,16 @@ joints in a skeleton (of which there can be 500 or more for a realistic humanoid
 character).
 因此动画文件一般需要使用高强度的压缩方式来存储。
 
-### Audio Data
+#### Audio Data
 
 Audio clips are usually exported from Sound Forge or some other audio production tool in a variety of formats and at a number of different data sampling rates.
 
-### Particle Systems Data
+#### Particle Systems Data
 
 Modern games make use of complex particle effects. These are authored by
 artists who specialize in the creation of visual effects. Third-party tools, such
 as Houdini, permit film-quality effects to be authored
+
 
 ### The World Editor
 
