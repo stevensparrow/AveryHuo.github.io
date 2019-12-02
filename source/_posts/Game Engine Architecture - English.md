@@ -247,3 +247,12 @@ This model can end up pervading the entire engine.
 
 ## depict
 
+## prove
+
+## invaluable
+
+## endeavor
+>We’ll briefly review the basic concepts of object-oriented pro- gramming (OOP) and then delve into some advanced topics that should
+prove invaluable in any software engineering endeavor (and especially when
+creating games).
+
