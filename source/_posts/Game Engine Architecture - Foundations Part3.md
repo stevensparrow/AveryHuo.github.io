@@ -31,4 +31,4 @@ a class tree.
 ### Composition and Aggregation
 
 组合和聚合
-has-a, use-a
+has-a, uses-a
