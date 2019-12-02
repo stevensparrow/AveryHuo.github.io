@@ -257,3 +257,5 @@ prove invaluable in any software engineering endeavor (and especially when
 creating games).
 
 ## rusty
+
+## hollow triangular 
