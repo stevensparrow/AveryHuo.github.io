@@ -25,6 +25,10 @@ single-inheritance hierarchy. Such classes are sometimes called mix-in classes
 because they can be used to introduce new functionality at arbitrary points in
 a class tree. 
 
-
 ![Deadly diamond](./img/1575255814499.png)
 ![Mix-in class](/img/1575255482902.png)
+
+### Composition and Aggregation
+
+组合和聚合
+has-a, use-a
