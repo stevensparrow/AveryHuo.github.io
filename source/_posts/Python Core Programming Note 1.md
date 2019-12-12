@@ -9,8 +9,8 @@ tags:
 ---
 
 ## Regular Expression
-![常用表达式](./images/1570674939333.png)
-![续](./images/1570674953248.png)
+![常用表达式](/img/1570674939333.png)
+![续](/img/1570674953248.png)
 
 ## match() & search()
 
