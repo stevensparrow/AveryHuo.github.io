@@ -261,7 +261,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="34">
-<input type="hidden" id="yelog_site_word_count" value="24.2k">
+<input type="hidden" id="yelog_site_word_count" value="24.7k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -481,11 +481,11 @@
         </a>
         
         <a  class="Python "
-           href="/2019/12/12/天天生鲜项目实例P2/"
+           href="/2019/12/17/天天生鲜项目实例P2/"
            data-tag="Python,Note,Django,实例"
            data-author="" >
             <span class="post-title" title="天天生鲜项目实例P2">天天生鲜项目实例P2</span>
-            <span class="post-date" title="2019-12-12 11:07:10">2019/12/12</span>
+            <span class="post-date" title="2019-12-17 11:48:36">2019/12/17</span>
         </a>
         
         <a  class="Python "
@@ -666,12 +666,12 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-12 11:07:10'>2019-12-12 11:07</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-17 11:48:36'>2019-12-17 11:48</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:274</span>
+        <span>字数:712</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -767,6 +767,76 @@ class IndexView(View):
         # 使用模板
         return render(request, &#39;index.html&#39;, context)
 </code></pre>
+<p><strong>使用celery生成Index的static文件</strong></p>
+<p>新建任务：</p>
+<blockquote>
+<p>注意：<br>1.from goods.models 要在django.setup之后<br>2.worker端的fdfs_client需要升级到Python3的exception写法。<br>3.worker端的fdfs_client考虑先将utils的import注释</p>
+</blockquote>
+<pre><code class="python">@app.task
+def generate_static_index_html():
+    # get all goods type
+    types = GoodsType.objects.all()
+
+    # 获取首页轮播商品信息
+    goods_banners = IndexGoodsBanner.objects.all().order_by(&#39;index&#39;)
+
+    # 获取促销信息
+    promotion_banners = IndexPromotionBanner.objects.all().order_by(&#39;index&#39;)
+
+    # 获取分类商品展示信息
+    for type in types:
+        # 获取图片类的banner展示信息
+        image_banners = IndexTypeGoodsBanner.objects.filter(type=type, display_type=1)
+        # 获取文字类的banner展示信息
+        title_banners = IndexTypeGoodsBanner.objects.filter(type=type, display_type=0)
+
+        # 添加属性
+        type.image_banners = image_banners
+        type.title_banners = title_banners
+
+    # 组织上下文
+    context = {
+        &#39;types&#39;: types,
+        &#39;goods_banners&#39;: goods_banners,
+        &#39;promotion_banners&#39;: promotion_banners,
+    }
+
+    # 使用模板
+    # 1.加载模板文件
+    temp = loader.get_template(&#39;static_index.html&#39;)
+    # 2.渲染
+    static_index_html = temp.render(context)
+
+    # 生成首页的静态文件
+    save_path = os.path.join(settings.BASE_DIR, &#39;static/index.html&#39;)
+    with open(save_path, &#39;w&#39;) as f:
+        f.write(static_index_html)</code></pre>
+<p><img src="/img/1576549292557.png" alt="流程"></p>
+<p><strong>在admin的委托返回调用中，执行celery</strong></p>
+<p>在goods的admin.py中监听一下admin后台的save和delete操作，然后执行celery刷新内容返回。</p>
+<p><img src="/img/1576551196217.png" alt="执行流程"></p>
+<p> 在admin.py中加入</p>
+<pre><code class="python">class BaseModelAdmin(admin.ModelAdmin):
+    def save_model(self, request, obj, form, change):
+        # 先执行数据库操作
+        super().save_model(request, obj, form, change)
+
+        # 发送celery事件
+        from celery_tasks.tasks import generate_static_index_html
+        generate_static_index_html.delay()
+
+    def delete_model(self, request, obj):
+        # 先执行数据库操作
+        super().delete_model(request, obj)
+
+        # 发送celery事件
+        from celery_tasks.tasks import generate_static_index_html
+        generate_static_index_html.delay()</code></pre>
+<blockquote>
+<p>遇到问题： 第一次修改后，celery生成的页面太快了，还没等save-model结束，因此查出来的数据是旧的。下一次又可以刷出最新数据<br>方案：在celery里加入一个等待，保证model已经处理完数据库了，这样celery任务可以查到最新的结果。</p>
+</blockquote>
+<p><strong>将index页面的两种获取方式调度起来</strong></p>
+<p><img src="/img/1576554364999.png" alt="静态页面的调度"></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1024037035@qq.com </span>
@@ -781,11 +851,11 @@ class IndexView(View):
 
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>天天生鲜项目实例P2</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">274</span></p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">712</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Avery Huo">Avery Huo</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-12-12, 11:07:10</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-12, 11:07:10</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/12/天天生鲜项目实例P2/" title="天天生鲜项目实例P2">https://AveryHuo.github.io/2019/12/12/天天生鲜项目实例P2/</a>
+    <p><span class="copy-title">发布时间:</span>2019-12-17, 11:48:36</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-17, 11:48:36</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/17/天天生鲜项目实例P2/" title="天天生鲜项目实例P2">https://AveryHuo.github.io/2019/12/17/天天生鲜项目实例P2/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
