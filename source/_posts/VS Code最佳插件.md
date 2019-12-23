@@ -35,3 +35,7 @@ tags:
 ### CSS Pick
 
 >自动从HTML中选择出CSS
+
+### HTML CSS Support
+
+> 自动提示CSS及补全HTML
