@@ -29,4 +29,5 @@ tags:
 ### REST Client
 
 > 测试后台接口
-![示例](/img/1577068738684.png)
+
+![GET与POST测试](/img/1577068784300.png)
