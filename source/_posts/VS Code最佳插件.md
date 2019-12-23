@@ -45,3 +45,4 @@ tags:
 > 根据当前的CSS，自动生成CSS文件。
 
 ### Live Server
+> 显示内置浏览器窗口
