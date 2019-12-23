@@ -41,3 +41,5 @@ tags:
 > 自动提示CSS及补全HTML
 
 ### Live sass Compiler
+
+> 根据当前的CSS，自动生成CSS文件。
