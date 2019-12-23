@@ -31,3 +31,7 @@ tags:
 > 测试后台接口
 
 ![GET与POST测试](/img/1577068784300.png)
+
+### CSS Pick
+
+>自动从HTML中选择出CSS
