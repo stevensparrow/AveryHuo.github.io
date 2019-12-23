@@ -22,7 +22,6 @@ tags:
 
 ## 2. 功能类插件
 
-
-
+### Auto Rename Tag
 
 
