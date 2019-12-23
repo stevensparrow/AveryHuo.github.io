@@ -5,19 +5,24 @@ categories:
 tags: 
 - Note
 ---
+## 1.视图类的插件
 
-## Material Theme && Material Theme Icon
+### Material Theme && Material Theme Icon
 
 
-## Prettier - code formatter
+### Prettier - code formatter
 
-## Bracket Pair Colorizer 2
+### Bracket Pair Colorizer 2
 
 > 显示bracket的section.
 
-## indent-rainbow
+### indent-rainbow
 
 >彩虹式的显示缩进
+
+## 2. 功能类插件
+
+
 
 
 
