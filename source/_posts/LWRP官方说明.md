@@ -17,6 +17,7 @@ tags:
 
 >原先shader使用的cginc引入，改成Include官方的hlsl文件
 >材质变量需要CBuffer块套好，这样才能使用LWRP的batcher
-
+>可使用LWRP独有的宏声明采样器
 
 ![LWRP的shader](/img/1578469710690.png)
+![单独申明的采样器](/img/1578469737158.png)
