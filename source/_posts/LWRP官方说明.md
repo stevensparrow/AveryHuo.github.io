@@ -10,3 +10,5 @@ tags:
 
 ![build-in流程](/img/1578468743022.png)
 
+## Command Buffer说明
+![Command Buffer说明](/img/1578468782581.png)
