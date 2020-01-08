@@ -32,3 +32,4 @@ tags:
 
 ## SRP Batcher
 ![SRP Batcher](/img/1578470502893.png)
+![不支持情况](/img/1578470577651.png)
