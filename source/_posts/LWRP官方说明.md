@@ -12,3 +12,11 @@ tags:
 
 ## Command Buffer说明
 ![Command Buffer说明](/img/1578468782581.png)
+
+## 语法说明
+
+>原先shader使用的cginc引入，改成Include官方的hlsl文件
+>材质变量需要CBuffer块套好，这样才能使用LWRP的batcher
+
+
+![LWRP的shader](/img/1578469710690.png)
