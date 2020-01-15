@@ -24,3 +24,9 @@ tags:
 > Fast Mode:editor 模式
 > Virtual Mode: 本地，虚拟服务端环境
 > Packed: 纯打包的环境
+
+## 迁移指南
+
+![从自己框架移植](/img/1579081015473.png)
+
+![从Resources移植](./img/1579081031342.png)
