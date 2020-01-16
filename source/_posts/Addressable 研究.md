@@ -37,3 +37,9 @@ Packed Mode：需要额外步骤打包AssetBundle，运行时资源也是在Asse
 1.每调用一次Addressables.Instantiate方法，会将该Asset的引用计数加一；而Addressables.ReleaseInstance会减少这个引用计数。如果你使用Object.Destroy释放了它，则原始资源会一直存在于内存中。所以应当避免使用Object.Destroy方法了~
 2.非使用 Addresables.Instantiate 方法实例化出来的对象，如使用Unity自带的Instantiate实例出来的对象，也可以使用Addressables.ReleaseInstance来释放，这并不会对计数有影响，只是单纯的释放。
 3.任何通过Addresables.Instantiate 方法实例化出来的对象，在切换场景的时候，如果没有标记为 DontDestroyOnLoad ,则会被自动调用Addressables.ReleaseInstance来释放掉。
+
+
+## 总结：
+
+> 指定本地和服务端资源：设置为Build RemoteCatalog时，才为服务端资源，即不跟随包打出。
+> 
