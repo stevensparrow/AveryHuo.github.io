@@ -21,9 +21,10 @@ tags:
 
 ![模式](/img/1579078890824.png)
 
-> Fast Mode:editor 模式
-> Virtual Mode: 本地，虚拟服务端环境
-> Packed: 纯打包的环境
+Data Builders：在Addressable窗口菜单中能够选择的在编辑器下的数据构建模式，一般来说附带的这几个已经可以满足大部分要求，你也可以新建适合自己项目的模式。
+Fast Mode：加载资源不通过资源包，直接使用AssetDatabase加载。
+Virtual Mode：会形成AssetBundle布局，但是不需要打包，加载资源通过ResourcesManager加载，并且可以在RM Profiler中查看包体布局。
+Packed Mode：需要额外步骤打包AssetBundle，运行时资源也是在AssetBundle中进行加载。
 
 ## 迁移指南
 
