@@ -42,4 +42,8 @@ Packed Mode：需要额外步骤打包AssetBundle，运行时资源也是在Asse
 ## 总结：
 
 > 指定本地和服务端资源：设置为Build RemoteCatalog时，才为服务端资源，即不跟随包打出。
-> 
+> build出的包带资源，但此资源要热更怎么办？
+ 1. 先将资源标注成Local build的路径形式（一定要成对），这样打出的包就会被带到手机包里
+ 2. Content Update Restriction一定要选上Cannot Change Post Release， 指明此资源是固定资源在外里的
+ 3. 出过一个版本后，使用Tools下的Check for Content Update Restriction，找出变更的固定资源到Content Update的分组中
+ 4. 使用Build -> Update Previous build 更新之前的版本即可完成来更新。
