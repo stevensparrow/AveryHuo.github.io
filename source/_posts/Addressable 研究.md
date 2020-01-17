@@ -48,3 +48,4 @@ Packed Mode：需要额外步骤打包AssetBundle，运行时资源也是在Asse
 >  3. 出过一个版本后，使用Tools下的Check for Content Update Restriction，找出变更的固定资源到Content Update的分组中
 >  4. 使用Build -> Update Previous build 更新之前的版本即可完成来更新。
 > * 那么如果已经指明此为remote资源的话，如果更新呢？ 那很简单了，直接使用Build -> Update previous build就行了。因为路径已经指明到远端，此时打开会自动更新成最新的。
+> * 注意这两个不要轻易改动。Asset Provider与AssetBundle Provider, 改动后一定要重新生成资源（Build-> New Build）。 一般使用Assets from Bundles Provider 与Assetbundle Provider。待深入研究才知道区别。
