@@ -67,4 +67,8 @@ Addressable是Unity最新推出且正式发布的资源管理系统，内含引�
 > GameObject configGo = await Game.Scene.GetComponent<ResourceLoaderComponent>().LoadPrefab($"{buffCfg}",ResourceLabel.buff);
  >```
 
-
+1.4 LoadPrefab(assetName, label, scene, parent = null)
+* 以asset和label的形式加载资源并实例化,同1.3，不过传入一个框架里的Scene对象用于存储此对象的缓存池
+```csharp
+ ETTask<GameObject> LoadPrefab(string assetName, ResourceLabel label = ResourceLabel.none, bool dontDestroy = false, Transform parent = null)
+```
