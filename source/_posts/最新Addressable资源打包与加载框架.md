@@ -3,7 +3,6 @@ title: 最新Addressable资源打包与加载框架
 categories:
 - 公司
 tags: 
-- Addressable
 ---
 
 #### 一、Addressable介绍
