@@ -56,4 +56,15 @@ Addressable是Unity最新推出且正式发布的资源管理系统，内含引�
 >``` 
  
 1.3 LoadPrefab(assetName, label, dontDestroy = false, parent = null)
+* 以asset和label的形式加载资源并实例化, 如果dontDestroy为true，则为全局资源，不随场景删除
+```csharp
+ ETTask<GameObject> LoadPrefab(string assetName, ResourceLabel label = ResourceLabel.none, bool dontDestroy = false, Transform parent = null)
+```
+
+>使用示例：
+>```csharp
+>//(配置Buff的预制)
+> GameObject configGo = await Game.Scene.GetComponent<ResourceLoaderComponent>().LoadPrefab($"{buffCfg}",ResourceLabel.buff);
+ >```
+
 
