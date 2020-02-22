@@ -19,7 +19,7 @@ tags:
 
 #### 二、控制脚本
 1.创建： 在Hotfix 建立文件夹，名字以功能命名，建立Compoents文件夹，新建控制脚本，命名以   UI#Name#Window的方式，如LoginUI，脚本名应为UILoginWindow.cs
-2.类的规则以 UIClickWindow.cs为参考，
+2.类的规则以 UIClickWindow.cs为参考。
 3.必须有的构造，以指明加载需要的预制名
 ```csharp
 public UIClickWindow():base()
@@ -59,4 +59,6 @@ public virtual void Update()
 ```
 
 
+#### 三、配入UI表
 
+找到资源表 fgame_ui_config.elsx 按表内的说明配置UI的参数
