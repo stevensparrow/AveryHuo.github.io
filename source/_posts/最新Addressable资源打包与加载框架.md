@@ -11,7 +11,23 @@ tags:
 Addressable是Unity最新推出且正式发布的资源管理系统，内含引用计数管理，快速资源热更，资源性能查看器，资源冗余工具等等，据官方的说法，这就像当初AssetBundle取代Resources一样，Addressable就是为了取代直接使用AssetBundle而生。
 
 #### 二、Addressable下载更新
+> 内容均在ResDownloadComponent中。
 
+##### 1. 打包资源
+手动： 使用 Build ->New Build -> Default Build Script。 也可用打包脚本，`AddressableAssetSettings.CleanPlayerContent();
+        AddressableAssetSettings.BuildPlayerContent();`
+生成的资源将在Library->com.unityengine.addressable下
+> 建议本机初次导项目后，先执行一次打包资源，再使用Use Existing Build的Play Mode Script方式，以bundle加载运行，方便测试。
+
+##### 2. 更新资源
+* 在发完包的情况下，在打包的机器上的Unity，选择Tools -> Check for Content Update Restriction 来获取变更的资源
+* 将这些资源应用出来一个新的Group， 再统一挂上updates的标签！
+* 选择Build -> Update a previous build 选择android的bin文件，等待完成，将会生成新的updates开头的更新文件，将这些文件上传即可更新。
+> 更新完后之后，如果再需要出包，请将资源归还到原group中，以防下次混乱了。
+
+#### 3.打包工具使用
+本地打包，可使用Tools -> 打包工具，勾选 是否打包工程，将导出一个gradle的工程，否则将先打出工程后接着打出apk。
+打包机不可使用此工具打包，由CI控制。
 
 #### 三、Addressable内置接口介绍
 
