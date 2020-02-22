@@ -78,17 +78,23 @@ Addressable是Unity最新推出且正式发布的资源管理系统，内含引�
  ##### 2. 缓存类接口
  
  2.1 ReleaseFromCache(string key, bool isGlobal, Type resType)
-* 将某个key直接从【AssetCachePoolComponent】对象池子里释放，isGlobal决定了使用全局缓存池还是场景缓存池
+* 将某个key直接从【AssetCachePool】对象池子里释放，isGlobal决定了使用全局缓存池还是场景缓存池
 
 2.2 LoadFromCache<T>(string key, bool isGlobal) where T: UnityEngine.Object
- * 从【ResGameObjectPoolComponent】缓存池加载一个类型T的对象，isGlobal决定了使用全局缓存池还是场景缓存池
+ * 从【ResGameObjectPool】缓存池加载一个类型T的对象，isGlobal决定了使用全局缓存池还是场景缓存池
 
 2.3 RecyclePrefab(string poolKey,GameObject o, bool isGlobal = false)
-* 将对象o回收进某个key对应的【ResGameObjectPoolComponent】缓存池，isGlobal决定了使用全局缓存池还是场景缓存池
+* 将对象o回收进某个key对应的【ResGameObjectPool】缓存池，isGlobal决定了使用全局缓存池还是场景缓存池
 
 2.4 RecyclePrefab(string assetName, ResourceLabel resLabel, GameObject o, bool isGlobal = false)
-* 将对象o回收进某个资源名及label对应的【ResGameObjectPoolComponent】缓存池，isGlobal决定了使用全局缓存池还是场景缓存池
+* 将对象o回收进某个资源名及label对应的【ResGameObjectPool】缓存池，isGlobal决定了使用全局缓存池还是场景缓存池
 
 2.5 ReleasePrefab(string assetName, ResourceLabel resLabel, bool isGlobal = false)
-*  将对应assetName和resLabel的实例对象从【ResGameObjectPoolComponent】池子中释放（清除），isGlobal决定了使用全局缓存池还是场景缓存池
+*  将对应assetName和resLabel的实例对象从【ResGameObjectPool】池子中释放（清除），isGlobal决定了使用全局缓存池还是场景缓存池
 
+
+##### 3. addressable接口
+
+3.1 ReleaseHandle(AsyncOperationHandle handle)
+* 释放一个addressable的异步句柄 
+* 
