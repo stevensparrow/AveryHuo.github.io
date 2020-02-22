@@ -27,44 +27,36 @@ public UIClickWindow():base()
 	mPrefabName = #Name#;//TODO
 }
 ```
-5.必须重写有如下函数：
+4.必须重写有如下函数：
 ```csharp
 /// <summary>
 /// 界面资源加载完成
 /// </summary>
 protected virtual void InitUI()
-{
-	//如有需要AddBehaviour
-}
 
 /// <summary>
 /// 界面显示
 /// </summary>
 protected virtual void ResetUI()
-{
-}
 
 /// <summary>
 /// 界面关闭
 /// </summary>
 protected virtual void HideUI()
-{
-}
 
 /// <summary>
 /// 界面资源销毁
 /// </summary>
 protected virtual void UnInitUI()
-{
-	IsLoadDone = false;
-}
+```
 
+5. 可选的函数
+```csharp
 /// <summary>
 /// 界面Update更新
 /// </summary>
 public virtual void Update()
-{
-
-}
 ```
+
+
 
