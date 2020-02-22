@@ -57,8 +57,81 @@ protected virtual void UnInitUI()
 /// </summary>
 public virtual void Update()
 ```
+#### 三、UI系统的对象池
+1.命名池子模板对象的key于头部，如：
+```csharp
+private const string TaskItemTemplate = "UICarnivalWindow_TaskItemTemplate";
+private const string NormalCardItemTemplate = "UICarnivalWindow_NormalCardItemTemplate";
+private const string HighlightCardItemTemplate = "UICarnivalWindow_HighlightCardItemTemplate";
+```
+2.添加对象为模板，让底层创建一个以模板为基的池子
+```csharp
+AddTemplate(NormalCardItemTemplate, normalItemObj);
+AddTemplate(HighlightCardItemTemplate, highlightItemObj);
+AddTemplate(TaskItemTemplate, taskItemObj);
+```
 
+3.获取： 仅获取一个对象
+
+```csharp
+GetTemplateInstance(string name, Transform parent, bool isActive)
+```
+传入1.定义的模板名字，父对象，是否隐藏就决定获取出来后是否立即隐藏。
+
+4.定义对应模板对象的控制类
+* 必须继承UIBaseComponent类
+* 继承覆写函数：
+```csharp
+///初始化函数，每次设置预制时都将会自动调用一次
+public virtual void InitObjs()
+
+//销毁时调用
+public virtual void Dispose() 
+```
+5.获取: 获取一个带对象控制器的类对象（将同时生成一个对象放在类的Root）
+
+```csharp
+GetTemplateComponent<T>(string name, Transform parent, bool isActive) where T : UIBaseComponent
+```
+传入1.定义的模板名字，父对象，是否隐藏就决定获取出来后是否立即隐藏。
+
+6.回收
+* 回收预制：`FreeTemplateInstance(NormalCardItemTemplate);`
+* 回收预制管理类，不会回收预制：`FreeTemplateComponent(NormalCardItemTemplate);`
+所以一般两个需要成对调用，如：
+```csharp
+ FreeTemplateInstance(NormalCardItemTemplate);
+FreeTemplateComponent(NormalCardItemTemplate);
+FreeTemplateInstance(HighlightCardItemTemplate);
+FreeTemplateComponent(HighlightCardItemTemplate);
+FreeTemplateInstance(TaskItemTemplate);
+FreeTemplateComponent(TaskItemTemplate);
+```
+
+７.销毁池子
+* 使用UIBaseWindow自带函数销毁单个模板的池子
+```csharp
+/// 移除模板
+void RemoveTemplate(string name)
+```
+Window在销毁时将调用DestroyAllTemplates() 先回收所有的预制，再清空池子。**因此一般不需要在逻辑里手动移除池子.**
 
 #### 三、配入UI表
 
-找到资源表 fgame_ui_config.elsx 按表内的说明配置UI的参数
+1.找到资源表 fgame_ui_config.elsx 按表内的说明配置UI的参数
+2.导表
+
+#### 四、窗口的显示或关闭
+
+* 使用UIManager提供的函数显示或关闭一个Window，如：
+
+```csharp
+//同步函数显示一个Window
+UIManager.Instance.ShowWindowSync("UIClickWindow");
+//异步函数
+await UIManager.Instance.ShowWindow("UIClickWindow");
+
+//关闭窗口
+UIManager.Instance.CloseWindow("UIClickWindow");
+
+```
