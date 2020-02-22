@@ -24,7 +24,7 @@ tags:
 ```csharp
 public UIClickWindow():base()
 {
-	mPrefabName = "ClickEffectUI";
+	mPrefabName = #Name#;//TODO
 }
 ```
 5.必须重写有如下函数：
