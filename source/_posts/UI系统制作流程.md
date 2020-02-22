@@ -30,22 +30,22 @@ public UIClickWindow():base()
 4.必须重写有如下函数：
 ```csharp
 /// <summary>
-/// 界面资源加载完成
+/// 界面资源加载完成， 一会用于获取各预制及组件，每次新建UI预制将调用
 /// </summary>
 protected virtual void InitUI()
 
 /// <summary>
-/// 界面显示
+/// 界面显示，一般处理每次显示需要即时更新的逻辑，每次setActive将调用
 /// </summary>
 protected virtual void ResetUI()
 
 /// <summary>
-/// 界面关闭
+/// 界面关闭，隐藏时调用的，一般与ResetUI放置成对的逻辑
 /// </summary>
 protected virtual void HideUI()
 
 /// <summary>
-/// 界面资源销毁
+/// 界面资源销毁，在预制将销毁时调用与InitUI成对。
 /// </summary>
 protected virtual void UnInitUI()
 ```
