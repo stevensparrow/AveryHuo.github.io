@@ -42,7 +42,7 @@ Addressable是Unity最新推出且正式发布的资源管理系统，内含引�
 > ResourceLoaderComponent.Instance.ReleaseFromCache("GrayMaterial",false,typeof(Material));
 >```
 
-1.2 LoadAssetsAsyncHandle()
+1.2 LoadAssetsAsyncHandle(assetName, label = ResourceLabel.none, saveToCache = false, isGlobal = false)
 * 以asset的形式加载资源不实例化，只返回相应此资源数组句柄. 区别于1.1接口，此接口可配置多一个label的参数指明资源标签。
 **注意：如果保存到缓存中，则是一个数组，LoadFromCache时必须使用一个数组返回。**
 ```csharp
@@ -55,4 +55,5 @@ Addressable是Unity最新推出且正式发布的资源管理系统，内含引�
 >var userIcon = handle.Result[0];
 >``` 
  
+1.3 LoadPrefab(assetName, label, dontDestroy = false, parent = null)
 
