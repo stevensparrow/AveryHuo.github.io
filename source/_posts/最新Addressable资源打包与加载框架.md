@@ -44,7 +44,7 @@ Addressable是Unity最新推出且正式发布的资源管理系统，内含引�
 
 1.2 LoadAssetsAsyncHandle()
 * 以asset的形式加载资源不实例化，只返回相应此资源数组句柄. 区别于1.1接口，此接口可配置多一个label的参数指明资源标签。
-** 注意：如果保存到缓存中，则是一个数组，LoadFromCache时必须使用一个数组返回。 **
+**注意：如果保存到缓存中，则是一个数组，LoadFromCache时必须使用一个数组返回。**
 ```csharp
  ETTask<AsyncOperationHandle<IList<T>>> LoadAssetsAsyncHandle<T>(string assetName, ResourceLabel label = ResourceLabel.none, bool saveToCache = false, bool isGlobal = false)
 ```
