@@ -1,0 +1,18 @@
+<p>/**
+* 简单用法使用示例：(加载配置文件的Config预制)
+* //获取加载完的句柄
+* var configGOHandle = await ResourceLoaderComponent.Instance.LoadAssetAsyncHandle<GameObject>(&quot;Config&quot;);
+* //从Handle中获取结果
+* configGO = configGOHandle.Result;
+* //当时即销毁此Handle
+* ResourceLoaderComponent.Instance.ReleaseHandle(configGOHandle);
+*
+* //深度使用示例：
+* //预加载需要用的材质，设值记录到缓存, 且非全局资源
+* await ResourceLoaderComponent.Instance.LoadAssetAsyncHandle<Material>(&quot;GrayMaterial&quot;, ResourceLabel.none,true,false);
+* //从缓存加载对应的材质
+* Material MAT_GARY = ResourceLoaderComponent.Instance.LoadFromCache<Material>(&quot;GrayMaterial&quot;, false);
+* //从缓存删除对应的材质
+* ResourceLoaderComponent.Instance.ReleaseFromCache(&quot;GrayMaterial&quot;,false,typeof(Material));
+*
+**/</p>
