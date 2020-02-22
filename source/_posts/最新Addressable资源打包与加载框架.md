@@ -49,7 +49,10 @@ Addressable是Unity最新推出且正式发布的资源管理系统，内含引�
  ETTask<AsyncOperationHandle<IList<T>>> LoadAssetsAsyncHandle<T>(string assetName, ResourceLabel label = ResourceLabel.none, bool saveToCache = false, bool isGlobal = false)
 ```
 
-
- 
+>使用示例：
+>```csharp
+>var handle = await Game.Scene.GetComponent<ResourceLoaderComponent>().LoadAssetsAsyncHandle<GameObject>("HeadResSmallSize",ResourceLabel.ui);
+>var userIcon = handle.Result[0];
+>``` 
  
 
