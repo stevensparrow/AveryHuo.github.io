@@ -49,3 +49,5 @@ Packed Mode：需要额外步骤打包AssetBundle，运行时资源也是在Asse
 >  4. 使用Build -> Update Previous build 更新之前的版本即可完成来更新。
 > * 那么如果已经指明此为remote资源的话，如果更新呢？ 那很简单了，直接使用Build -> Update previous build就行了。因为路径已经指明到远端，此时打开会自动更新成最新的。
 > * 注意这两个不要轻易改动。Asset Provider与AssetBundle Provider, 改动后一定要重新生成资源（Build-> New Build）。 一般使用Assets from Bundles Provider 与Assetbundle Provider。待深入研究才知道区别。
+
+> Addressable的比对是使用hash,json两个文件及新的更新文件决定的，所以更新下来的文件必须放在一个地方，这个地方可以是服务端的地址，也可以是本地，这个可以在更新后用代码实现。
