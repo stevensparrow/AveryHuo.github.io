@@ -60,14 +60,27 @@ http://aras-p.info/blog/2018/03/28/Daily-Pathtracer-Part-3-CSharp-Unity-Burst/
 
 3.Burst编译器
 
-原理
+3.1 原理
 * 以开源LLVM为基础的后端编译技术
 * 原理的5个步骤：源代码》前端》优化器》后端 》机器码
 * LLVM定义抽象语言IR，前端负责将源代码（C#）翻译成IR，优化器优化，后端将IR生成目标语言（机器码）。
 * IR的存在，所以LLVM支持众多语言
 * LLVM对C#的GC支持不好，目前burst只支持值类型。
 
-内存别名
+3.2 内存别名
 * 之前的编译器无法知道运行时两个指针指向同一个地址的情况，编译出的代码必然要占用额外寄存器多次拷贝，无法优化。
 * NativeArray的API禁止限制了内存别名，不存在两个指针指向同一地址的情况。所以它更加高效。
-* 
+
+
+3.3 Unity.Mathmatcis数学库
+* 更高效的数据库，提供矢量类型float3,float4. 直接映射到SIMD寄存器
+* Math类中也提供了直接映射 到硬件SIMD寄存器。
+* SIMD可以一次性计算完毕。
+* 旧Math类是不支持SIMD寄存器的。
+*
+
+3.4 启动BurstCompile
+添加标签即可：
+
+![enter description here](/img/1584499995727.png)
+
