@@ -80,7 +80,7 @@ http://aras-p.info/blog/2018/03/28/Daily-Pathtracer-Part-3-CSharp-Unity-Burst/
 *
 
 3.4 启动BurstCompile
-添加标签即可：
-
+* 添加标签即可：
+* Struct必须继承IJob
 ![enter description here](/img/1584499995727.png)
 
