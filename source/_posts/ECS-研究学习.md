@@ -163,3 +163,5 @@ https://www.xuanyusong.com/archives/4683
 * BRG内部会调自动Graphics.DrawMeshInstanced且没有1023的数量限制。
 
 ![enter description here](/img/1584502302892.png)
+
+![enter description here](./img/1584502316800.png)
