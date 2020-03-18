@@ -161,3 +161,5 @@ https://www.xuanyusong.com/archives/4683
 * BRG强制需要镜头裁剪的JOB方法，自己实现
 * BRG需要提供每个渲染物体的包围盒区载用于job中判断是否不在视野。
 * BRG内部会调自动Graphics.DrawMeshInstanced且没有1023的数量限制。
+
+![enter description here](/img/1584502302892.png)
