@@ -128,3 +128,23 @@ A system is a data tranform.
 
 ![enter description here](/img/1584500759081.png)
 
+4.6 World世界
+Worlds ars for isolation
+* 包含EntityManager, ComponentSystem, ArcheTypes.
+* ECS默认提供了一个World，也可自己创建
+* 世界之间不互通，可以同时并行
+
+### 5. ECS + Job + Burst让性能飞起来
+
+5.1 JobComponentSystem 
+
+* 使用继承于ComponentSystem的JobComponentSystem
+* JobComponentSystem的Update效率更高，复杂运算将由Job完成
+*  标识ReadOnly让Job的数据并行
+*  如果Job数据变更，此Job就不能与其他访问此数据的JOB并行
+
+5.2 JCS与CS混合
+
+* JCS中的实体有任何 结构数据变更修改都带来硬性同步点
+* JCS必须保证后面执行的CS拿到的数据准确性，实体增删改都会带来同步点，导致线程卡顿。
+
