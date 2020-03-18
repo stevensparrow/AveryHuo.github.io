@@ -148,3 +148,8 @@ Worlds ars for isolation
 * JCS中的实体有任何 结构数据变更修改都带来硬性同步点
 * JCS必须保证后面执行的CS拿到的数据准确性，实体增删改都会带来同步点，导致线程卡顿。
 
+
+5.3 ECS渲染
+
+* ECS自身不包含渲染，但游戏中的渲染与实体是紧密绑定的
+* 原理大致是ECS在Job中先准备渲染的数据，通过GPU Instancing一次渲染，中间不产生gameobject.
