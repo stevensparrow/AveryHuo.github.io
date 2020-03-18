@@ -165,3 +165,11 @@ https://www.xuanyusong.com/archives/4683
 ![enter description here](/img/1584502302892.png)
 
 ![enter description here](/img/1584502316800.png)
+
+
+### 6.实践
+
+6.1  装Entites, Burst, Hybrid Render, Dots Editor
+
+>报错了？The type or namespace name 'CompilerServices' does not exist in the namespace 'Unity.Burst' (are you missing an assembly reference?)
+>选择安装preview下的最高版本，如burst会默认安装非preview的版本
