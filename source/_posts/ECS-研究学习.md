@@ -236,3 +236,25 @@ public class Spawner : MonoBehaviour
 ```
 
 > 注意： RenderBounds 如果不加，会导致不显示。。
+
+6.2 实例2 自定义system
+
+```csharp
+using Unity.Entities;
+using Unity.Mathematics;
+using Unity.Transforms;
+
+public class MoveSystem : ComponentSystem
+{
+    protected override void OnUpdate()
+    {
+        Entities.ForEach((ref Translation trans, ref MoveBySpeedData moveSpeed, ref WaveData waveData) =>
+        {
+            float zPos = waveData.amplitude * math.sin((float)Time.ElapsedTime * moveSpeed.Value
+                + trans.Value.x * waveData.xOffset + trans.Value.y * waveData.yOffset);
+            trans.Value = new float3(trans.Value.x, trans.Value.y, zPos);
+        });
+    }
+}
+
+```
