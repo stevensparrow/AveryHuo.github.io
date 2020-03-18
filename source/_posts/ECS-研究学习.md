@@ -113,4 +113,7 @@ A entity is a key.
 
 ![enter description here](/img/1584500576606.png)
 
+4.5 System系统
 
+* 只与Component关联，不关心entity
+* 在Update中可以统一更新自己关心的组件
