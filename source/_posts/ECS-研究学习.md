@@ -55,3 +55,5 @@ http://aras-p.info/blog/2018/03/28/Daily-Pathtracer-Part-3-CSharp-Unity-Burst/
 > 使用ReadOnly标记的数据，只读后让Job不为其加锁。
 > 默认的数据是Read/Write的，这样在改变数据后，Job一定会等它。
 > 加解锁unity已经做好了，不需要自己实现逻辑。
+> 
+![enter description here](/img/1584499275880.png)
