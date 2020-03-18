@@ -117,3 +117,5 @@ A entity is a key.
 
 * 只与Component关联，不关心entity
 * 在Update中可以统一更新自己关心的组件
+
+![enter description here](/img/1584500759081.png)
