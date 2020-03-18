@@ -4,12 +4,12 @@ categories:
 - Unity
 ---
 
-### What is DOTS?
+### 1. What is DOTS?
 
 DATA-ORIENTED TECH STACK
 多线程式数据导向型技术堆栈
 
-1. 核心-高性能
+ 核心-高性能
 充分利用多核处理器，多线程，让游戏运行速度更快。
 组成部分如下：
 * C# 任务系统， Job System，用于高效运行多线程代码
@@ -18,7 +18,7 @@ DATA-ORIENTED TECH STACK
 
 Job System 与ECS是独立的，两者结合实际才能发挥最大优势。
 
-2. Job System
+### 2. Job System
 
 * 在Job System之前，unity 仅在内部支持多线程，外部都必须运行在主线程上
 * C#虽然支持多线程，但在unity中只处理数据，如网络消息，下载等等，且在线程中调用Unity的API是不行的。
@@ -58,7 +58,7 @@ http://aras-p.info/blog/2018/03/28/Daily-Pathtracer-Part-3-CSharp-Unity-Burst/
 > 
 ![enter description here](/img/1584499275880.png)
 
-3.Burst编译器
+### 3.Burst编译器
 
 3.1 原理
 * 以开源LLVM为基础的后端编译技术
@@ -83,4 +83,25 @@ http://aras-p.info/blog/2018/03/28/Daily-Pathtracer-Part-3-CSharp-Unity-Burst/
 * 添加标签即可：
 * Struct必须继承IJob
 ![enter description here](/img/1584499995727.png)
+
+
+### 4. ECS
+
+4.1 组合模式：
+需要什么功能加什么组件
+
+4.2 传统脚本的问题：
+* 耦合度过高
+* 引用类型
+* 挂脚本过重，产生 0.01s耗时
+* 热更支持不好
+
+4.3 Entity
+A entity is a key.
+* 非常轻量级，一个ID用Int保存。
+* 根据需要绑定组件
+* 对Cache友好，将相同的组件排列在一起，遍历更快。
+
+
+4.4 Component
 
