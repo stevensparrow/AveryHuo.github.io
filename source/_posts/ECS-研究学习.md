@@ -57,3 +57,12 @@ http://aras-p.info/blog/2018/03/28/Daily-Pathtracer-Part-3-CSharp-Unity-Burst/
 > 加解锁unity已经做好了，不需要自己实现逻辑。
 > 
 ![enter description here](/img/1584499275880.png)
+
+3.Burst编译器
+
+原理
+* 以开源LLVM为基础的后端编译技术
+* 原理的5个步骤：源代码》前端》优化器》后端 》机器码
+* LLVM定义抽象语言IR，前端负责将源代码（C#）翻译成IR，优化器优化，后端将IR生成目标语言（机器码）。
+* IR的存在，所以LLVM支持众多语言
+* LLVM对C#的GC支持不好，目前burst只支持值类型。
