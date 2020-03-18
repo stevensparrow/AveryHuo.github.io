@@ -102,9 +102,15 @@ A entity is a key.
 * 根据需要绑定组件
 * 对Cache友好，将相同的组件排列在一起，遍历更快。
 
-
 4.4 Component 组件
-
+数据层，只有数据
 * 实现IcomponentData接口的结构体，不能写方法，没有任何行为
 * 注意使用新的数学库代替一些变量。
+
+> ArcheType原型
+> 组件命中率高得益于Archetype
+> unity规定每个archetype为16K，不够再开，保证连续性
+
+![enter description here](/img/1584500576606.png)
+
 
