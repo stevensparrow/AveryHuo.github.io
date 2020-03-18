@@ -239,6 +239,8 @@ public class Spawner : MonoBehaviour
 
 6.2 实例2 自定义system
 
+System定义后，将自动执行update函数。
+
 ```csharp
 using Unity.Entities;
 using Unity.Mathematics;
