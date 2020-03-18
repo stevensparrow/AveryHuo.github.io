@@ -69,4 +69,5 @@ http://aras-p.info/blog/2018/03/28/Daily-Pathtracer-Part-3-CSharp-Unity-Burst/
 
 内存别名
 * 之前的编译器无法知道运行时两个指针指向同一个地址的情况，编译出的代码必然要占用额外寄存器多次拷贝，无法优化。
-* NativeArray的API禁止限制了内存别名，
+* NativeArray的API禁止限制了内存别名，不存在两个指针指向同一地址的情况。所以它更加高效。
+* 
