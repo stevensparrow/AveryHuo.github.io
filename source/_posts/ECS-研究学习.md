@@ -81,7 +81,7 @@ http://aras-p.info/blog/2018/03/28/Daily-Pathtracer-Part-3-CSharp-Unity-Burst/
 
 3.4 启动BurstCompile
 * 添加标签即可：
-* Struct必须继承IJob
+* Struct必须实现IJob接口
 ![enter description here](/img/1584499995727.png)
 
 
@@ -96,12 +96,15 @@ http://aras-p.info/blog/2018/03/28/Daily-Pathtracer-Part-3-CSharp-Unity-Burst/
 * 挂脚本过重，产生 0.01s耗时
 * 热更支持不好
 
-4.3 Entity
+4.3 Entity  实体
 A entity is a key.
 * 非常轻量级，一个ID用Int保存。
 * 根据需要绑定组件
 * 对Cache友好，将相同的组件排列在一起，遍历更快。
 
 
-4.4 Component
+4.4 Component 组件
+
+* 实现IcomponentData接口的结构体，不能写方法，没有任何行为
+* 注意使用新的数学库代替一些变量。
 
