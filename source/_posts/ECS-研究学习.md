@@ -153,4 +153,4 @@ Worlds ars for isolation
 
 * ECS自身不包含渲染，但游戏中的渲染与实体是紧密绑定的
 * 原理大致是ECS在Job中先准备渲染的数据，通过GPU Instancing一次渲染，中间不产生gameobject.
-* GPU instancing不带裁剪，且需要每帧在Update中调用刷新。建议使用CommondBuffer来渲染Gpu instancing.
+* GPU instancing不带裁剪，且需要每帧在Update中调用刷新。建议使用CommandBuffer来渲染Gpu instancing，如果在有变化时再刷新。
