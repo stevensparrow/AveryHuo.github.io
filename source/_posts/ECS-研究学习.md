@@ -66,3 +66,7 @@ http://aras-p.info/blog/2018/03/28/Daily-Pathtracer-Part-3-CSharp-Unity-Burst/
 * LLVM定义抽象语言IR，前端负责将源代码（C#）翻译成IR，优化器优化，后端将IR生成目标语言（机器码）。
 * IR的存在，所以LLVM支持众多语言
 * LLVM对C#的GC支持不好，目前burst只支持值类型。
+
+内存别名
+* 之前的编译器无法知道运行时两个指针指向同一个地址的情况，编译出的代码必然要占用额外寄存器多次拷贝，无法优化。
+* NativeArray的API禁止限制了内存别名，
