@@ -31,7 +31,7 @@ Job System 与ECS是独立的，两者结合实际才能发挥最大优势。
 
 介绍：
 * IL2Cpp虽然将IL转成C++，但实际还是模拟了.NET的垃圾回收，效率并非等同C++
-* 使用NativeArray<T>代替T[]，数据类型包括了值类型和其他类型指针
+* 使用NativeArray代替T[]，数据类型包括了值类型和其他类型指针
 * NativeArray可以在C#层分配 C++中的对象，主动释放而不进行C#的垃圾回收。
 
 Burst性能对比：
@@ -47,5 +47,11 @@ http://aras-p.info/blog/2018/03/28/Daily-Pathtracer-Part-3-CSharp-Unity-Burst/
 * 数据类型只能是值类型和其他类型的指针
 * 不能使用引用类型，如T[]数组就不能在job中使用，应用HPC#的NativeArray代替
 
+![enter description here](/img/1584498872491.png)
 
-
+> IJob与IJobParallelFor
+> IJob是一个一个的开线程任务，顺序执行的，所以正确性有保证
+> 如果想让线程真正并行，则应使用JobParallelFor。这样并行后的数据就不会有前后依赖关系。
+> 使用ReadOnly标记的数据，只读后让Job不为其加锁。
+> 默认的数据是Read/Write的，这样在改变数据后，Job一定会等它。
+> 加解锁unity已经做好了，不需要自己实现逻辑。
