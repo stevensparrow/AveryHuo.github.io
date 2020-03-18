@@ -164,4 +164,4 @@ https://www.xuanyusong.com/archives/4683
 
 ![enter description here](/img/1584502302892.png)
 
-![enter description here](./img/1584502316800.png)
+![enter description here](/img/1584502316800.png)
