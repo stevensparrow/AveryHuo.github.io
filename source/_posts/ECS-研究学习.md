@@ -118,7 +118,8 @@ A entity is a key.
 > 典型的例子：场景中很多相同mesh和材质的物体。
 > 必须实现IEquatable接口！
 
-![enter description here](./img/1584501076960.png)
+![共享组件](/img/1584501076960.png)
+![enter description here](/img/1584501108996.png)
 
 4.5 System系统
 A system is a data tranform.
