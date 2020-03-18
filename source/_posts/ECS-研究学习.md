@@ -173,3 +173,66 @@ https://www.xuanyusong.com/archives/4683
 
 >报错了？The type or namespace name 'CompilerServices' does not exist in the namespace 'Unity.Burst' (are you missing an assembly reference?)
 >选择安装preview下的最高版本，如burst会默认安装非preview的版本
+
+6.2 实例1 创建entity
+
+```csharp
+using UnityEngine;
+using Unity.Transforms;
+using Unity.Entities;
+using Unity.Rendering;
+using Unity.Mathematics;
+public class Spawner : MonoBehaviour
+{
+    [SerializeField] private Mesh unitMesh;
+    [SerializeField] private Material unitMat;
+
+    private EntityManager unitManager;
+    private EntityArchetype entityArcheType;
+    // Start is called before the first frame update
+    void Start()
+    {
+        InitEntityManager();
+        CreateArcheType();
+        CreateEntity();
+    }
+
+    void InitEntityManager()
+    {
+        unitManager = World.DefaultGameObjectInjectionWorld.EntityManager;
+    }
+
+    void CreateEntity()
+    {
+        Entity hero = unitManager.CreateEntity(entityArcheType);
+        unitManager.AddComponentData(hero, new Translation(){
+            Value = new float3(1, 1, 1)
+        });
+
+        unitManager.AddComponentData(hero, new Scale()
+        {
+            Value = 1.0f
+        });
+
+        unitManager.AddSharedComponentData(hero, new RenderMesh()
+        {
+            mesh = unitMesh,
+            material = unitMat
+        });
+        
+    }
+
+    void CreateArcheType()
+    {
+        var translationType = ComponentType.ReadWrite<Translation>();
+        var scaleType = ComponentType.ReadWrite<Scale>();
+        var rotationType = ComponentType.ReadWrite<Rotation>();
+        var renderType = ComponentType.ReadWrite<RenderMesh>();
+        var renderBoundsType = ComponentType.ReadWrite<RenderBounds>();
+        var localToWorldType = ComponentType.ReadWrite<LocalToWorld>();
+        entityArcheType = unitManager.CreateArchetype(translationType, scaleType, rotationType, renderType, renderBoundsType, localToWorldType);
+    }
+}
+```
+
+> 注意： RenderBounds 如果不加，会导致不显示。。
