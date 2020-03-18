@@ -113,9 +113,15 @@ A entity is a key.
 
 ![enter description here](/img/1584500576606.png)
 
-4.5 System系统
+> 共享组件
+> 区别IcomponentData于，IsharedComponentData共享组件。是为了避免结构体存储的数据完全相同，从而占用多份内存
+> 典型的例子：场景中很多相同mesh和材质的物体。
+> 必须实现IEquatable接口！
 
+4.5 System系统
+A system is a data tranform.
 * 只与Component关联，不关心entity
 * 在Update中可以统一更新自己关心的组件
 
 ![enter description here](/img/1584500759081.png)
+
