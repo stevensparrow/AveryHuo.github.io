@@ -6,40 +6,18 @@
   <meta name="keywords" content=" Python , Note , Django , Conda ">
   <meta name="description" content="Conda 常用操作 | Avery">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="一、图 相关定义   表示方式 Graph： G（V，E） 由顶点的有穷非空集合和顶点之间的边组成。 线性表的数据元素叫元素，树中叫结点，图中叫顶点Vertex   无向边：两个随机顶点之间的边无方向，用无序偶(Vi,Vj)或(Vj,Vi)表示 有向边：顶点之间的边是有向的，用有序偶表示：&amp;lt;Vi,Vj&amp;gt;表示，与&amp;lt;Vj,Vi&amp;gt;是不同的。 又称为弧。 有向边总是&amp;lt;弧尾，弧">
+<meta name="description" content="一、Addressable介绍Addressable是Unity最新推出且正式发布的资源管理系统，内含引用计数管理，快速资源热更，资源性能查看器，资源冗余工具等等，据官方的说法，这就像当初AssetBundle取代Resources一样，Addressable就是为了取代直接使用AssetBundle而生。 二、Addressable下载更新 内容均在ResDownloadComponent中。">
 <meta name="keywords" content="Learn+Study">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数据结构-笔记1">
-<meta property="og:url" content="https://AveryHuo.github.io/2020/04/02/数据结构-笔记1/index.html">
+<meta property="og:title" content="最新Addressable资源打包与加载框架">
+<meta property="og:url" content="https://AveryHuo.github.io/2020/03/18/最新Addressable资源打包与加载框架/index.html">
 <meta property="og:site_name" content="Avery">
-<meta property="og:description" content="一、图 相关定义   表示方式 Graph： G（V，E） 由顶点的有穷非空集合和顶点之间的边组成。 线性表的数据元素叫元素，树中叫结点，图中叫顶点Vertex   无向边：两个随机顶点之间的边无方向，用无序偶(Vi,Vj)或(Vj,Vi)表示 有向边：顶点之间的边是有向的，用有序偶表示：&amp;lt;Vi,Vj&amp;gt;表示，与&amp;lt;Vj,Vi&amp;gt;是不同的。 又称为弧。 有向边总是&amp;lt;弧尾，弧">
+<meta property="og:description" content="一、Addressable介绍Addressable是Unity最新推出且正式发布的资源管理系统，内含引用计数管理，快速资源热更，资源性能查看器，资源冗余工具等等，据官方的说法，这就像当初AssetBundle取代Resources一样，Addressable就是为了取代直接使用AssetBundle而生。 二、Addressable下载更新 内容均在ResDownloadComponent中。">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585708632739.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585709533268.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585710256442.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585710628207.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585710777047.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585711969955.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585711991004.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585712085363.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585712479371.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585713033340.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585712995976.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585714606930.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585714787406.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585714939207.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585722630933.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585722584708.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585742087660.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585742120344.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585742361670.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585742844977.png">
-<meta property="og:image" content="https://averyhuo.github.io/img/1585743156869.png">
-<meta property="og:updated_time" content="2020-04-02T08:36:00.830Z">
+<meta property="og:updated_time" content="2020-03-18T03:35:00.925Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数据结构-笔记1">
-<meta name="twitter:description" content="一、图 相关定义   表示方式 Graph： G（V，E） 由顶点的有穷非空集合和顶点之间的边组成。 线性表的数据元素叫元素，树中叫结点，图中叫顶点Vertex   无向边：两个随机顶点之间的边无方向，用无序偶(Vi,Vj)或(Vj,Vi)表示 有向边：顶点之间的边是有向的，用有序偶表示：&amp;lt;Vi,Vj&amp;gt;表示，与&amp;lt;Vj,Vi&amp;gt;是不同的。 又称为弧。 有向边总是&amp;lt;弧尾，弧">
-<meta name="twitter:image" content="https://averyhuo.github.io/img/1585708632739.png">
+<meta name="twitter:title" content="最新Addressable资源打包与加载框架">
+<meta name="twitter:description" content="一、Addressable介绍Addressable是Unity最新推出且正式发布的资源管理系统，内含引用计数管理，快速资源热更，资源性能查看器，资源冗余工具等等，据官方的说法，这就像当初AssetBundle取代Resources一样，Addressable就是为了取代直接使用AssetBundle而生。 二、Addressable下载更新 内容均在ResDownloadComponent中。">
 
 
 <link rel="icon" href="/img/my.jpg">
@@ -230,7 +208,7 @@
 
 
 <ul>
-    <li><div class="all active">全部文章<small>(47)</small></div></li>
+    <li><div class="all active">全部文章<small>(48)</small></div></li>
     
         
             
@@ -298,7 +276,7 @@
     
         
             
-            <li><div data-rel="数据结构">数据结构<small>(1)</small></div>
+            <li><div data-rel="数据结构">数据结构<small>(2)</small></div>
                 
             </li>
             
@@ -322,7 +300,7 @@
     </div>
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="47">
+<input type="hidden" id="yelog_site_posts_number" value="48">
 <input type="hidden" id="yelog_site_word_count" value="39.4k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -779,11 +757,11 @@
         </a>
         
         <a  class="数据结构 "
-           href="/2020/04/02/数据结构-笔记1/"
+           href="/2020/04/03/数据结构-笔记1/"
            data-tag=""
            data-author="" >
             <span class="post-title" title="数据结构-笔记1">数据结构-笔记1</span>
-            <span class="post-date" title="2020-04-02 16:36:00">2020/04/02</span>
+            <span class="post-date" title="2020-04-03 18:22:55">2020/04/03</span>
         </a>
         
         <a  class="数学 "
@@ -792,6 +770,14 @@
            data-author="" >
             <span class="post-title" title="线性代数-笔记1">线性代数-笔记1</span>
             <span class="post-date" title="2020-04-01 10:53:14">2020/04/01</span>
+        </a>
+        
+        <a  class="数据结构 "
+           href="/2020/04/03/排序算法/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="排序算法">排序算法</span>
+            <span class="post-date" title="2020-04-03 18:22:55">2020/04/03</span>
         </a>
         
     </nav>
