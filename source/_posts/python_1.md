@@ -193,3 +193,8 @@ for s in input_str:
 print(output)
 ```
 + [mac]ctrl+cmd+space>> to show emojis
+
++ ### 函数
++ 注释：
++ 三个引号的注释，意为文档注释，使用help函数时显示
++ 无返回函数，默认返回为None
