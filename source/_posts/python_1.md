@@ -40,6 +40,18 @@ print("%0.2f"%b)
 print("%-10.3f"%b)
 ```
 
++ 自动转义的函数
++ "greater".__len__() 等价于len("greater")
++ "a"+"b" 等价于"a".__add__("b")
++ "e" in "great" 等价于 "great".__contains__("e")
+
+
++ ==获取对象可用函数列表==
++ dir(str) 
+
++ 获取函数文档
++ help(str.upper)
+
 + 以独立程序加载的python文件
 + 使用“main”标记为模块name的名字
 ```python
