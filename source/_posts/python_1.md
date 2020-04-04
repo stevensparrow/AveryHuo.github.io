@@ -8,6 +8,14 @@ tags:
 ---
 # Python Note 1
 
++ 逻辑运算符的使用：
++ and or not 会将几个值作为False ：0 None "" []
+
++ 多变量赋值
+```python
+minValue, maxValue = 10 , 20
+```
+
 + ### while结构
  注： """  多行string
  
