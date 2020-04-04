@@ -204,7 +204,10 @@ print(output)
 
 + 函数之中也可嵌套函数！
 
-+ 高阶函数：filter函数与map函数
++ 高阶函数：filter函数与map函数，reduce函数
++ map将第二个列表中的值放到第一个参数的函数中逐个执行。最后把结果映射成map出来
++ filter将把第二个列表中的值逐个放到第一个参数的函数中进行运算得出 True的放到一个结果里。
++ reduce函数是每一个参数是一个带双参的函数，第一个参为下一项，第二参为上一次的结果。
 ```python
 def is_no_zero(v):
     if v != 0:
@@ -214,5 +217,6 @@ def is_no_zero(v):
 oldlist = [5,0,3,5,0,8,6,4,0,3,9,1]
 
 newlist = list(filter(is_no_zero, oldlist))
+newlist = list(map(str, oldlist))
 print(newlist)
 ```
