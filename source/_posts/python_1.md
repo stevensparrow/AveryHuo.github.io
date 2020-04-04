@@ -16,6 +16,25 @@ tags:
 minValue, maxValue = 10 , 20
 ```
 
++ 命名规范
++ 变量名，函数名： 小驼峰或下划线小写的形式
++ 常量：全大写
++ 类名：大驼峰
+
++ 代码换行：
++ 当一行写不完时，使用 \ 将代码延续
+```python
+product  = max(100,200) \
+					*30
+```
+
++ 以独立程序加载的python文件
++ 使用“main”标记为模块name的名字
+```python
+if __name__ == "__main__"
+	main()
+```
+
 + ### while结构
  注： """  多行string
  
