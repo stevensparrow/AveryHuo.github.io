@@ -203,3 +203,16 @@ print(output)
 + 输出的小技巧：使用“ ” * 递归序号的形式生成缩进的日志，这样就有一个层级的输出结构了。
 
 + 函数之中也可嵌套函数！
+
++ 高阶函数：filter函数与map函数
+```python
+def is_no_zero(v):
+    if v != 0:
+        return True
+    return False
+
+oldlist = [5,0,3,5,0,8,6,4,0,3,9,1]
+
+newlist = list(filter(is_no_zero, oldlist))
+print(newlist)
+```
