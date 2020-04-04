@@ -219,4 +219,14 @@ oldlist = [5,0,3,5,0,8,6,4,0,3,9,1]
 newlist = list(filter(is_no_zero, oldlist))
 newlist = list(map(str, oldlist))
 print(newlist)
+
+import  functools
+oldlist = [5,0,3,5,0,8,6,4,0,3,9,1]
+result = functools.reduce(lambda x,y:x+y, oldlist)
+print(result)
+```
+
++ lambda做内联函数
+```python
+# lambda x,y:x+y
 ```
