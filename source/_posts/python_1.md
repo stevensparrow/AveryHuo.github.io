@@ -31,7 +31,7 @@ product  = max(100,200) \
 + 输出：
 + 以% 输出
 + 字符宽度指定："%3d" 右对齐数字， “%-3d”左对齐数字。换成s则为字符串。 
-+ 小数精度指定：%<field_width>.<precision>f  
++ 小数精度指定：%<field_width>.<precision>f  ，注意字符宽度将包含.
 ```python
 a = 10
 print("%d"%a)
