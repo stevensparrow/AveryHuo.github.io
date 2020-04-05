@@ -230,3 +230,30 @@ print(result)
 ```python
 # lambda x,y:x+y
 ```
+
+
++ 使用pickle 读写对象
+```python
+
+mylist = [5, 6, "abc", 7]
+f = open("myfile.txt", "w")
+
+for n in mylist:
+    print("写入数据：", n)
+    pickle.dump(n, f)
+    # f.write(n)
+f.close()
+
+mylist = list()
+f = open("myfile.txt", "r")
+while True:
+    try:
+        item = pickle.load(f)
+        # item = f.read()
+        mylist.append(item)
+    except EOFError:
+        f.close()
+        break
+print("读出的结果：", mylist)
+
+```
