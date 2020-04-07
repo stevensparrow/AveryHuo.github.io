@@ -293,3 +293,7 @@ print("读出的结果：", mylist)
 print(13%7)#6
 print(3.5%1.5)#0.5
 ```
+
++ ### 使用Profiler探测
++ 安装Profiler库
++ 度量算法性能。
