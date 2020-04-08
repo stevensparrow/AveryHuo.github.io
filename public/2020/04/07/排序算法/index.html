@@ -301,7 +301,7 @@
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="48">
-<input type="hidden" id="yelog_site_word_count" value="40.9k">
+<input type="hidden" id="yelog_site_word_count" value="41k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -513,7 +513,7 @@
            data-tag="Python,Note"
            data-author="" >
             <span class="post-title" title="Python Note 1">Python Note 1</span>
-            <span class="post-date" title="2020-04-07 10:21:29">2020/04/07</span>
+            <span class="post-date" title="2020-04-07 20:18:10">2020/04/07</span>
         </a>
         
         <a  class="Python "
@@ -773,11 +773,11 @@
         </a>
         
         <a  class="数据结构 "
-           href="/2020/04/03/排序算法/"
+           href="/2020/04/07/排序算法/"
            data-tag=""
            data-author="" >
             <span class="post-title" title="排序算法">排序算法</span>
-            <span class="post-date" title="2020-04-03 18:22:55">2020/04/03</span>
+            <span class="post-date" title="2020-04-07 20:18:10">2020/04/07</span>
         </a>
         
     </nav>
@@ -810,12 +810,12 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-04-03 18:22:55'>2020-04-03 18:22</time>
+        创建时间:<time class="date" title='更新时间: 2020-04-07 20:18:10'>2020-04-07 20:18</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:71</span>
+        <span>字数:150</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -834,7 +834,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#冒泡排序"><span class="toc-text">冒泡排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#插入排序"><span class="toc-text">插入排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#归并排序"><span class="toc-text">归并排序</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#冒泡排序"><span class="toc-text">冒泡排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#插入排序"><span class="toc-text">插入排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#归并排序"><span class="toc-text">归并排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#快速排序"><span class="toc-text">快速排序</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -867,6 +867,24 @@
 <ul>
 <li>特点：同样是稳定的</li>
 </ul>
+<h4 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h4><ul>
+<li>基本思路实现：选取左点，左右两端分别往中间走，注意要用“等于”的条件。</li>
+</ul>
+<p><img src="/img/1586247034757.png" alt="基本的快排的Partition函数实现"></p>
+<ul>
+<li>优化1： 选择点的优化：</li>
+</ul>
+<p><img src="/img/1586247286704.png" alt="选点优化的快排Partition函数"></p>
+<ul>
+<li>优化2： 改交换为赋值：</li>
+</ul>
+<p><img src="/img/1586247445746.png" alt="交换换赋值的优化的快排Partition函数"></p>
+<ul>
+<li><p>优化3： 设定小个数的数组使用插入排序来完成</p>
+</li>
+<li><p>优化4： 使用伪递归：<br><img src="/img/1586248831375.png" alt="伪递归优化快排"></p>
+</li>
+</ul>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1024037035@qq.com </span>
@@ -881,11 +899,11 @@
 
 <div class="article_copyright">
     <p><span class="copy-title">文章标题:</span>排序算法</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">71</span></p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">150</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Avery Huo">Avery Huo</a></p>
-    <p><span class="copy-title">发布时间:</span>2020-04-03, 18:22:55</p>
-    <p><span class="copy-title">最后更新:</span>2020-04-03, 18:22:55</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/04/03/排序算法/" title="排序算法">https://AveryHuo.github.io/2020/04/03/排序算法/</a>
+    <p><span class="copy-title">发布时间:</span>2020-04-07, 20:18:10</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-07, 20:18:10</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/04/07/排序算法/" title="排序算法">https://AveryHuo.github.io/2020/04/07/排序算法/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
