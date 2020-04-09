@@ -151,3 +151,7 @@ for p in path.glob("*.py"):
 
 ```
 
+### 使用type直接拿到类句柄
+
++ 以type取得的值为句柄创建一个新的对象
++ result = type(self)(self.a)
