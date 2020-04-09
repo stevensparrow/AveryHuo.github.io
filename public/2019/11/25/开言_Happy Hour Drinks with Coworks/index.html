@@ -48,7 +48,7 @@
 </head>
 <div style="display: none">
   <input class="theme_disqus_on" value="true">
-  <input class="theme_preload_comment" value="false">
+  <input class="theme_preload_comment" value="true">
   <input class="theme_blog_path" value>
 </div>
 
@@ -854,6 +854,17 @@
         </span>
         
         
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
     </div>
     
     <div class="toc-ref">
@@ -916,6 +927,31 @@
 </div>
 
 
+
+    <section id="comments" class="disqus">
+    <style> aside.comment-bar { margin: auto 30px; }</style>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function(){
+            this.page.url = 'https://AveryHuo.github.io/2019/11/25/开言_Happy Hour Drinks with Coworks/';
+            this.page.identifier = '2019/11/25/开言_Happy Hour Drinks with Coworks/';
+        };
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = '//.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        }
+    </script>
+    
+    <script> loadComment(); </script>
+
+
+</section>
+
+<!-- Add comment count-->
+<span class="disqus-comment-count" style="display: none" data-disqus-identifier="2019/11/25/开言_Happy Hour Drinks with Coworks/"></span>
+<span class="disqus-comment-count" style="display: none" data-disqus-url="https://AveryHuo.github.io/2019/11/25/开言_Happy Hour Drinks with Coworks/"></span>
 
 
 
