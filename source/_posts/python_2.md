@@ -69,3 +69,8 @@ except ValueError:
 
 + ### Comments
 + User comment to explain why and how, not what!
+
++ ### UML 复习
++ 线->空心菱形：表示聚合关系
++ 实心箭头<-实线：表示父子类关系
++ 实心箭头<-虚线：表示接口实现关系
