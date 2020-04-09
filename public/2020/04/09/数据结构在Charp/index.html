@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>天天生鲜项目实例P1 | Avery</title>
-  <meta name="keywords" content=" Python , Note , Django , 实例 ">
-  <meta name="description" content="天天生鲜项目实例P1 | Avery">
+  <title>数据结构在C# | Avery</title>
+  <meta name="keywords" content>
+  <meta name="description" content="数据结构在C# | Avery">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="这是关于我，有空再加吧">
 <meta name="keywords" content="Learn+Study">
@@ -816,9 +816,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-天天生鲜项目实例" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-数据结构在Charp" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">天天生鲜项目实例P1</h1>
+        <h1 class="article-title">数据结构在C#</h1>
     
     <div class="article-meta">
         
@@ -826,32 +826,20 @@
         
         <span class="book">
             
-                <a  data-rel="Python">Python</a>
+                <a  data-rel="Unity">Unity</a>
             
         </span>
         
         
-        <span class="tag">
-            
-            <a class="color2">Python</a>
-            
-            <a class="color5">Note</a>
-            
-            <a class="color2">Django</a>
-            
-            <a class="color3">实例</a>
-            
-        </span>
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2020-04-09 17:31:59'>2020-04-09 17:31</time>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-12 11:07:10'>2019-12-12 11:07</time>
-        
-    </div>
-    <div class="article-meta">
-        
-        <span>字数:3.1k</span>
+        <span>字数:516</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -870,7 +858,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#相关背景概念"><span class="toc-text">相关背景概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据库设计"><span class="toc-text">数据库设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目搭建"><span class="toc-text">项目搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#13-可能出现的问题"><span class="toc-text">13.  可能出现的问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#User模块-注册"><span class="toc-text">User模块 - 注册</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#User-模块-用户中心"><span class="toc-text">User 模块 - 用户中心</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分布式FastDFS文件系统"><span class="toc-text">分布式FastDFS文件系统</span></a></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -886,497 +874,31 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="相关背景概念"><a href="#相关背景概念" class="headerlink" title="相关背景概念"></a>相关背景概念</h2><blockquote>
-<p>B2B, O2O, B2C, C2C..</p>
-</blockquote>
-<h2 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h2><p><img src="/img/1573441070020.png" alt="enter description here"></p>
-<blockquote>
-<p>对数据库进行授权<br><img src="/img/1573442010455.png" alt="enter description here"></p>
-</blockquote>
-<blockquote>
-<p>使用后台管理<br><img src="/img/1573442404015.png" alt="enter description here"></p>
-</blockquote>
-<h2 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h2><p><strong>1.一个模块对应一个APP</strong><br><strong>2.将所有app归类到一个apps文件夹</strong><br><strong>3.[可选]  设置一个系统路径，这样就不用注册APP时添加前缀文件夹</strong></p>
-<pre><code class="python">sys.path.insert(0, os.path.join(BASE_DIR, &#39;apps&#39;))</code></pre>
-<p><strong>4.添加templates包和static包</strong></p>
-<blockquote>
-<p>TEMPLATES_DIR = os.path.join(BASE_DIR, ‘templates’)<br>TEMPLATES = [<br>    {<br>        ‘BACKEND’: ‘django.template.backends.django.DjangoTemplates’,<br>        ‘DIRS’: [TEMPLATES_DIR],<br>        …<br>STATICFILES_DIRS = [os.path.join(BASE_DIR, ‘static’)]</p>
-</blockquote>
-<p><strong>5.添加templates和static路径到setting</strong></p>
-<p><strong>6.配置数据库为Mysql</strong></p>
-<blockquote>
-<p>  ‘ENGINE’: ‘django.db.backends.mysql’,<br>        ‘NAME’: ‘dailyfresh’,<br>        ‘USER’: ‘root’,<br>        ‘PASSWORD’:’bk102435’,<br>        ‘HOST’:’39.97.170.176’,<br>        ‘PORT’:3306,</p>
-</blockquote>
-<p><strong>7.设置语言</strong></p>
-<pre><code class="python">LANGUAGE_CODE = &#39;zh-hans&#39;
-TIME_ZONE = &#39;Asia/Shanghai&#39;</code></pre>
-<p><strong>8.配置项目总的urls</strong><br><strong>9.为各应用创建urls</strong></p>
-<p><strong>10.数据层准备，创建db包，创建basemodel.py</strong></p>
-<p><strong>11.[可选]创建各models 或 链接现有数据库</strong></p>
-<blockquote>
-<p>Inpectdb 也可针对某张表：<br>python manage.py inspectdb TableName &gt; output.py<br>链接： <a href="https://www.jianshu.com/p/037bd7e20a7a">https://www.jianshu.com/p/037bd7e20a7a</a></p>
-</blockquote>
-<p><strong>12.指定django认证系统的模型</strong><br>这样superuser的模型表就被指定到自己的user表</p>
-<blockquote>
-<p>settings.py中加入<br>AUTH_USER_MODEL = ‘user.User’</p>
-</blockquote>
-<h3 id="13-可能出现的问题"><a href="#13-可能出现的问题" class="headerlink" title="13.  可能出现的问题"></a>13.  可能出现的问题</h3><p>不确定是不是使用pymysql导致的，这里会有两个问题</p>
+        <p>数组Array：顺序存储结构<br>        优点：按位置索引很快，修改效率高。<br>        缺点：需声明存放类型，且只能存放相同类型，必须指定长度（过长浪费，过短溢出），插入与删除很慢（排除特殊情况）。</p>
+<p>数组ArrayList：顺序存储结构，解决了Array的缺点，由源码得知，默认容量为4，容量自增2倍。<br>        不过由于容量是类成员，自增机制会引发线程安全问题，所以ArrayList不是线程安全的。<br>        优点：无需指定长度，无需声明存放类型，可存放不同类型元素，底层是object,顺序存储结构常有优点这里都有。<br>        缺点：由于底层元素是object，当为值类型时，存在装箱/拆箱操作，效率降低，且可能会有非类型安全问题。顺序存储结构常有缺点这里都有。</p>
+<p>数组List：顺序存储结构，综合Array和ArrayList的优点，所以List也不是线程安全的。<br>        优点：无需指定长度，长度自增。需声明存放类型，内部用Array实现，保证了类型安全。<br>        缺点：顺序存储结构常有缺点都有。<br>    所以现在基本上不使用Array和ArrayList，而是使用List。</p>
+<p>双向链表LinkList：链式存储结构,非线程安全，可自己加锁实现线程安全。<br>        优点：插入，删除效率高，只需修改指针域的前驱节点和后继节点即可进行插入删除。<br>        缺点：无法基于位置索引，必须从头结点依次遍历。</p>
+<p>队列Queue：顺序存储结构，先进先出集合。由官方文档得知，非线程安全，但是其有线程安全的的队列实现为ConcurrentQueue<T>。<br>        默认容量为32，容量自增为4(.net framework 4.8)，其他版本可能会有变化。</p>
+<p>栈Stack：顺序存储结构，后进先出集合，默认容量10，容量自增2倍。非线程安全。</p>
+<p><img src="/img/1586415301619.png" alt="递归算法"></p>
 <ul>
-<li>1.现在django使用mysqlclient，而且恶心的是会在启动时自动验证版本号，pymysql最高只到0.9.3。这里根据报错直接那代码注释即可！</li>
-<li>2.makemigration出错，提示在django代码里的operations.py中的last_executed_query函数，由于python3与Python2的decode与encode函数区别，这里也需要把.decode..去掉。</li>
-</ul>
-<h2 id="User模块-注册"><a href="#User模块-注册" class="headerlink" title="User模块 - 注册"></a>User模块 - 注册</h2><p><strong>1.准备views函数</strong></p>
-<ul>
-<li>views.py添加相应函数<br>register函数为接收跳转网页, register_handler函数接收处理及逻辑</li>
-</ul>
-<pre><code class="python">def register():
-    pass
-def register_handle():
-    pass</code></pre>
-<ul>
-<li>urls.py配置对应view函数路径</li>
-</ul>
-<pre><code class="python">path(&#39;register&#39;,views.register,name=&#39;register&#39;)
-path(&#39;register_handle&#39;,views.register_handle,name=&#39;register_handle&#39;)</code></pre>
-<p><strong>2.templates里放入html信息</strong></p>
-<ul>
-<li>编辑表单&lt;form&gt;<br>  添加method,action.<br>  写法升级：</li>
-</ul>
-<pre><code class="python">action=&quot;{% url 'user:detail' %}&quot; </code></pre>
-<p>旧的写法:</p>
-<pre><code class="python">action = &quot;/user/register_handle&quot;</code></pre>
-<blockquote>
-<p>注意事项：</p>
-<ol>
-<li>网页使用跳转，需要在urls.py中指定name:<br>如下：所对应的地址段需要设置不同的正则</li>
-</ol>
-<pre><code class="python">path(&#39;add/&#39;, calc_views.add, name=&#39;add&#39;),  # new
-path(&#39;add/&lt;int:a&gt;/&lt;int:b&gt;/&#39;, calc_views.old_add2_redirect,name=&#39;add&#39;),</code></pre>
-<p>2.使用shell, 用reverse测试<br>地址反射的机制：django.urls reverse<br>3.定义一个跳转函数来做：</p>
-<pre><code class="python">urls.py中加入如下：
- path(&#39;add/&lt;int:a&gt;/&lt;int:b&gt;/&#39;, calc_views.old_add2_redirect,name=&#39;add&#39;),
-path(&#39;new_add/&lt;int:a&gt;/&lt;int:b&gt;/&#39;, calc_views.add2, name=&#39;add2&#39;),
-
-views.py中加入如下：
-def old_add2_redirect(request):
-return HttpResponseRedirect(
-       reverse(&#39;add2&#39;, args=(a, b))
-   )
-测试网址： http://127.0.0.1:8000/add/5/6/ 
-这时最终就将跳到美术http://127.0.0.1:8000/new_add/5/6/</code></pre>
-</blockquote>
-<p><strong>3.使用类视图</strong></p>
-<blockquote>
-<p>1.优化去register_handle函数，使用get/post判断实现不同的跳转类型<br>2.基于1的优化，使用类视图方式加载</p>
-</blockquote>
-<pre><code class="python">from django.views.generic import View
-
-class RegisterView(View):
-
-    def get(self, request):
-        pass
-
-    def post(self, request):
-        pass</code></pre>
-<p><strong>3.激活用户</strong></p>
-<ol>
-<li>使用itsdangerous为网址进行加密签名</li>
-<li>调用django.core.mail 的send_mail来发送邮件，把链接成文本发送过去</li>
-</ol>
-<pre><code class="python">from django.conf import settings
-from django.core.mail import send_mail
-import time
-
-def send_register_active_email(to_email, username, token):
-    &#39;&#39;&#39;send active email&#39;&#39;&#39;
-    subject = &quot;天天生鲜欢迎消息&quot;
-    message = &quot;&quot;
-    sender = settings.DEFAULT_FROM_EMAIL
-    receiver = [to_email]
-    html_message = &quot;&lt;h1&gt;%s, 欢迎你&lt;/h1&gt;请点击下面链接激活&lt;br/&gt;&lt;a href=\&quot;http://127.0.0.1:8000/user/active/%s\&quot;&gt;http://127.0.0.1:8000/user/active/%s&lt;/a&gt;&quot; % (
-    username, token, token)
-    send_mail(subject, message, sender, receiver, html_message=html_message)
-    time.sleep(5)</code></pre>
-<blockquote>
-<p>也可使用Python的发email库</p>
-</blockquote>
-<blockquote>
-<pre><code class="python"> def active_email(self, email_addr, active_code):
-     # 第三方 SMTP 服务 # 授权码：cmatkgceuuxcbddc
-     mail_host = &quot;smtp.qq.com&quot;  # 设置服务器
-     mail_user = &quot;1024037035@qq.com&quot;  # 用户名
-     mail_pass = &quot;cmatkgceuuxcbddc&quot;  # 口令
-     sender = &#39;1024037035@qq.com&#39;
-     receivers = [email_addr]  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
-      # 三个参数：第一个为文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
-     try:
-         smtp_obj = smtplib.SMTP()
-         smtp_obj.connect(mail_host, 25)  # 25 为 SMTP 端口号
-         smtp_obj.login(mail_user, mail_pass)
-         smtp_obj.sendmail(sender, receivers, message.as_string())
-         return True
-         &quot;邮件发送成功&quot;
-     except smtplib.SMTPException:
-          return False
-           &quot;Error: 无法发送邮件&quot;</code></pre>
-</blockquote>
-<ol start="3">
-<li>在Url中配置激活的功能</li>
-</ol>
-<pre><code class="python">path(&#39;active/&lt;token&gt;&#39;,ActiveView.as_view(), name=&#39;active&#39;),</code></pre>
-<ol start="4">
-<li>在views.py中写一个ActiveView的视图来处理激活</li>
-</ol>
-<pre><code class="python">class ActiveView(View):
-    def get(self, request, token):
-        try:
-            serializer = Serializer(settings.SECRET_KEY, 3600)
-            # print(type(token))
-            token = token.encode()
-            info = serializer.loads(token)
-            user_id = info[&#39;confirm&#39;]
-            user = User.objects.get(id=user_id)
-            user.is_active = 1
-            user.save()
-
-            # 跳转到登陆页面
-            return redirect(reverse(&#39;user:login&#39;))
-        except SignatureExpired as e:
-            # 激活链接过期
-            return HttpResponse(&#39;激活链接已过期&#39;)</code></pre>
-<p><strong>4.使用celery做为异步处理</strong></p>
-<p><img src="/img/1574171584470.png" alt="enter description here"></p>
-<p>1.配置一个项目目录为：celery_tasks/tasks.py的文件<br>2.在tasks.py写入配置如 </p>
-<pre><code class="python"># use celery
-from celery import Celery
-# create celery instance
-app = Celery(&#39;celery_tasks.tasks&#39;, broker=&#39;redis://:pwd@39.97.170.176:6379/8&#39;)
-
-# define task function
-@app.task
-def send_register_active_email(to_email, username, token):
-    pass</code></pre>
-<p>3.执行的脚本函数里写入：</p>
-<pre><code class="python">        # 发送邮件1
-        send_register_active_email.delay(email, username, secret_info)</code></pre>
-<p>4.在有redis的电脑上</p>
-<ul>
-<li>复制项目代码</li>
-<li>在tasks.py中加入初始化django的代码</li>
-<li><pre><code class="python">import os
-import django
-from django.core.wsgi import get_wsgi_application
-</code></pre>
+<li><p>公式法求复杂度：</p>
+</li>
+<li><p><img src="/img/1586415991649.png" alt="公式法"></p>
+</li>
+<li><p><img src="/img/1586416006714.png" alt="三种情况"></p>
+</li>
+<li><p><img src="/img/1586416029304.png" alt="例一"></p>
+</li>
+<li><p><img src="/img/1586416055487.png" alt="例二"></p>
+</li>
+<li><p><img src="/img/1586416101201.png" alt="例三"></p>
 </li>
 </ul>
-<p>os.environ.setdefault(‘DJANGO_SETTINGS_MODULE’, ‘dailyfresh.settings’)<br>django.setup()</p>
-<pre><code>* 启动worker
-</code></pre><p>celery -A celery_tasks.tasks worker -l info</p>
-<pre><code>* 启动redis , 大功告成，测试
-
-&gt; 可能出现的问题
-&gt; 在windows系统中：
-&gt;  使用这种方式来启动worker: pip install eventlet -&gt; celery -A your_app_name worker --pool=eventlet
-&gt;  或： celery -A your_app_name worker --pool=solo -l info
-&gt;  或：
-&gt;  at worker side:
-set FORKED_BY_MULTIPROCESSING = 1
-then
-celery -A myworker worker --loglevel=info
-
-## User模块 - 登录
-
-**LoginView，使用自带的授权**
-
-授权，如果成功则会返回user对象：：
-</code></pre><p>user = authenticate(username=username, password=pwd)</p>
-<pre><code>
-登录：
-
-```python
-login(request, user)</code></pre><p>添加URL及表单部分，参考注册流程</p>
-<p><strong>为减少数据库操作，使用redis存储</strong></p>
-<p>1.安装 django-redis<br>2.settings加入如下配置即可：</p>
-<pre><code class="python">#Django 缓存配置
-CACHES = {
-    &quot;default&quot;: {
-        &quot;BACKEND&quot;: &quot;django_redis.cache.RedisCache&quot;,
-        &quot;LOCATION&quot;: &quot;redis://127.0.0.1:6379/9&quot;, #服务器地址
-        &quot;OPTIONS&quot;: {
-            &quot;CLIENT_CLASS&quot;: &quot;django_redis.client.DefaultClient&quot;,
-            &quot;CONNECTION_POOL_KWARGS&quot;: {&quot;max_connections&quot;: 100}, # 最大连接数
-            &quot;PASSWORD&quot;: &quot;bk102435&quot;,
-        }
-    }
-}
-#配置session存储
-SESSION_ENGINE = &#39;django.contrib.sessions.backends.cache&#39;
-SESSION_CACHE_ALIAS = &#39;default&#39;</code></pre>
-<p><strong>把用户名记在cookie</strong></p>
-<p>1.登录成功时，把username字段存在cookie中</p>
-<pre><code class="python">response = redirect(reverse(&#39;goods:index&#39;))
-remember = request.POST.get(&#39;remember&#39;)
-
-if remember == &#39;on&#39;:
-    response.set_cookie(&#39;username&#39;, username, max_age=7*24*3600)
-else:
-    response.delete_cookie(&#39;username&#39;)</code></pre>
-<p>2.get方法中取出cookie数据</p>
-<pre><code>if &#39;username&#39; in request.COOKIES:
-    username = request.COOKIES.get(&#39;username&#39;)
-    checked = &#39;checked&#39;
-else:
-    username = &#39;&#39;
-    checked = &#39;&#39;
-return render(request, &#39;login.html&#39;, {&#39;username&#39;:username, &#39;checked&#39;:checked})</code></pre><h2 id="User-模块-用户中心"><a href="#User-模块-用户中心" class="headerlink" title="User 模块 - 用户中心"></a>User 模块 - 用户中心</h2><p><strong>从模板网页中抽象</strong></p>
-<ol>
-<li>将共同部分放在一个html， 不同部分使用</li>
-</ol>
-<p>base_user_center.html:</p>
-<p><img src="/img/1574937645193.png" alt="enter description here"></p>
-<p>2.在对应的功能页面继承</p>
-<p><img src="/img/1574937788143.png" alt="enter description here"></p>
-<p><strong>使用if 做功能块显示隐藏</strong></p>
-<p>如上方的：</p>
-<p><img src="/img/1574937430699.png" alt="enter description here"></p>
-<p><strong>使用官方提供的授权管理</strong></p>
-<p>有些页面需要登录后才能显示，如这里的用户中心页<br>使用django的login_required装饰器来做</p>
-<p><a href="https://docs.djangoproject.com/en/2.2/topics/auth/default/">https://docs.djangoproject.com/en/2.2/topics/auth/default/</a></p>
-<ol>
-<li>当用户已登录过，将直接跳转至所需页面</li>
-<li>当未登录，将默认跳转至/accounts/login/?next=/polls/3/.</li>
-<li>login_url可在settings.LOGIN_URL中配置 或login_url参数中配置</li>
-<li>next可在redirect_field_name参数中配置</li>
-</ol>
-<pre><code class="python">from django.contrib.auth.decorators import login_required
-
-@login_required(login_url=&#39;/accounts/login/&#39;)
-def my_view(request):</code></pre>
-<ol start="5">
-<li>处理用户通过非登录界面过来的<pre><code class="python"># 处理通过跳转的请求值#
-             # 设置下一步自动跳转 #
-             next_url = request.GET.get(&#39;next&#39;, reverse(&#39;goods:index&#39;))
-             response = redirect(reverse(next_url))</code></pre>
-</li>
-</ol>
-<blockquote>
-<p>注意：需要将form表单的action设成无action，这样提交的内容将按当前内容来指定！</p>
-</blockquote>
-<p>6.使用Mixin优化写法</p>
-<ul>
-<li>新建utils文件夹，新建一个LoginRequireMixin类</li>
-</ul>
-<pre><code class="python">class LoginRequiredMixin(object):
-    @classmethod
-    def as_view(cls, **initkwargs):
-        view = super(LoginRequiredMixin, cls).as_view(**initkwargs)
-        return login_required(view)</code></pre>
-<p>在所有view函数中继承</p>
-<pre><code class="python">class AddressView(LoginRequiredMixin, View):
-    pass</code></pre>
-<blockquote>
-<p>Mixin的原理是，执行一个子类没有的函数，Python继承规则是第一个父类先找，找到cls所代表的类的父类，再调用其as_view<br>super(A,cls) 找到A的父类，并将cls转成父类对象！</p>
-</blockquote>
-<p><strong>使用官方提供的是否登录标识</strong></p>
-<pre><code class="python">if request.user.is_authenticated:
-    # Do something for authenticated users.
-    ...
-else:
-    # Do something for anonymous users.
-    ...</code></pre>
-<p>因此在html中加入如下代码：</p>
-<p><img src="/img/1574937768754.png" alt="enter description here"></p>
-<p><strong>使用官方提供的退出登录</strong></p>
-<p>logout函数</p>
-<pre><code class="html">&lt;a href=&quot;{% url 'user:logout' %}&quot;&gt;退出&lt;/a&gt;</code></pre>
-<pre><code class="python">class LogoutView(View):
-    def get(self, request):
-        logout(request)
-        return redirect(reverse(&#39;goods:index&#39;))</code></pre>
-<p><strong>实现地址页的功能</strong></p>
-<blockquote>
-<p>1.使用request.user拿到user对象<br>2.Address.objects.create/get 来操作数据库<br>3.post请求中收到后再进行操作<br>4.Post请求完毕后，在get请求中再取数据库的地址来到html<br>5.显示get请求的结果到html</p>
-</blockquote>
-<p><strong>抽象Model里的管理器</strong></p>
-<p>model.py里：</p>
-<p>需要继承manager</p>
-<pre><code class="python">class AddressManager(models.Manager):
-    &#39;&#39;&#39;自定义模型管理器&#39;&#39;&#39;
-    def get_default_address(self, user):
-        #self.model: 获取self对象所在模型类
-        try:
-            address = self.get(user=user, is_default=True)
-        except self.DoesNotExist as e:
-            address = None
-        return address
-
-class Address(BaseModel):
-    &quot;&quot;&quot;地址模型类&quot;&quot;&quot;
-    pass
-    # 在这里使用定义的管理器
-    objects = AddressManager()</code></pre>
-<blockquote>
-<p>需要使用Address.objects.get_default_address来调用。这样传入self</p>
-</blockquote>
-<p><strong>用户中心的历史记录显示</strong></p>
-<p><img src="/img/1575029000281.png" alt="enter description here"></p>
-<p>参考redis资料<br><a href="https://django-redis-chs.readthedocs.io/zh_CN/latest/#">https://django-redis-chs.readthedocs.io/zh_CN/latest/#</a></p>
-<ol>
-<li><p>获取StrictRedis对象<br> 一般做法：</p>
-<pre><code class="python"> from redis import StrictRedis
- sr = StrictRedis(host=&#39;127.0.0.1&#39;, port=&#39;6379&#39;, db=9)</code></pre>
-<p> 但可以使用原生端的使用方式：</p>
-<pre><code class="python"> from django_redis import get_redis_connection
- con = get_redis_connection(&quot;default&quot;)</code></pre>
-</li>
-<li><p>获取redis数据并返回界面</p>
-</li>
-</ol>
-<pre><code class="python">  #获取redis数据连接
-        con = get_redis_connection(&quot;default&quot;)
-        #获取数据
-        history_key = &#39;history_%id&#39;%user.id
-        #拿前五个
-        sku_ids = con.lrange(history_key, 0, 4)</code></pre>
-<pre><code class="python"> def get(self, request):
-        user = request.user
-        address = Address.objects.get_default_address(user)
-
-        #获取redis数据连接
-        con = get_redis_connection(&quot;default&quot;)
-        #获取数据
-        history_key = &#39;history_%id&#39;%user.id
-        #拿前五个
-        sku_ids = con.lrange(history_key, 0, 4)
-        #获取此ID内的物体
-        # goods_li = GoodsSKU.objects.filter(id__in=sku_ids)
-        goods_li = []
-        for id in sku_ids:
-            goods = GoodsSKU.objects.get(id=id)
-            goods_li.append(goods)
-        #数据组装
-        context = {&#39;page&#39;: &#39;user&#39;,
-                   &#39;address&#39;: address,
-                   &#39;goods_li&#39;:goods_li}
-
-        return render(request, &#39;user_center_info.html&#39;, context)</code></pre>
-<p>3.在Html中配置数据，显示使用for goods, 和empty表示</p>
-<p><img src="/img/1575033223646.png" alt="enter description here"></p>
-<h2 id="分布式FastDFS文件系统"><a href="#分布式FastDFS文件系统" class="headerlink" title="分布式FastDFS文件系统"></a>分布式FastDFS文件系统</h2><p><img src="/img/1575033366217.png" alt="enter description here"></p>
-<p>客户端先发请求到Tracker服务器，服务器将返回一个Storage服务器地址，客户端再上传到此Storage服务器</p>
-<p><img src="/img/1575033456146.png" alt="enter description here"></p>
-<p>电商网站的图片数据一般不放在Django服务器，以防服务器存储器爆掉<br><img src="/img/1575034858096.png" alt="enter description here"></p>
-<p>FastDFS 采用hash值标识存储文件</p>
-<p><strong>文件上传</strong></p>
-<p><img src="/img/1575035108391.png" alt="enter description here"><br><img src="/img/1575035161292.png" alt="enter description here"></p>
-<p><strong>文件下载</strong></p>
-<p><img src="/img/1575035213445.png" alt="enter description here"> </p>
-<p><img src="/img/1575035246421.png" alt="enter description here"></p>
-<p><strong>安装配置</strong></p>
-<p><img src="/img/1575290159935.png" alt="安装"></p>
-<p><img src="/img/1575290242736.png" alt="服务器配置"></p>
-<p><img src="/img/1575290266752.png" alt="服务器配置"></p>
-<p><img src="/img/1575290288546.png" alt="启动"></p>
-<p><img src="/img/1575290314506.png" alt="安装Nginx"></p>
-<p><strong>结合nginx使用，提高多人访问的效率</strong></p>
-<p>获取文件需要借助nginx来获取静态文件。</p>
-<p><img src="/img/1575290314506.png" alt="安装Nginx"></p>
-<p><img src="/img/1575603749178.png" alt="fastdfs-nginx"></p>
-<p>注： 是conf目录<br><img src="/img/1575634128185.png" alt="连接fadfs与nginx"></p>
-<p><img src="/img/1575634466665.png" alt="http server配置"></p>
-<p><img src="/img/1575635246200.png" alt="server配置"></p>
-<p><img src="/img/1575635485238.png" alt="启动"></p>
-<p>上传测试: windows电脑下：</p>
-<ol>
-<li>去github下下载zip，解压</li>
-<li>把fdfs_client文件夹复制到自己conda环境下</li>
-<li>复制远端的client.conf，修改base_path和 网址（一般不用改）</li>
-<li>注释掉fdfs_client.sendfile这句代码在storage_client.py</li>
-<li>写一个Python文件，一定要在自己的conda环境下！</li>
-</ol>
-<pre><code class="python">from fdfs_client.client import Fdfs_client
-
-client = Fdfs_client(&#39;F:/Projects/django_env/client.conf&#39;)
-ret = client.upload_by_filename(&#39;timg.jpg&#39;)
-print(ret)</code></pre>
-<p>上传成功后：可以使用我们的 <a href="http://39.97.170.176:8888/">http://39.97.170.176:8888/</a> 做为前缀加上地址来访问图片<br><img src="/img/1575640031870.png" alt="测试上传"></p>
-<p><strong>fdfs工作流程</strong></p>
-<p><img src="/img/1575981798051.png" alt="fdfs工作流程"></p>
-<p><strong>实现fdfs</strong></p>
-<ul>
-<li>写一个如下结构：<br><img src="/img/1575984532516.png" alt="fdfs文件"></li>
-<li>storage.py中继承官方的Storage类并重写方法</li>
-</ul>
-<pre><code class="python">from django.core.files.storage import Storage
-from fdfs_client.client import Fdfs_client
-from django.conf import settings
-
-
-class FDFSStorage(Storage):
-
-    def __init__(self, client_conf=None, base_url=None):
-        if client_conf is None:
-            client_conf = settings.FDFS_CLIENT_CONF
-        self.client_conf = client_conf
-
-        if base_url is None:
-            base_url = settings.FDFS_URL
-        self.base_url = base_url
-
-    def _open(self, name, mode=&#39;rb&#39;):
-        pass
-
-    def _save(self, name, content):
-        client = Fdfs_client(self.client_conf)
-
-        # 上传文件内容
-        res = client.upload_by_buffer(content.read())
-        # return dict
-        # {
-        #     &#39;Group name&#39;: group_name,
-        #     &#39;Remote file_id&#39;: remote_file_id,
-        #     &#39;Status&#39;: &#39;Upload successed.&#39;,
-        #     &#39;Local file name&#39;: &#39;&#39;,
-        #     &#39;Uploaded size&#39;: upload_size,
-        #     &#39;Storage IP&#39;: storage_ip
-        # } if success else None
-
-        if res.get(&#39;Status&#39;) !=  &#39;Upload successed.&#39;:
-            # 上传失败
-            raise Exception(&#39;上传文件到DFS失败&#39;)
-
-        # 获取返回的文件ID
-        filename = res.get(&#39;Remote file_id&#39;)
-
-        # 返回文件ID
-        return filename
-
-    def exists(self, name):
-        return False
-
-
-    def url(self, name):
-        &#39;&#39;&#39;返回文件url&#39;&#39;&#39;
-        return self.base_url+name
-</code></pre>
-<ul>
-<li>最后在settings中加入</li>
-</ul>
-<pre><code class="python">#配置文件存储器
-DEFAULT_FILE_STORAGE = &#39;utils.fdfs.storage.FDFSStorage&#39;
-
-#设置fdfs 的client.conf文件路径
-FDFS_CLIENT_CONF=&#39;./utils/fdfs/client.conf&#39;
-
-#FDFS服务器地址
-FDFS_URL=&#39;http://39.97.170.176:8888/&#39;</code></pre>
-<p><strong>总结</strong></p>
-<p>使用fdfs好处：</p>
-<ol>
-<li>海量存储，存储内容易扩展</li>
-<li>解决文件内容重复</li>
-<li>结合nginx，提高网站提供图片的效率</li>
-</ol>
+<p><img src="/img/1586416261865.png" alt="回溯法"></p>
+<p><img src="/img/1586416480976.png" alt="经典找集合总和的算法"></p>
+<p>NQueen算法：<br><img src="/img/1586418715552.png" alt="回溯法NQueen"></p>
+<p>算法复杂度：<br><img src="/img/1586419084172.png" alt="NQueen算法复杂度"></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1024037035@qq.com </span>
@@ -1390,12 +912,12 @@ FDFS_URL=&#39;http://39.97.170.176:8888/&#39;</code></pre>
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>天天生鲜项目实例P1</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">3.1k</span></p>
+    <p><span class="copy-title">文章标题:</span>数据结构在C#</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">516</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Avery Huo">Avery Huo</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-12-12, 11:07:10</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-12, 11:07:10</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/12/天天生鲜项目实例/" title="天天生鲜项目实例P1">https://AveryHuo.github.io/2019/12/12/天天生鲜项目实例/</a>
+    <p><span class="copy-title">发布时间:</span>2020-04-09, 17:31:59</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-09, 17:31:59</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/04/09/数据结构在Charp/" title="数据结构在C#">https://AveryHuo.github.io/2020/04/09/数据结构在Charp/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
