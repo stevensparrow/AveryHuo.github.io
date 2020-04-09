@@ -8,6 +8,8 @@ tags:
 ---
 # Python Note 2
 
+Python中每一个数据类型实际上都是一个类。
+
 + ### Function definition
 + As python recommended, left two blank lines after function
 
