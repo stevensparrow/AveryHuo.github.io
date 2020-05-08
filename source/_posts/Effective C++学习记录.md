@@ -13,4 +13,7 @@ C++ 领域的四大块：
 * 3.Template C++: 泛型编程
 * 4. STL： 一种特殊的Template程序库，容器，迭代器，算法，对象等等规约
 
+#### 条款2：尽量以const, enum, inline替换 #define
+
+
 
