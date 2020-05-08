@@ -35,6 +35,8 @@ private:
 ```
 * 3.对于函数宏定义，使用Inline替代
  ```c++
+ //替换以下define语句。
+ //#define CALL_WITH_MAX(a,b) f(a>b?a:b);
  template<typename T>
  inline void callWithMax(const T&a,const T&b)
  {
