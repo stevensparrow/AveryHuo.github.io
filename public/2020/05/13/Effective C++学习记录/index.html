@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>Avery</title>
-  <meta name="keywords" content>
-  <meta name="description" content="Avery">
+  <title>Effective C++学习记录 | Avery</title>
+  <meta name="keywords" content=" C++ ">
+  <meta name="description" content="Effective C++学习记录 | Avery">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="这是关于我，有空再加吧">
 <meta name="keywords" content="Learn+Study">
@@ -53,7 +53,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/my.jpeg" />
@@ -918,12 +918,68 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-Effective C++学习记录" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么有这个博客"><span class="toc-text">为什么有这个博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于我"><span class="toc-text">关于我</span></a></li></ol></li></ol>
+        <h1 class="article-title">Effective C++学习记录</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="CPlusPlus">CPlusPlus</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color4">C++</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2020-05-13 14:27:59'>2020-05-13 14:27</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:201</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#条款1-习惯C"><span class="toc-text">条款1: 习惯C++</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#条款2：尽量以const-enum-inline替换-define"><span class="toc-text">条款2：尽量以const, enum, inline替换 #define</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -936,36 +992,77 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="为什么有这个博客"><a href="#为什么有这个博客" class="headerlink" title="为什么有这个博客"></a>为什么有这个博客</h2><blockquote>
-<p>并非为了博客来有这个网站，实际上是做一个日记本</p>
-</blockquote>
-<blockquote>
-<p>有时看书学习，都可以将自己的内容放在这里</p>
-</blockquote>
-<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p><strong>AveryHuo</strong> 是Avery的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<p>主要功能：</p>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="条款1-习惯C"><a href="#条款1-习惯C" class="headerlink" title="条款1: 习惯C++"></a>条款1: 习惯C++</h4><p>C++ 领域的四大块：</p>
 <ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad/手机等移动端适配</li>
-<li>页面全局快捷键 <a href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
+<li>1.C： 基础，语句，数组，指针等等</li>
+<li>2.Object-Oriented C: 继承，多态，封装</li>
+<li>3.Template C++: 泛型编程</li>
+<li><ol start="4">
+<li>STL： 一种特殊的Template程序库，容器，迭代器，算法，对象等等规约</li>
+</ol>
+</li>
+</ul>
+<h4 id="条款2：尽量以const-enum-inline替换-define"><a href="#条款2：尽量以const-enum-inline替换-define" class="headerlink" title="条款2：尽量以const, enum, inline替换 #define"></a>条款2：尽量以const, enum, inline替换 #define</h4><p>宁用编译器替换预处理器。</p>
+<ul>
+<li>1.使用声明式与定义式：如<pre><code class="c++">//头文件
+class GamePlayer{
+private:
+  static const int NumTurns = 5;//声明时候指定数值
+}
+//实现文件
+const int GamePlayer::NumTurns;//无需再次定义了</code></pre>
+</li>
+<li>2.使用enum当int数组用<pre><code class="c++">class GamePlayer{
+private:
+  enum{NumTurns =5};
+  int scores[NumTurns];
+}</code></pre>
+</li>
+<li>3.对于函数宏定义，使用Inline替代<pre><code class="c++">//替换以下define语句。
+//#define CALL_WITH_MAX(a,b) f(a&gt;b?a:b);
+template&lt;typename T&gt;
+inline void callWithMax(const T&amp;a,const T&amp;b)
+{
+   f(a&gt;b?a:b);
+}</code></pre>
+</li>
 </ul>
 
-        </article>
-        
-        <p>
-            <a  class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1024037035@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>Effective C++学习记录</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">201</span></p>
+    <p><span class="copy-title">本文作者:</span><a  title="Avery Huo">Avery Huo</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-05-13, 14:27:59</p>
+    <p><span class="copy-title">最后更新:</span>2020-05-13, 14:27:59</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/05/13/Effective C++学习记录/" title="Effective C++学习记录">https://AveryHuo.github.io/2020/05/13/Effective C++学习记录/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
     <section id="comments" class="disqus">
     <style> aside.comment-bar { margin: auto 30px; }</style>
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function(){
-            this.page.url = 'https://AveryHuo.github.io/';
-            this.page.identifier = 'archives/2020/04/index.html';
+            this.page.url = 'https://AveryHuo.github.io/2020/05/13/Effective C++学习记录/';
+            this.page.identifier = '2020/05/13/Effective C++学习记录/';
         };
         var loadComment = function(){
             var d = document, s = d.createElement('script');
@@ -981,8 +1078,15 @@
 </section>
 
 <!-- Add comment count-->
-<span class="disqus-comment-count" style="display: none" data-disqus-identifier="archives/2020/04/index.html"></span>
-<span class="disqus-comment-count" style="display: none" data-disqus-url=""></span>
+<span class="disqus-comment-count" style="display: none" data-disqus-identifier="2020/05/13/Effective C++学习记录/"></span>
+<span class="disqus-comment-count" style="display: none" data-disqus-url="https://AveryHuo.github.io/2020/05/13/Effective C++学习记录/"></span>
+
+
+
+    
+
+
+
 
     </div>
     <div class="copyright">
