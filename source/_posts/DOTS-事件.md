@@ -68,3 +68,9 @@ World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<PipeMoveSystem_Done>().O
             captureEventsEntityCommandBuffer.DestroyEntity(entity);
         }).Run();
 ```
+
+>  不用EndSimulationEntityCommandBufferSystem 也可以直接定义EntityCommandBuffer。只要在 job complete时，手动dispose()即可。
+```c#
+entityCommandBuffer.Playback(EntityManager);
+        entityCommandBuffer.Dispose();
+```
