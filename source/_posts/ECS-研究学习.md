@@ -367,3 +367,19 @@ public class CubeConvert : MonoBehaviour, IConvertGameObjectToEntity
 ```
 
 > 在 entities-0.5.1版本里, TypeManager.cs 源码中可看到, 任何没有[InternalBufferCapacity] 的buffer 类型都会默认 128/size 的容量. LinkedEntityGroup里面装的是 entity, 因此其容量是 128/8 = 16 .
+每个 Entity 关联的LinkedEntityGroup(或者其他未指定 capacity 的buffer) 将占据 128 bytes. 这是 chunk 容积变小的原因.
+层级中超过16个子对象并不是什么好事, 一旦超过这个数量, 这些 linked entities 不得不从排列良好的 chunk 内存中挪到堆内存中. 可能 Unity 认为 16 是一个不太可能达到的值, 而 8 又太过于常见.
+除非显式调用, LinkedEntityGroup仅仅在 prefab 的 conversion 过程中被自动创建, 因此你只需要注意你的 prefab 里面嵌套的 GameObject 数量
+在运行时, 所有嵌套 prefab 和 prefab variant 工作流并不受影响, 系统内部只把它们看过一个单独的 prefab. 你无法把嵌套 prefab 从父 prefab 中拿出来, 并期望LinkedEntityGroup正常工作.
+最后, 16个entities 一个 chunk ，  1MB 大概包含 60 个 chunk. 如上例, 你能在 1MB 存储大约 2700 个转换后的GameObject , 这样看来或许45 的 chunk 容量也不用太担心了(当然具体情况具体分析).
+
+7.5 创建额外的entity
+使用如下方式：
+```c#
+  Entity additional1 = conversionSystem.CreateAdditionalEntity(this.gameObject);
+        dstManager.SetName(additional1, $"{this.name}_Add1");
+        Entity additional2 = conversionSystem.CreateAdditionalEntity(this.gameObject);
+        dstManager.SetName(additional2, $"{this.name}_Add2");
+```
+
+> 注意：此方式创建的entity将不在linkedentitygroup内
