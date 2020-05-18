@@ -331,6 +331,17 @@ public class MoveSystem : JobComponentSystem
 ```
 
 ### 7. 使用Conversion
+流程明细：
+```c#
+// ??? <- IDeclareReferencedPrefabs 调用.
+GameObjectDeclareReferencedObjectsGroup.Update()
+// ??? <- discovery 阶段结束, 无法再声明更多 asset.
+GameObjectBeforeConversionGroup.Update()
+GameObjectConversionGroup.Update() <-- 你的 Convert 方法在这时运行
+GameObjectAfterConversionGroup.Update()
+// ??? <- LinkedEntityGroup + Prefab 都已就绪.
+GameObjectExportGroup.Update()
+```
 
 7.1 ConversionToEntity
 * 为GameObject添加ConversionToEntity将自动转换为ECS的entity. 
