@@ -343,5 +343,6 @@ public class MoveSystem : JobComponentSystem
 
 7.3 IConvertGameObjectToEntity
 * 继承此接口，在方法Convert里自由控制conversion的过程
+> Unity 内置了另一种名为ConvertGameObjectToEntitySystem 的 conversion system. 该 system 会迭代 conversion world 中所有的GameObject, 接着使用GetComponents 并判断是否实现IConvertGameObjectToEntity 接口, 然后再调用该接口的.Convert 方法
 
 
