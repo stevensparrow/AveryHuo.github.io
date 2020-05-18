@@ -341,4 +341,7 @@ public class MoveSystem : JobComponentSystem
 * Convert and inject 模式： 此模式下，相比上一个组件都会保留。
 > Convert and inject模式是用于当你需要在 conversion 的结果上面回溯原有对象的情况下才有用, 而 Hybrid Renderer 显然无需回溯。
 
+7.3 IConvertGameObjectToEntity
+* 继承此接口，在方法Convert里自由控制conversion的过程
+
 
