@@ -329,3 +329,15 @@ public class MoveSystem : JobComponentSystem
 }
 
 ```
+
+### 7. 使用Conversion
+
+7.1 ConversionToEntity
+* 为GameObject添加ConversionToEntity将自动转换为ECS的entity. 
+* 添加ConversionToEntity(Stop)将保持为原gameobject
+
+7.2 ConversionMode
+* Convert And Destroy模式：如果没有conversion system处理的组件，在Conversion world 被带入的东西在world销毁时也同时销毁，
+* Convert and inject 模式： 此模式下，相比上一个组件都会保留。
+
+
