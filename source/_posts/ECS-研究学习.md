@@ -382,4 +382,4 @@ public class CubeConvert : MonoBehaviour, IConvertGameObjectToEntity
         dstManager.SetName(additional2, $"{this.name}_Add2");
 ```
 
-> 注意：此方式创建的entity将不在linkedentitygroup内
+> 注意：此方式创建的entity将不在linkedentitygroup内，且是完全空的entity
