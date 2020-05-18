@@ -351,7 +351,7 @@ public class MoveSystem : JobComponentSystem
 * 调用DestroyEntity时也会同时销毁 LinkedEntityGroup中的所有 entity. 类似在编辑器中删除GameObject
 * 调用 entityManager.SetEnabled 加上的 Disabledcomponent 会告知 ECS 的查询系统忽略它们, 而 LinkedEntityGroup 中的 entity 也会受到同样的影响. 有点类似禁用GameObject 时同时会禁用整个层级树.
 
-> 当有子物体Disable状态时，将不会生成linkedentitygroup,但可以手动在此disable上添加
+> 当有子物体Disable状态时，此子物体自身不会生成linkedentitygroup,但可以手动在此disable上添加
 
 > 注意如果buffer 中的 entity 也有LinkedEntityGroup, 系统不会递归地执行instantiation/destroy/disabled 过程.
 这些过程在具体执行当中也有一些细微不同.Instantiate和SetEnabled只要检测到 buffer 便在所有成员上一次性执行, 不会做其他更多事. 这意味着关联该 buffer 的 entity 必须要把自己包括在内才能正常工作. 然而DestroyEntity则无所谓, 因为它会先销毁传入的entity, 然后再迭代 buffer 中的 entity 进行销毁.
