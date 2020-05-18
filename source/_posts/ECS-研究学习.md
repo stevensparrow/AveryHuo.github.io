@@ -337,7 +337,8 @@ public class MoveSystem : JobComponentSystem
 * 添加ConversionToEntity(Stop)将保持为原gameobject
 
 7.2 ConversionMode
-* Convert And Destroy模式：如果没有conversion system处理的组件，在Conversion world 被带入的东西在world销毁时也同时销毁，
+* Convert And Destroy模式：如果没有conversion system处理的组件，在Conversion world 被带入的东西在world销毁时也同时销毁。
 * Convert and inject 模式： 此模式下，相比上一个组件都会保留。
+> Convert and inject模式是用于当你需要在 conversion 的结果上面回溯原有对象的情况下才有用, 而 Hybrid Renderer 显然无需回溯。
 
 
