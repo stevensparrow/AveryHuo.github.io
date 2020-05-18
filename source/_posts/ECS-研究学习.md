@@ -365,3 +365,5 @@ public class CubeConvert : MonoBehaviour, IConvertGameObjectToEntity
     }
 }
 ```
+
+> 在 entities-0.5.1版本里, TypeManager.cs 源码中可看到, 任何没有[InternalBufferCapacity] 的buffer 类型都会默认 128/size 的容量. LinkedEntityGroup里面装的是 entity, 因此其容量是 128/8 = 16 .
