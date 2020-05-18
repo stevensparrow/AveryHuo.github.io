@@ -345,4 +345,23 @@ public class MoveSystem : JobComponentSystem
 * 继承此接口，在方法Convert里自由控制conversion的过程
 > Unity 内置了另一种名为ConvertGameObjectToEntitySystem 的 conversion system. 该 system 会迭代 conversion world 中所有的GameObject, 接着使用GetComponents 并判断是否实现IConvertGameObjectToEntity 接口, 然后再调用该接口的.Convert 方法
 
+7.4 LinkedEntityGroup
+* 为原层次结构做关联的组件。同时也是一个dynmaic buffer。 
+* 调用Instantiate方法时, 会同时实例化所有 buffer 中的 entity, 同时也会创建相同的LinkedEntityGroup. 注意实例化并不一定和ECS中的Prefab component 直接关联.
+* 调用DestroyEntity时也会同时销毁 LinkedEntityGroup中的所有 entity. 类似在编辑器中删除GameObject
+* 调用 entityManager.SetEnabled 加上的 Disabledcomponent 会告知 ECS 的查询系统忽略它们, 而 LinkedEntityGroup 中的 entity 也会受到同样的影响. 有点类似禁用GameObject 时同时会禁用整个层级树.
 
+> 注意如果buffer 中的 entity 也有LinkedEntityGroup, 系统不会递归地执行instantiation/destroy/disabled 过程.
+这些过程在具体执行当中也有一些细微不同.Instantiate和SetEnabled只要检测到 buffer 便在所有成员上一次性执行, 不会做其他更多事. 这意味着关联该 buffer 的 entity 必须要把自己包括在内才能正常工作. 然而DestroyEntity则无所谓, 因为它会先销毁传入的entity, 然后再迭代 buffer 中的 entity 进行销毁.
+要注意LinkedEntityGroup 和 Parent并不一样 (虽然它们经常同时出现). 后者是递归地工作, 循环依赖也是不允许的.
+
+* 为gameobject添加
+```c#
+public class CubeConvert : MonoBehaviour, IConvertGameObjectToEntity
+{
+    public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
+    {
+        conversionSystem.DeclareLinkedEntityGroup(this.gameObject);
+    }
+}
+```
